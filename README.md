@@ -1,5 +1,5 @@
 
-# Deep Learning Based Core Industry Big Data Analysis Expert Course
+# ML/DL Based Core Industry Big Data Analysis Expert Course
 
 <div align='right'><font size=2 color='gray'>Python For BigData @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, [김진수](bigpycraft@gmail.com)</font></div>
 <br>
