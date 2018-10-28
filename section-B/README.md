@@ -14,9 +14,15 @@
 <hr>
 
 ## Index of Python Modules for BigData
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-B/html/PB_DA_101_Review_DataType.html      "> 1-1. Python Review : 변수, 데이터타입, 제어문</a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-B/html/PB_DA_102_Review_DataStructure.html "> 1-2. Python Review : 데이터구조형            </a>
-
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_101_Review_DataType.html               "> 1-1. Python Review : Variable, DataType, Control               </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_102_Review_DataStructure.html          "> 1-2. Python Review : Data Structure                            </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_103_Review_Function1_Basic.html        "> 1-3. Python Review : Function Basic                            </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_103_Review_Function2_Extension.html    "> 1-3. Python Review : Function Refactoring                      </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_104_Lambda_Internal_Functiion.html     "> 1-4. Lambda Function & Internal Functions                      </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_105_Review_Class2_OOP.html             "> 1-5. Class & Object                                            </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_106_Exceptions.html                    "> 1-6. Exceptions                                                </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_107_FileIO_Basic.html                  "> 1-7. File I/O                                                  </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_108_Module_ver1.html                   "> 1-8. Module & Package                                          </a>
 <br/><br/>
 
 
