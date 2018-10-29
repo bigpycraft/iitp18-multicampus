@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>PB_DA_106_Exceptions</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>PB_DA_107_FileIO_OS-CMD</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11792,17 +11792,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2><font color='brown'>에러와 예외처리, Errors & Exceptions</font></h2>
-<blockquote><p></p>
-<ul>
-<li>구문 에러, Syntax Errors</li>
-<li>예외, Exceptions</li>
-<li>try-except 구문으로 예외상황 제어, Exceptions Handling in Program</li>
-<li>try-except 구문으로 예외상황 제어, Exceptions Handling in Function </li>
-<li>else와 finally 활용하기</li>
-<li>사용자 정의 예외, User-defined Exceptions!</li>
-</ul>
-</blockquote>
+<h2><font color='brown'>파일핸들링 & OS 기본명령어 </font></h2>
 
 </div>
 </div>
@@ -11811,163 +11801,45 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#44396;&#47928;-&#50640;&#47084;,-Syntax-Errors">&#44396;&#47928; &#50640;&#47084;, Syntax Errors<a class="anchor-link" href="#&#44396;&#47928;-&#50640;&#47084;,-Syntax-Errors">&#182;</a></h3>
+<h3 id="Text-&#54028;&#51068;-&#49373;&#49457;"><font color="blue">Text &#54028;&#51068; &#49373;&#49457;</font><a class="anchor-link" href="#Text-&#54028;&#51068;-&#49373;&#49457;">&#182;</a></h3>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print() 함수의 괄호 누락</span>
-<span class="nb">print</span> <span class="s1">&#39;I can do coding with python. Wow~~~&#39;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-1-c0abefaa7ede&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">2</span>
-<span class="ansi-yellow-intense-fg ansi-bold">    print &#39;I can do coding with python. Wow~~~&#39;</span>
-<span class="ansi-white-intense-fg ansi-bold">                                              ^</span>
-<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> Missing parentheses in call to &#39;print&#39;. Did you mean print(&#39;I can do coding with python. Wow~~~&#39;)?
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 콜론(:) 누락</span>
-<span class="k">if</span> <span class="mi">1</span><span class="o">&gt;</span><span class="mi">0</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1은 0보다 크다.&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-2-0c27e6b29d97&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">2</span>
-<span class="ansi-yellow-intense-fg ansi-bold">    if 1&gt;0</span>
-<span class="ansi-white-intense-fg ansi-bold">          ^</span>
-<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 들여쓰기 실수</span>
-<span class="k">if</span> <span class="mi">1</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;1은 0보다 크다.&#39;</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;당연하쥐!&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;tokenize&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">4</span>
-<span class="ansi-yellow-intense-fg ansi-bold">    print(&#39;당연하쥐!&#39;)</span>
-<span class="ansi-white-intense-fg ansi-bold">    ^</span>
-<span class="ansi-red-intense-fg ansi-bold">IndentationError</span><span class="ansi-red-intense-fg ansi-bold">:</span> unindent does not match any outer indentation level
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#50696;&#50808;,-Exceptions">&#50696;&#50808;, Exceptions<a class="anchor-link" href="#&#50696;&#50808;,-Exceptions">&#182;</a></h3>
-</div>
-</div>
-</div>
+</div><1--
+# break_point
+"""
+여러분, 반갑습니다! 
+재미있고 유익한 시간이 되길 바랍니다.
+끝까지 화이팅!!!
+"""
+-->
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 정의하지 않은 변수 stragne 호출</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">strange</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">write_txt</span><span class="p">(</span><span class="n">filepath</span><span class="p">):</span>
+    <span class="c1"># 텍스트 파일에 한줄씩 쓰기(writelines)</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;파일에 내용을 저장하려면 내용을 입력하지 말고 [Enter]를 누르세요&#39;</span><span class="p">)</span>
+
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%d</span><span class="s1">] 파일에 저장할 내용을 입력하세요: &#39;</span> <span class="o">%</span><span class="k">count</span>)
+        <span class="k">if</span> <span class="n">text</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">text</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+    <span class="n">ret</span> <span class="o">=</span> <span class="s1">&#39;TEXT 파일을 생성하였습니다.&#39;</span>
+    
+    <span class="k">return</span> <span class="n">ret</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-4-20527d0147e7&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-fg">      1</span> <span class="ansi-red-intense-fg ansi-bold"># 정의하지 않은 변수 stragne 호출</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>print<span class="ansi-yellow-intense-fg ansi-bold">(</span>strange<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;strange&#39; is not defined</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -11977,8 +11849,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 숫자와 문자열의 덧셈, 불가하다.</span>
-<span class="mi">2</span> <span class="o">+</span> <span class="s1">&#39;2&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">filepath</span> <span class="o">=</span> <span class="s1">&#39;./data/mydata.txt&#39;</span>
+<span class="n">write_txt</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11994,15 +11866,64 @@ div#notebook {
 <div class="prompt"></div>
 
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-5-abdd20d17bfa&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-fg">      1</span> <span class="ansi-red-intense-fg ansi-bold"># 숫자와 문자열의 덧셈, 불가하다.</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold"> </span><span class="ansi-cyan-intense-fg ansi-bold">2</span> <span class="ansi-yellow-intense-fg ansi-bold">+</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;2&#39;</span>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>파일에 내용을 저장하려면 내용을 입력하지 말고 [Enter]를 누르세요
+[1] 파일에 저장할 내용을 입력하세요: 여러분, 반갑습니다! 
+[2] 파일에 저장할 내용을 입력하세요: 재미있고 유익한 시간이 되길 바랍니다.
+[3] 파일에 저장할 내용을 입력하세요: 끝까지 화이팅!!!
+[4] 파일에 저장할 내용을 입력하세요: 
+</pre>
+</div>
+</div>
 
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: unsupported operand type(s) for +: &#39;int&#39; and &#39;str&#39;</pre>
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;TEXT 파일을 생성하였습니다.&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>여러분, 반갑습니다! 
+재미있고 유익한 시간이 되길 바랍니다.
+끝까지 화이팅!!!
+
+</pre>
 </div>
 </div>
 
@@ -12014,80 +11935,27 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="try-except-&#44396;&#47928;&#51004;&#47196;-&#50696;&#50808;&#49345;&#54889;-&#51228;&#50612;,-Exceptions-Handling-in-Program">try-except &#44396;&#47928;&#51004;&#47196; &#50696;&#50808;&#49345;&#54889; &#51228;&#50612;, Exceptions Handling in Program<a class="anchor-link" href="#try-except-&#44396;&#47928;&#51004;&#47196;-&#50696;&#50808;&#49345;&#54889;-&#51228;&#50612;,-Exceptions-Handling-in-Program">&#182;</a></h3>
+<h3 id="Text-&#54028;&#51068;-&#48373;&#49324;"><font color="blue">Text &#54028;&#51068; &#48373;&#49324;</font><a class="anchor-link" href="#Text-&#54028;&#51068;-&#48373;&#49324;">&#182;</a></h3>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;안녕하세요.&#39;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">param</span><span class="p">)</span>
-<span class="k">except</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;예외가 발생했습니다!&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>안녕하세요.
-예외가 발생했습니다!
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;안녕하세요.&#39;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">param</span><span class="p">)</span>
-<span class="k">except</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;예외가 발생했습니다!&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;예외가 발생하지 않았습니다.&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 텍스트 파일 복사하기(read, write)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./data/mydata.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">h</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./data/mydata_copy.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">h</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="n">h</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>안녕하세요.
-예외가 발생했습니다!
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -12097,13 +11965,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;안녕하세요.&#39;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">param</span><span class="p">)</span>
-<span class="k">except</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;예외가 발생했습니다!&#39;</span><span class="p">)</span>
-<span class="k">finally</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;무조건 실행하는 코드&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./data/mydata_copy.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">fp</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    
 </pre></div>
 
 </div>
@@ -12120,9 +11985,10 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>안녕하세요.
-예외가 발생했습니다!
-무조건 실행하는 코드
+<pre>여러분, 반갑습니다! 
+재미있고 유익한 시간이 되길 바랍니다.
+끝까지 화이팅!!!
+
 </pre>
 </div>
 </div>
@@ -12130,37 +11996,27 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Image-&#54028;&#51068;-&#48373;&#49324;"><font color="blue">Image &#54028;&#51068; &#48373;&#49324;</font><a class="anchor-link" href="#Image-&#54028;&#51068;-&#48373;&#49324;">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">param</span><span class="p">)</span>
-<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>        <span class="c1"># name &#39;param&#39; is not defined 가 출력됨</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Image</span>
+
+<span class="n">origin_img</span> <span class="o">=</span> <span class="s1">&#39;./images/bpc_logo.png&#39;</span>
+<span class="n">copied_img</span> <span class="o">=</span> <span class="s1">&#39;./images/bpc_logo_copy.png&#39;</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>name &#39;param&#39; is not defined
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -12170,15 +12026,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
-<span class="n">count</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="k">try</span><span class="p">:</span>
-    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
-        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>   <span class="c1"># Ctrl-C가 입력되면 발생하는 오류</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;사용자에 의해 프로그램이 중단되었습니다.&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">origin_img</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12191,91 +12039,355 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt"></div>
+<div class="prompt output_prompt">Out[10]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>1
-2
-3
-4
-5
-6
-사용자에 의해 프로그램이 중단되었습니다.
-</pre>
+
+
+<div class="output_png output_subarea output_execute_result">
+<img src="data:image/png;base64,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
+"
+>
 </div>
+
 </div>
 
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="try-except-&#44396;&#47928;&#51004;&#47196;-&#50696;&#50808;&#49345;&#54889;-&#51228;&#50612;,-Exceptions-Handling-in-Function">try-except &#44396;&#47928;&#51004;&#47196; &#50696;&#50808;&#49345;&#54889; &#51228;&#50612;, Exceptions Handling in Function<a class="anchor-link" href="#try-except-&#44396;&#47928;&#51004;&#47196;-&#50696;&#50808;&#49345;&#54889;-&#51228;&#50612;,-Exceptions-Handling-in-Function">&#182;</a></h3>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 예외상황 테스트를 위한 함수</span>
-<span class="k">def</span> <span class="nf">exception_test</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[1] Can you add 2 and &#39;2&#39; in python? &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[2] Try it~! &quot;</span><span class="p">,</span> <span class="mi">2</span><span class="o">+</span><span class="s1">&#39;2&#39;</span><span class="p">)</span>     <span class="c1"># 예외 발생</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[3] It&#39;s not possible to add integer and string together. &quot;</span><span class="p">)</span>
-    
-<span class="n">exception_test</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 바이너리 파일 복사하기(read, write)</span>
+<span class="n">bufsize</span> <span class="o">=</span> <span class="mi">1024</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">origin_img</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
+<span class="n">h</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">copied_img</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">bufsize</span><span class="p">)</span>
+<span class="k">while</span> <span class="n">data</span><span class="p">:</span>
+    <span class="n">h</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">bufsize</span><span class="p">)</span>
+
+<span class="n">h</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1] Can you add 2 and &#39;2&#39; in python? 
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-11-c971d69df651&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-fg">      5</span>     print<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;[3] It&#39;s not possible to add integer and string together. &#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">      6</span> 
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 7</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>exception_test<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-11-c971d69df651&gt;</span> in <span class="ansi-cyan-fg">exception_test</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-fg">      2</span> <span class="ansi-green-intense-fg ansi-bold">def</span> exception_test<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
-<span class="ansi-green-fg">      3</span>     print<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;[1] Can you add 2 and &#39;2&#39; in python? &#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 4</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>print<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;[2] Try it~! &#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">2</span><span class="ansi-yellow-intense-fg ansi-bold">+</span><span class="ansi-blue-intense-fg ansi-bold">&#39;2&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>     <span class="ansi-red-intense-fg ansi-bold"># 예외 발생</span>
-<span class="ansi-green-fg">      5</span>     print<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;[3] It&#39;s not possible to add integer and string together. &#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">      6</span> 
-
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: unsupported operand type(s) for +: &#39;int&#39; and &#39;str&#39;</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -12285,19 +12397,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 예외상황에 대한 처리를 구현한 함수</span>
-<span class="k">def</span> <span class="nf">exception_test2</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[1] Can you add 2 and &#39;2&#39; in python? &quot;</span><span class="p">)</span>
-    
-    <span class="k">try</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[2] Try it~! &quot;</span><span class="p">,</span> <span class="mi">2</span><span class="o">+</span><span class="s1">&#39;2&#39;</span><span class="p">)</span>     <span class="c1"># TypeError 발생</span>
-    <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[2] I got TypeError! &quot;</span><span class="p">)</span>    <span class="c1"># 에러 메시지 출력</span>
-    
-    
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[3] It&#39;s not possible to add integer and string together. &quot;</span><span class="p">)</span>
-    
-<span class="n">exception_test2</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">copied_img</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12310,86 +12410,373 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt"></div>
+<div class="prompt output_prompt">Out[12]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1] Can you add 2 and &#39;2&#39; in python? 
-[2] I got TypeError! 
-[3] It&#39;s not possible to add integer and string together. 
-</pre>
+
+
+<div class="output_png output_subarea output_execute_result">
+<img src="data:image/png;base64,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
+"
+>
 </div>
+
 </div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 예외상황에 대한 에러메시지를 상세히 나타낸 함수</span>
-<span class="k">def</span> <span class="nf">exception_test3</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[1] Can you add 2 and &#39;2&#39; in python? &quot;</span><span class="p">)</span>
-    
-    <span class="k">try</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[2] Try it~! &quot;</span><span class="p">,</span> <span class="mi">2</span><span class="o">+</span><span class="s1">&#39;2&#39;</span><span class="p">)</span>     <span class="c1"># TypeError 발생</span>
-    <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[2] TypeError: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">err</span><span class="p">))</span>    <span class="c1"># 에러 메시지 출력</span>
-    
-    
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[3] It&#39;s not possible to add integer and string together. &quot;</span><span class="p">)</span>
-    
-<span class="n">exception_test3</span><span class="p">()</span>
-</pre></div>
-
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="OS-&#44592;&#48376;&#47749;&#47161;&#50612;-"><font color="brown">OS &#44592;&#48376;&#47749;&#47161;&#50612; </font><a class="anchor-link" href="#OS-&#44592;&#48376;&#47749;&#47161;&#50612;-">&#182;</a></h2>
 </div>
 </div>
 </div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1] Can you add 2 and &#39;2&#39; in python? 
-[2] TypeError: unsupported operand type(s) for +: &#39;int&#39; and &#39;str&#39;
-[3] It&#39;s not possible to add integer and string together. 
-</pre>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#54028;&#51068;-&#53356;&#44592;-&#44396;&#54616;&#44592;(ospathgetsize)-"><font color="blue">&#54028;&#51068; &#53356;&#44592; &#44396;&#54616;&#44592;(ospathgetsize) </font><a class="anchor-link" href="#&#54028;&#51068;-&#53356;&#44592;-&#44396;&#54616;&#44592;(ospathgetsize)-">&#182;</a></h3>
 </div>
 </div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">traceback</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 파일 크기 구하기(ospathgetsize)</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="k">import</span> <span class="n">getsize</span>
 
-<span class="c1"># 처음에 보았던 트레이스백 메시지와 함께 나타낸 함수</span>
-<span class="k">def</span> <span class="nf">exception_test4</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[1] Can you add 2 and &#39;2&#39; in python? &quot;</span><span class="p">)</span>
-    
-    <span class="k">try</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[2] Try it~! &quot;</span><span class="p">,</span> <span class="mi">2</span><span class="o">+</span><span class="s1">&#39;2&#39;</span><span class="p">)</span>     <span class="c1"># TypeError 발생</span>
-    <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[2] I got TypeError! Check below! &quot;</span><span class="p">)</span>    <span class="c1"># 에러 메시지 출력</span>
-        <span class="n">traceback</span><span class="o">.</span><span class="n">print_exc</span><span class="p">()</span>                          <span class="c1"># 트레이스백 메시지 출력</span>
-    
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[3] It&#39;s not possible to add integer and string together. &quot;</span><span class="p">)</span>
-    
-<span class="n">exception_test4</span><span class="p">()</span>
+<span class="n">file1</span> <span class="o">=</span> <span class="s1">&#39;./data/mydata_copy.txt&#39;</span>
+<span class="n">file2</span> <span class="o">=</span> <span class="s1">&#39;./images/jupyter_logo.png&#39;</span>
+
+<span class="c1"># OK !!</span>
+<span class="c1"># file2 = &#39;/Users/user/Dropbox/sect_tech/src_anaconda/images/jupyter_logo.png&#39;</span>
+
+<span class="c1"># SyntaxError</span>
+<span class="c1"># file2 = &#39;C:\Users\user\Dropbox\sect_tech\src_anaconda\images\upyter_logo.png&#39;</span>
+
+<span class="n">file_size1</span> <span class="o">=</span> <span class="n">getsize</span><span class="p">(</span><span class="n">file1</span><span class="p">)</span>
+<span class="n">file_size2</span> <span class="o">=</span> <span class="n">getsize</span><span class="p">(</span><span class="n">file2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;File Name: </span><span class="si">%s</span><span class="s1"> </span><span class="se">\t</span><span class="s1"> File Size: </span><span class="si">%d</span><span class="s1"> Byte&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">file1</span><span class="p">,</span> <span class="n">file_size1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;File Name: </span><span class="si">%s</span><span class="s1"> </span><span class="se">\t</span><span class="s1"> File Size: </span><span class="si">%d</span><span class="s1"> Byte&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">file2</span><span class="p">,</span> <span class="n">file_size2</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -12406,23 +12793,8 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[1] Can you add 2 and &#39;2&#39; in python? 
-[2] I got TypeError! Check below! 
-[3] It&#39;s not possible to add integer and string together. 
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Traceback (most recent call last):
-  File &#34;&lt;ipython-input-14-c6979eb4973d&gt;&#34;, line 8, in exception_test4
-    print(&#34;[2] Try it~! &#34;, 2+&#39;2&#39;)     # TypeError 발생
-TypeError: unsupported operand type(s) for +: &#39;int&#39; and &#39;str&#39;
+<pre>File Name: ./data/mydata_copy.txt 	 File Size: 79 Byte
+File Name: ./images/jupyter_logo.png 	 File Size: 4898 Byte
 </pre>
 </div>
 </div>
@@ -12435,250 +12807,24 @@ TypeError: unsupported operand type(s) for +: &#39;int&#39; and &#39;str&#39;
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="else&#50752;-finally-&#54876;&#50857;&#54616;&#44592;">else&#50752; finally &#54876;&#50857;&#54616;&#44592;<a class="anchor-link" href="#else&#50752;-finally-&#54876;&#50857;&#54616;&#44592;">&#182;</a></h3>
+<h3 id="&#54028;&#51068;-&#49325;&#51228;&#54616;&#44592;(osremove)-"><font color="blue">&#54028;&#51068; &#49325;&#51228;&#54616;&#44592;(osremove) </font><a class="anchor-link" href="#&#54028;&#51068;-&#49325;&#51228;&#54616;&#44592;(osremove)-">&#182;</a></h3>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 예외 처리 방식에서의 else 옵션 구문 활용</span>
-<span class="k">def</span> <span class="nf">exception_test5</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>            <span class="c1"># 파일 열기 시도</span>
-    <span class="k">except</span> <span class="ne">IOError</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;cannot open&#39;</span><span class="p">,</span> <span class="n">file_path</span><span class="p">)</span>     <span class="c1"># 에러 메시지 출력</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;File has&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()),</span> <span class="s1">&#39;lines&#39;</span><span class="p">)</span>    <span class="c1"># 파일 라인 수 출력</span>
-        <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>                           <span class="c1"># 파일 닫기</span>
-        
-<span class="c1"># 정상 상황</span>
-<span class="n">exception_test5</span><span class="p">(</span><span class="s1">&#39;README.txt&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>File has 3 lines
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 없는 파일을 찾을때</span>
-<span class="n">exception_test5</span><span class="p">(</span><span class="s1">&#39;README-XXX.txt&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>cannot open README-XXX.txt
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 예외 처리 방식에서의 finally 옵션 구문 활용</span>
-<span class="k">def</span> <span class="nf">exception_test6</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>            <span class="c1"># 파일 열기 시도</span>
-    <span class="k">except</span> <span class="ne">IOError</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;cannot open&#39;</span><span class="p">,</span> <span class="n">file_path</span><span class="p">)</span>     <span class="c1"># 에러 메시지 출력</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;File has&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()),</span> <span class="s1">&#39;lines&#39;</span><span class="p">)</span>    <span class="c1"># 파일 라인 수 출력</span>
-        <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>                           <span class="c1"># 파일 닫기</span>
-    <span class="k">finally</span><span class="p">:</span>
-        <span class="c1"># 예외 발생 상관 없이 무조건 실행</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I just tried to read this file.&#39;</span><span class="p">,</span> <span class="n">file_path</span><span class="p">)</span>
-        
-<span class="c1"># 정상 상황</span>
-<span class="n">exception_test6</span><span class="p">(</span><span class="s1">&#39;README.txt&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>File has 3 lines
-I just tried to read this file. README.txt
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 없는 파일을 찾을때</span>
-<span class="n">exception_test6</span><span class="p">(</span><span class="s1">&#39;README-XXX.txt&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>cannot open README-XXX.txt
-I just tried to read this file. README-XXX.txt
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#49324;&#50857;&#51088;-&#51221;&#51032;-&#50696;&#50808;,-User-defined-Exceptions">&#49324;&#50857;&#51088; &#51221;&#51032; &#50696;&#50808;, User-defined Exceptions<a class="anchor-link" href="#&#49324;&#50857;&#51088;-&#51221;&#51032;-&#50696;&#50808;,-User-defined-Exceptions">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 예외 클래스 </span>
-<span class="k">class</span> <span class="nc">TooBigNumError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="n">val</span>
-    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s1">&#39;too big number </span><span class="si">{}</span><span class="s1">. Use 1~10! &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">val</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">raise</span> <span class="n">TooBigNumError</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
-</pre></div>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 파일 삭제하기(osremove)</span>
+<span class="kn">from</span> <span class="nn">os</span> <span class="k">import</span> <span class="n">remove</span>
 
-</div>
-</div>
-</div>
+<span class="n">target_file</span> <span class="o">=</span> <span class="s1">&#39;./data/mydata_copy.txt&#39;</span>
+<span class="n">k</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">] 파일을 삭제하겠습니까? ([y]/n)&#39;</span> <span class="o">%</span><span class="k">target_file</span>)
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">TooBigNumError</span>                            Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-20-6e086af09243&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span><span class="ansi-green-intense-fg ansi-bold">raise</span> TooBigNumError<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">15</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-
-<span class="ansi-red-intense-fg ansi-bold">TooBigNumError</span>: too big number 15. Use 1~10! </pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 사용자 정의 예외를 위한 테스트 함수</span>
-<span class="k">def</span> <span class="nf">user_defined_exception_test</span><span class="p">():</span>
-    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;1부터 10 사이의 점수를 입력하세요! : &#39;</span><span class="p">))</span>   <span class="c1"># 숫자 입력</span>
-    <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">TooBigNumError</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>                              <span class="c1"># 에러 발생</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;숫자 </span><span class="si">{}</span><span class="s1"> 를 입력하셨군요! &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>             <span class="c1"># 정상인 경우 출력문</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 정상 Case 입력</span>
-<span class="n">user_defined_exception_test</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">&#39;y&#39;</span> <span class="ow">or</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+    <span class="n">remove</span><span class="p">(</span><span class="n">target_file</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">] 파일을 삭제했습니다.&#39;</span> <span class="o">%</span><span class="k">target_file</span>)
 </pre></div>
 
 </div>
@@ -12695,8 +12841,8 @@ I just tried to read this file. README-XXX.txt
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1부터 10 사이의 점수를 입력하세요! : 7
-숫자 7 를 입력하셨군요! 
+<pre>[./data/mydata_copy.txt] 파일을 삭제하겠습니까? ([y]/n)
+[./data/mydata_copy.txt] 파일을 삭제했습니다.
 </pre>
 </div>
 </div>
@@ -12704,14 +12850,31 @@ I just tried to read this file. README-XXX.txt
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#54028;&#51068;&#51060;&#47492;-&#48148;&#44984;&#44592;(osrename)-"><font color="blue">&#54028;&#51068;&#51060;&#47492; &#48148;&#44984;&#44592;(osrename) </font><a class="anchor-link" href="#&#54028;&#51068;&#51060;&#47492;-&#48148;&#44984;&#44592;(osrename)-">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 에러 Case 입력</span>
-<span class="n">user_defined_exception_test</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 파일이름 바꾸기(osrename)</span>
+<span class="kn">from</span> <span class="nn">os</span> <span class="k">import</span> <span class="n">rename</span>
+
+<span class="n">folder_path</span> <span class="o">=</span> <span class="s1">&#39;./data/&#39;</span>
+<span class="n">target_file</span> <span class="o">=</span> <span class="n">folder_path</span> <span class="o">+</span> <span class="s1">&#39;mydata.txt&#39;</span>
+<span class="n">newname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">]에 대한 새로운 파일 이름을 입력하세요: &#39;</span> <span class="o">%</span><span class="k">target_file</span>)
+
+<span class="c1"># new_file = folder_path + newname</span>
+<span class="n">new_file</span> <span class="o">=</span> <span class="n">newname</span>
+<span class="n">rename</span><span class="p">(</span><span class="n">target_file</span><span class="p">,</span> <span class="n">new_file</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">] -&gt; [</span><span class="si">%s</span><span class="s1">] 로 파일이름이 변경되었습니다.&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">target_file</span><span class="p">,</span> <span class="n">new_file</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -12728,34 +12891,438 @@ I just tried to read this file. README-XXX.txt
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1부터 10 사이의 점수를 입력하세요! : 15
+<pre>[./data/mydata.txt]에 대한 새로운 파일 이름을 입력하세요: yourdata.txt
+[./data/mydata.txt] -&gt; [yourdata.txt] 로 파일이름이 변경되었습니다.
 </pre>
 </div>
 </div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#54028;&#51068;&#51012;-&#45796;&#47480;-&#46356;&#47113;&#53552;&#47532;&#47196;-&#51060;&#46041;&#54616;&#44592;(osrename)-"><font color="blue">&#54028;&#51068;&#51012; &#45796;&#47480; &#46356;&#47113;&#53552;&#47532;&#47196; &#51060;&#46041;&#54616;&#44592;(osrename) </font><a class="anchor-link" href="#&#54028;&#51068;&#51012;-&#45796;&#47480;-&#46356;&#47113;&#53552;&#47532;&#47196;-&#51060;&#46041;&#54616;&#44592;(osrename)-">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 파일을 다른 디렉터리로 이동하기(osrename)</span>
+<span class="kn">from</span> <span class="nn">os</span> <span class="k">import</span> <span class="n">rename</span>
+
+<span class="c1"># target_file = &#39;yourdata.txt&#39;</span>
+<span class="n">target_file</span> <span class="o">=</span> <span class="n">new_file</span>
+<span class="n">newpath</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">]를 이동할 디렉터리의 절대경로를 입력하세요: &#39;</span> <span class="o">%</span><span class="k">target_file</span>)
+
+<span class="k">if</span> <span class="n">newpath</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;/&#39;</span><span class="p">:</span>
+    <span class="n">newname</span> <span class="o">=</span> <span class="n">newpath</span> <span class="o">+</span> <span class="n">target_file</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">newname</span> <span class="o">=</span> <span class="n">newpath</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">target_file</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">rename</span><span class="p">(</span><span class="n">target_file</span><span class="p">,</span> <span class="n">newname</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">] -&gt; [</span><span class="si">%s</span><span class="s1">]로 이동되었습니다.&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">target_file</span><span class="p">,</span> <span class="n">newname</span><span class="p">))</span>
+<span class="k">except</span> <span class="ne">FileNotFoundError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
 
 <div class="output_area">
 
 <div class="prompt"></div>
 
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">TooBigNumError</span>                            Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-23-0749cb398f53&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-fg">      1</span> <span class="ansi-red-intense-fg ansi-bold"># 에러 Case 입력</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>user_defined_exception_test<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-21-3abc451a1afb&gt;</span> in <span class="ansi-cyan-fg">user_defined_exception_test</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-fg">      3</span>     num <span class="ansi-yellow-intense-fg ansi-bold">=</span> int<span class="ansi-yellow-intense-fg ansi-bold">(</span>input<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#39;1부터 10 사이의 점수를 입력하세요! : &#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>   <span class="ansi-red-intense-fg ansi-bold"># 숫자 입력</span>
-<span class="ansi-green-fg">      4</span>     <span class="ansi-green-intense-fg ansi-bold">if</span> num <span class="ansi-yellow-intense-fg ansi-bold">&gt;</span> <span class="ansi-cyan-intense-fg ansi-bold">10</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 5</span><span class="ansi-yellow-intense-fg ansi-bold">         </span><span class="ansi-green-intense-fg ansi-bold">raise</span> TooBigNumError<span class="ansi-yellow-intense-fg ansi-bold">(</span>num<span class="ansi-yellow-intense-fg ansi-bold">)</span>                              <span class="ansi-red-intense-fg ansi-bold"># 에러 발생</span>
-<span class="ansi-green-fg">      6</span>     print<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#39;숫자 {} 를 입력하셨군요! &#39;</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>format<span class="ansi-yellow-intense-fg ansi-bold">(</span>num<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>             <span class="ansi-red-intense-fg ansi-bold"># 정상인 경우 출력문</span>
-
-<span class="ansi-red-intense-fg ansi-bold">TooBigNumError</span>: too big number 15. Use 1~10! </pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[yourdata.txt]를 이동할 디렉터리의 절대경로를 입력하세요: /Temp
+[yourdata.txt] -&gt; [/Temp/yourdata.txt]로 이동되었습니다.
+</pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#46356;&#47113;&#53552;&#47532;&#50640;-&#51080;&#45716;-&#54028;&#51068;&#47785;&#47197;-&#50619;&#44592;(os.listdir,-glob.glob)-"><font color="blue">&#46356;&#47113;&#53552;&#47532;&#50640; &#51080;&#45716; &#54028;&#51068;&#47785;&#47197; &#50619;&#44592;(os.listdir, glob.glob) </font><a class="anchor-link" href="#&#46356;&#47113;&#53552;&#47532;&#50640;-&#51080;&#45716;-&#54028;&#51068;&#47785;&#47197;-&#50619;&#44592;(os.listdir,-glob.glob)-">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 디렉터리에 있는 파일목록 얻기(os.listdir, glob.glob)</span>
+<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">glob</span>
+
+<span class="c1"># folder = &#39;E:/devlab&#39;</span>
+<span class="n">folder</span> <span class="o">=</span> <span class="s1">&#39;data&#39;</span>
+<span class="n">file_list1</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">folder</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">file_list1</span><span class="p">)</span>
+
+<span class="c1"># files = &#39;*.txt&#39;</span>
+<span class="n">files</span> <span class="o">=</span> <span class="s1">&#39;data/*.txt&#39;</span>
+<span class="n">file_list2</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">files</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">file_list2</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;.ipynb_checkpoints&#39;, &#39;company.csv&#39;, &#39;hello.txt&#39;, &#39;students.csv&#39;, &#39;subject.txt&#39;]
+[&#39;data\\hello.txt&#39;, &#39;data\\subject.txt&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#54788;&#51116;-&#46356;&#47113;&#53552;&#47532;-&#54869;&#51064;&#54616;&#44256;-&#48148;&#44984;&#44592;(os.getcwd,-os.chdir)-"><font color="blue">&#54788;&#51116; &#46356;&#47113;&#53552;&#47532; &#54869;&#51064;&#54616;&#44256; &#48148;&#44984;&#44592;(os.getcwd, os.chdir) </font><a class="anchor-link" href="#&#54788;&#51116;-&#46356;&#47113;&#53552;&#47532;-&#54869;&#51064;&#54616;&#44256;-&#48148;&#44984;&#44592;(os.getcwd,-os.chdir)-">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 현재 디렉터리 확인하고 바꾸기(os.getcwd, os.chdir)</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">pdir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">();</span> <span class="nb">print</span><span class="p">(</span><span class="n">pdir</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">);</span>   <span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">);</span>     <span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">pdir</span><span class="p">);</span>     <span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>C:\Users\user\Dropbox\sect_tech\src_anaconda\P1810_IITP_Multicampus\s20-python-packages
+C:\Users\user\Dropbox\sect_tech\src_anaconda\P1810_IITP_Multicampus\s20-python-packages\data
+C:\Users\user\Dropbox\sect_tech\src_anaconda\P1810_IITP_Multicampus\s20-python-packages
+C:\Users\user\Dropbox\sect_tech\src_anaconda\P1810_IITP_Multicampus\s20-python-packages
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#46356;&#47113;&#53552;&#47532;-&#49373;&#49457;&#54616;&#44592;(osmkdir)-"><font color="blue">&#46356;&#47113;&#53552;&#47532; &#49373;&#49457;&#54616;&#44592;(osmkdir) </font><a class="anchor-link" href="#&#46356;&#47113;&#53552;&#47532;-&#49373;&#49457;&#54616;&#44592;(osmkdir)-">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 디렉터리 생성하기(osmkdir)</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">newfolder</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;새로 생성할 디렉터리 이름을 입력하세요: &#39;</span><span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">newfolder</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">] 디렉터리를 새로 생성했습니다.&#39;</span> <span class="o">%</span><span class="k">newfolder</span>)
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>새로 생성할 디렉터리 이름을 입력하세요: atemp
+[atemp] 디렉터리를 새로 생성했습니다.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#46356;&#47113;&#53552;&#47532;-&#51228;&#44144;&#54616;&#44592;(osrmdir)-"><font color="blue">&#46356;&#47113;&#53552;&#47532; &#51228;&#44144;&#54616;&#44592;(osrmdir) </font><a class="anchor-link" href="#&#46356;&#47113;&#53552;&#47532;-&#51228;&#44144;&#54616;&#44592;(osrmdir)-">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 디렉터리 제거하기(osrmdir)</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">target_folder</span> <span class="o">=</span> <span class="n">newfolder</span>
+<span class="n">k</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">] 디렉터리를 삭제하겠습니까? (y/n)&#39;</span> <span class="o">%</span><span class="k">target_folder</span>)
+<span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">rmdir</span><span class="p">(</span><span class="n">target_folder</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">] 디렉터리를 삭제했습니다.&#39;</span> <span class="o">%</span><span class="k">target_folder</span>)
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[atemp] 디렉터리를 삭제하겠습니까? (y/n)y
+[atemp] 디렉터리를 삭제했습니다.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#54616;&#50948;-&#46356;&#47113;&#53552;&#47532;-&#48143;-&#54028;&#51068;-&#51204;&#52404;-&#49325;&#51228;&#54616;&#44592;(shutil.rmtree)-"><font color="blue">&#54616;&#50948; &#46356;&#47113;&#53552;&#47532; &#48143; &#54028;&#51068; &#51204;&#52404; &#49325;&#51228;&#54616;&#44592;(shutil.rmtree) </font><a class="anchor-link" href="#&#54616;&#50948;-&#46356;&#47113;&#53552;&#47532;-&#48143;-&#54028;&#51068;-&#51204;&#52404;-&#49325;&#51228;&#54616;&#44592;(shutil.rmtree)-">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 하위 디렉터리 및 파일 전체 삭제하기(shutil.rmtree)</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">target_folder</span> <span class="o">=</span> <span class="s1">&#39;E:/devlab/tmp&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">] 하위 모든 디렉터리 및 파일들을 삭제합니다.&#39;</span> <span class="o">%</span><span class="k">target_folder</span>)
+
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">target_folder</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+<span class="n">k</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">]를 삭제하겠습니까? (y/n) &#39;</span> <span class="o">%</span><span class="k">target_folder</span>)
+
+<span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">target_folder</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">]의 모든 하위 디렉터리와 파일들을 삭제했습니다.&#39;</span> <span class="o">%</span><span class="k">target_folder</span>)
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[E:/devlab/tmp] 하위 모든 디렉터리 및 파일들을 삭제합니다.
+mydata.txt
+stockcode.txt
+stockcode_part.txt
+[E:/devlab/tmp]를 삭제하겠습니까? (y/n) y
+[E:/devlab/tmp]의 모든 하위 디렉터리와 파일들을 삭제했습니다.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#54028;&#51068;&#51060;-&#51316;&#51116;&#54616;&#45716;&#51648;-&#52404;&#53356;&#54616;&#44592;(os.pathexists)-"><font color="blue">&#54028;&#51068;&#51060; &#51316;&#51116;&#54616;&#45716;&#51648; &#52404;&#53356;&#54616;&#44592;(os.pathexists) </font><a class="anchor-link" href="#&#54028;&#51068;&#51060;-&#51316;&#51116;&#54616;&#45716;&#51648;-&#52404;&#53356;&#54616;&#44592;(os.pathexists)-">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 파일이 존재하는지 체크하기(os.pathexists)</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="k">import</span> <span class="n">exists</span>
+
+<span class="n">dir_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;새로 생성할 디렉터리 이름을 입력하세요: &#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">exists</span><span class="p">(</span><span class="n">dir_name</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">dir_name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">] 디렉터리를 생성했습니다.&#39;</span> <span class="o">%</span><span class="k">dir_name</span>)
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">]은(는) 이미 존재합니다.&#39;</span> <span class="o">%</span><span class="k">dir_name</span>)
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>새로 생성할 디렉터리 이름을 입력하세요: E:/devlab/tmp
+[E:/devlab/tmp] 디렉터리를 생성했습니다.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#54028;&#51068;&#51064;&#51648;-&#46356;&#47113;&#53552;&#47532;&#51064;&#51648;-&#54869;&#51064;&#54616;&#44592;(os.pathisfile,-os.pathisdir)-"><font color="blue">&#54028;&#51068;&#51064;&#51648; &#46356;&#47113;&#53552;&#47532;&#51064;&#51648; &#54869;&#51064;&#54616;&#44592;(os.pathisfile, os.pathisdir) </font><a class="anchor-link" href="#&#54028;&#51068;&#51064;&#51648;-&#46356;&#47113;&#53552;&#47532;&#51064;&#51648;-&#54869;&#51064;&#54616;&#44592;(os.pathisfile,-os.pathisdir)-">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr> 
+
+<div class="highlight"><pre><span></span><span class="c1"># os.listdir</span>
+
+<span class="n">Signature</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+<span class="n">Docstring</span><span class="p">:</span>
+<span class="n">Return</span> <span class="n">a</span> <span class="nb">list</span> <span class="n">containing</span> <span class="n">the</span> <span class="n">names</span> <span class="n">of</span> <span class="n">the</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">directory</span><span class="o">.</span>
+
+<span class="n">path</span> <span class="n">can</span> <span class="n">be</span> <span class="n">specified</span> <span class="k">as</span> <span class="n">either</span> <span class="nb">str</span> <span class="ow">or</span> <span class="nb">bytes</span><span class="o">.</span>  <span class="n">If</span> <span class="n">path</span> <span class="ow">is</span> <span class="nb">bytes</span><span class="p">,</span>
+  <span class="n">the</span> <span class="n">filenames</span> <span class="n">returned</span> <span class="n">will</span> <span class="n">also</span> <span class="n">be</span> <span class="nb">bytes</span><span class="p">;</span> <span class="ow">in</span> <span class="nb">all</span> <span class="n">other</span> <span class="n">circumstances</span>
+  <span class="n">the</span> <span class="n">filenames</span> <span class="n">returned</span> <span class="n">will</span> <span class="n">be</span> <span class="nb">str</span><span class="o">.</span>
+<span class="n">If</span> <span class="n">path</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">,</span> <span class="n">uses</span> <span class="n">the</span> <span class="n">path</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="o">.</span>
+<span class="n">On</span> <span class="n">some</span> <span class="n">platforms</span><span class="p">,</span> <span class="n">path</span> <span class="n">may</span> <span class="n">also</span> <span class="n">be</span> <span class="n">specified</span> <span class="k">as</span> <span class="n">an</span> <span class="nb">open</span> <span class="nb">file</span> <span class="n">descriptor</span><span class="p">;</span>\
+  <span class="n">the</span> <span class="nb">file</span> <span class="n">descriptor</span> <span class="n">must</span> <span class="n">refer</span> <span class="n">to</span> <span class="n">a</span> <span class="n">directory</span><span class="o">.</span>
+  <span class="n">If</span> <span class="n">this</span> <span class="n">functionality</span> <span class="ow">is</span> <span class="n">unavailable</span><span class="p">,</span> <span class="n">using</span> <span class="n">it</span> <span class="n">raises</span> <span class="ne">NotImplementedError</span><span class="o">.</span>
+
+<span class="n">The</span> <span class="nb">list</span> <span class="ow">is</span> <span class="ow">in</span> <span class="n">arbitrary</span> <span class="n">order</span><span class="o">.</span>  <span class="n">It</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">include</span> <span class="n">the</span> <span class="n">special</span>
+<span class="n">entries</span> <span class="s1">&#39;.&#39;</span> <span class="ow">and</span> <span class="s1">&#39;..&#39;</span> <span class="n">even</span> <span class="k">if</span> <span class="n">they</span> <span class="n">are</span> <span class="n">present</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">directory</span><span class="o">.</span>
+<span class="n">Type</span><span class="p">:</span>      <span class="n">builtin_function_or_method</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 파일인지 디렉터리인지 확인하기(os.pathisfile, os.pathisdir)</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="k">import</span> <span class="n">exists</span><span class="p">,</span> <span class="n">isdir</span><span class="p">,</span> <span class="n">isfile</span>
+
+<span class="c1"># files = os.listdir(&#39;..&#39;)</span>
+<span class="n">files</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">isdir</span><span class="p">(</span><span class="n">file</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;DIR: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">file</span>)
+
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">isfile</span><span class="p">(</span><span class="n">file</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;FILE: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">file</span>)
+</pre></div>
+
+</div>
 </div>
 </div>
 
