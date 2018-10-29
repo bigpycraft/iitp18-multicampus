@@ -26,9 +26,8 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_108_Exceptions.html                 "> 2-3. Exceptions                                     </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_109_Module_ver1.html                "> 2-4. Module                                         </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_110_DateTIme_ver1.html              "> 2-5. DateTIme                                       </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_111_MFR_ver1.html                   "> 2-6. Map, Filter, Reduce                            </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_111_MFR.html                        "> 2-6. Map, Filter, Reduce                            </a>
 <br/><br/>
-
 
 
 <hr>
