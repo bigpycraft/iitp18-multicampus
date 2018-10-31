@@ -11,7 +11,6 @@
 
 <img src="../images/img_front_readme_iitp.png">
 
-
 <hr>
 
 ## Index of Python Modules for BigData
@@ -30,9 +29,14 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_104_Lambda_Internal_Functiion.html  "> 3-1. Lambda Function & Internal Functions           </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_111_MFR.html                        "> 3-2. Map, Filter, Reduce                            </a>
 <br/><br/>
-<a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/IITP18_Python_TEST_01.pdf                             "><font color='brown'> ★ Python Programming TEST</font> </a>
+- <a href="https://github.com/bigpycraft/iitp18-multicampus/tree/master/midterm-exam "> 4-1. Python Programming TEST </a>
 <br/><br/>
-
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_221_NumPy.html            "> 5-1. NumPy                 </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_422_JSON.html             "> 5-2. JSON Handle           </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_231_Pandas.html           "> 5-3. Pandas                </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_423_RegEx.html            "> 5-4. Regular Expresso      </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_211_Matplotlib.html       "> 5-5. Matplot Lib           </a>
+<br/><br/>
 
 
 <hr>
