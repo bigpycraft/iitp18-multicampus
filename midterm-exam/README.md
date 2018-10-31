@@ -5,7 +5,7 @@
 <hr>
 
 ## IITP 2018, Innovation Growth Intensive Training in MultiCampus
-> <b>Midterm Exam</b>
+>  Midterm Exam
 - <a href='./IITP18_Python_TEST_01_A.pdf'> Python Programming - Question Test </a>
 - <a href='./IITP18_Python_TEST_01_B.pdf'> Python Programming - Practice Test </a>
 
@@ -20,9 +20,7 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S02_IITP_C반_유영재_Checked.html  "> S02_IITP_C반_유영재_Checked  </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S03_IITP_C반_강호영_Checked.html  "> S03_IITP_C반_강호영_Checked  </a>
 
-<br><br>
-
-
+<br>
 
 <hr>
 
