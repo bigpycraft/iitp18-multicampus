@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+<div>
+  <div>
+    <div>
+
+<div><div>
+</div>
+<div>
+<div>
+<h2>Python 실습 제출_빅데이터(C반)_김효신<a href="#0.1_Python-실습-제출_빅데이터(C반)_김효신">¶</a></h2>
+</div>
+</div>
+</div>
+<div><div>
+</div>
+<div>
+<div>
+<h3>실습1. 데이터타입에 대한 이해<a href="#0.1_실습1.-데이터타입에-대한-이해">¶</a></h3><ul>
+<li>2의 1000 제곱의 결과값의 각 자릿수를 모두 더하면 얼마입니까?</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>In [1]:</div>
+<div>
+    <div>
+<div><pre><span></span><span>def</span> <span>sum</span><span>(</span><span>number</span><span>):</span>
+    <span>i</span> <span>=</span> <span>0</span>
+    <span>for</span> <span>index</span> <span>in</span> <span>str</span><span>(</span><span>number</span><span>):</span>
+        <span>i</span> <span>+=</span> <span>int</span><span>(</span><span>index</span><span>)</span>
+    <span>return</span> <span>i</span>
+
+<span># print(&#39;2의 15 제곱의 각 자릿수의 합 : {}&#39;.format(sum(2 ** 15)))</span>
+<span>print</span><span>(</span><span>&#39;2의 1000 제곱의 각 자릿수의 합 : </span><span>{}</span><span>&#39;</span><span>.</span><span>format</span><span>(</span><span>sum</span><span>(</span><span>2</span> <span>**</span> <span>1000</span><span>)))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div>
+<div>
+
+
+<div>
+
+<div></div>
+
+
+<div>
+<pre>2의 1000 제곱의 각 자릿수의 합 : 1366
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div><div>
+</div>
+<div>
+<div>
+<h3>실습2. 로또번호를 주문하는 클래스(Class Lotto)를 생성하시오.<a href="#0.1_실습2.-로또번호를-주문하는-클래스(Class-Lotto)를-생성하시오.">¶</a></h3><ul>
+<li>로또는 1 ~ 10까지 주문 가능</li>
+<li>6개의 숫자로 된 로또는 오름차순으로 정렬</li>
+<li>주문한 개수만큼의 일련번호를 달아 로또번호를 출력</li>
+<li>OOP 기반으로 클래스에 메소드를 최대한 모듈화</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>In [4]:</div>
+<div>
+    <div>
+<div><pre><span></span><span>import</span> <span>random</span> <span>as</span> <span>r</span>
+
+<span>class</span> <span>lotto</span><span>:</span>
+    <span>idx</span> <span>=</span> <span>int</span><span>()</span>
+    <span>num</span> <span>=</span> <span>list</span><span>()</span>
+
+    <span>def</span> <span>__init__</span><span>(</span><span>self</span><span>,</span> <span>idx</span><span>,</span> <span>num</span><span>):</span>
+        <span>self</span><span>.</span><span>idx</span> <span>=</span> <span>idx</span>
+        <span>self</span><span>.</span><span>num</span> <span>=</span> <span>num</span>
+    <span>def</span> <span>games</span><span>(</span><span>idx</span><span>,</span> <span>num</span><span>):</span>
+        <span>print</span><span>(</span><span>&#39;일련번호&#39;</span><span>,</span> <span>idx</span><span>,</span> <span>&#39;의 게임 결과는&#39;</span><span>,</span> <span>num</span><span>,</span> <span>&#39;입니다.&#39;</span><span>)</span>
+
+<span>game</span> <span>=</span> <span>int</span><span>(</span><span>input</span><span>(</span><span>&#39;게임 수를 입력하세요. &#39;</span><span>))</span>
+<span>for</span> <span>i</span> <span>in</span> <span>range</span><span>(</span><span>1</span><span>,</span> <span>game</span><span>+</span><span>1</span><span>):</span>
+    <span>for</span> <span>j</span> <span>in</span> <span>range</span><span>(</span><span>1</span><span>,</span> <span>game</span> <span>+</span> <span>1</span><span>):</span>
+        <span>result</span> <span>=</span> <span>list</span><span>()</span>
+        <span>while</span> <span>True</span><span>:</span>
+            <span>numbers</span> <span>=</span> <span>r</span><span>.</span><span>randint</span><span>(</span><span>1</span><span>,</span> <span>47</span><span>)</span>
+            <span>if</span> <span>len</span><span>(</span><span>result</span><span>)</span> <span>==</span> <span>6</span><span>:</span>
+                <span>break</span>
+            <span>else</span><span>:</span>
+                <span>result</span><span>.</span><span>append</span><span>(</span><span>numbers</span><span>)</span>
+        <span>result</span> <span>=</span> <span>list</span><span>(</span><span>sorted</span><span>(</span><span>result</span><span>))</span>
+    <span>lotto</span><span>.</span><span>games</span><span>(</span><span>i</span><span>,</span> <span>result</span><span>)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div>
+<div>
+
+
+<div>
+
+<div></div>
+
+
+<div>
+<pre>게임 수를 입력하세요. 5
+일련번호 1 의 게임 결과는 [7, 10, 11, 23, 27, 29] 입니다.
+일련번호 2 의 게임 결과는 [1, 10, 19, 26, 33, 35] 입니다.
+일련번호 3 의 게임 결과는 [10, 14, 29, 34, 45, 46] 입니다.
+일련번호 4 의 게임 결과는 [8, 18, 34, 38, 41, 43] 입니다.
+일련번호 5 의 게임 결과는 [19, 22, 23, 25, 31, 33] 입니다.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div><div>
+</div>
+<div>
+<div>
+<h3>실습3. 특정기념일로부터 얼마나 경과되었는지 알려주는 함수를 만드시오.<a href="#0.1_실습3.-특정기념일로부터-얼마나-경과되었는지-알려주는-함수를-만드시오.">¶</a></h3>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>In [3]:</div>
+<div>
+    <div>
+<div><pre><span></span><span>from</span> <span>datetime</span> <span>import</span> <span>datetime</span>
+
+<span>def</span> <span>getMemorialDay</span><span>(</span><span>year</span><span>,</span> <span>month</span><span>,</span> <span>day</span><span>,</span> <span>mem_day</span><span>=</span><span>&#39;기념일&#39;</span><span>,</span> <span>is_msg</span><span>=</span><span>True</span><span>):</span>
+    <span>today</span> <span>=</span> <span>datetime</span><span>.</span><span>now</span><span>()</span>
+    <span>m_day</span> <span>=</span> <span>datetime</span><span>(</span><span>year</span><span>,</span> <span>month</span><span>,</span> <span>day</span><span>)</span>
+    <span>elapsed_day</span> <span>=</span> <span>today</span> <span>-</span> <span>m_day</span>
+
+    <span>remain_day</span> <span>=</span> <span>abs</span><span>(</span><span>elapsed_day</span><span>.</span><span>days</span><span>)</span>
+    <span>remain_month</span> <span>=</span> <span>int</span><span>(</span><span>abs</span><span>(</span><span>remain_day</span> <span>/</span> <span>30</span><span>))</span>
+    <span>remain_year</span> <span>=</span> <span>int</span><span>(</span><span>abs</span><span>(</span><span>remain_day</span> <span>/</span> <span>365</span><span>))</span>
+
+    <span>num</span> <span>=</span> <span>list</span><span>(</span><span>str</span><span>(</span><span>remain_day</span><span>))</span>
+    <span>result</span> <span>=</span> <span>list</span><span>()</span>
+    <span>temp</span> <span>=</span> <span>&#39;&#39;</span>
+    <span>n</span> <span>=</span> <span>len</span><span>(</span><span>num</span><span>)</span>
+
+    <span>for</span> <span>i</span> <span>in</span> <span>range</span><span>(</span><span>1</span><span>,</span> <span>len</span><span>(</span><span>num</span><span>)</span> <span>+</span> <span>1</span><span>):</span>
+        <span>temp</span> <span>+=</span> <span>num</span><span>.</span><span>pop</span><span>(</span><span>-</span><span>1</span><span>)</span>
+        <span>if</span> <span>i</span> <span>%</span> <span>3</span> <span>==</span> <span>0</span> <span>and</span> <span>i</span> <span>!=</span> <span>n</span><span>:</span>
+            <span>temp</span> <span>+=</span> <span>&#39;,&#39;</span>
+        <span>else</span><span>:</span>
+            <span>pass</span>
+    <span>result</span> <span>=</span> <span>temp</span><span>[::</span><span>-</span><span>1</span><span>]</span>
+
+    <span>if</span> <span>elapsed_day</span><span>.</span><span>days</span> <span>&lt;</span> <span>0</span><span>:</span>
+        <span>if</span> <span>is_msg</span><span>:</span>
+            <span>print</span><span>(</span><span>&#39;&quot;</span><span>%s</span><span>&quot;까지 </span><span>%s</span><span>일 남았습니다.&#39;</span> <span>%</span> <span>(</span><span>mem_day</span><span>,</span> <span>remain_day</span><span>))</span>
+        <span>else</span><span>:</span>
+            <span>return</span> <span>remain_year</span><span>,</span> <span>remain_month</span><span>,</span> <span>remain_day</span>
+    <span>elif</span> <span>elapsed_day</span><span>.</span><span>days</span> <span>==</span> <span>0</span><span>:</span>
+        <span>if</span> <span>is_msg</span><span>:</span>
+            <span>print</span><span>(</span><span>&#39;오늘입니다&#39;</span><span>)</span>
+        <span>else</span><span>:</span>
+            <span>return</span> <span>remain_year</span><span>,</span> <span>remain_month</span><span>,</span> <span>remain_day</span>
+    <span>else</span><span>:</span>
+        <span>if</span> <span>is_msg</span><span>:</span>
+            <span>print</span><span>(</span>
+                <span>&#39;오늘은 &quot;</span><span>%s</span><span>&quot;로부터 </span><span>%s</span><span>일 경과되었고, 달 수로는 </span><span>%d</span><span>개월째, 연 수로는 </span><span>%d</span><span>년째 되었습니다!!&#39;</span> <span>%</span> <span>(</span><span>mem_day</span><span>,</span> <span>result</span><span>,</span> <span>remain_month</span><span>,</span> <span>remain_year</span><span>))</span>
+        <span>else</span><span>:</span>
+            <span>return</span> <span>remain_year</span><span>,</span> <span>remain_month</span><span>,</span> <span>remain_day</span>
+
+<span>getMemorialDay</span><span>(</span><span>2014</span><span>,</span> <span>4</span><span>,</span> <span>16</span><span>,</span> <span>&#39;세월호침몰사고일&#39;</span><span>)</span>
+<span>getMemorialDay</span><span>(</span><span>2018</span><span>,</span> <span>12</span><span>,</span> <span>25</span><span>,</span> <span>&#39;올해 크리스마스&#39;</span><span>)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div>
+<div>
+
+
+<div>
+
+<div></div>
+
+
+<div>
+<pre>오늘은 &quot;세월호침몰사고일&quot;로부터 1,659일 경과되었고, 달 수로는 55개월째, 연 수로는 4년째 되었습니다!!
+&quot;올해 크리스마스&quot;까지 55일 남았습니다.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div><div>
+</div>
+<div>
+<div>
+<h3>4번 과제는 이해가 아직 부족하여 완성하지 못했습니다.<a href="#0.1_4번-과제는-이해가-아직-부족하여-완성하지-못했습니다.">¶</a></h3><h3>map, filter, reduce 부분을 조금 더 공부하고 실습을 제출하겠습니다.<a href="#0.1_map,-filter,-reduce-부분을-조금-더-공부하고-실습을-제출하겠습니다.">¶</a></h3><h3>개인적으로 준비하는 자격 시험 공부로 python 실습 수업에 조금 소홀했던 것 같습니다. 앞으로 열심히 하겠습니다...ㅜㅜ<a href="#0.1_개인적으로-준비하는-자격-시험-공부로-python-실습-수업에-조금-소홀했던-것-같습니다.-앞으로-열심히-하겠습니다...ㅜㅜ">¶</a></h3>
+</div>
+</div>
+</div>
+    </div>
+  </div>
+</div>
+
+ 
+
+
+
+</body></html>
