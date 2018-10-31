@@ -29,8 +29,10 @@
 <br/><br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_104_Lambda_Internal_Functiion.html  "> 3-1. Lambda Function & Internal Functions           </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_111_MFR.html                        "> 3-2. Map, Filter, Reduce                            </a>
-<br/><font color='brown'> ★ Python Programming TEST</font>
 <br/><br/>
+<a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/IITP18_Python_TEST_01.pdf                             "><font color='brown'> ★ Python Programming TEST</font> </a>
+<br/><br/>
+
 
 
 <hr>
