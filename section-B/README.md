@@ -37,7 +37,7 @@
 <br/><br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_230_Pandas.html           "> 5-1. Pandas1                </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_232_Pandas.html           "> 5-2. Pandas2                </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_423_RegEx.html            "> 5-3. Regular Expresso       </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_423_RegEx.html            "> 5-3. Regular Expression     </a>
 <br/><br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_211_Matplotlib.html       "> 6-1. Matplot Lib            </a>
 <br/><br/>
