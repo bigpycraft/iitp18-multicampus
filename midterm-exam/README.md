@@ -19,11 +19,12 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S01_IITP_C반_이상훈_Checked.html  "> S01_IITP_C반_이상훈_Checked  </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S02_IITP_C반_유영재_Checked.html  "> S02_IITP_C반_유영재_Checked  </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S03_IITP_C반_강호영_Checked.html  "> S03_IITP_C반_강호영_Checked  </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S04_IITP_C반_김홍기_Checked.html  "> S04_IITP_C반_김홍기_Checked  </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S05_IITP_C반_김하준_Checked.html  "> S05_IITP_C반_김하준_Checked  </a>
 
 <br>
 
 <hr>
-
 ## Original Submission Code
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S01_IITP_C반_이상훈.ipynb        "> S01_IITP_C반_이상훈.ipynb       </a>
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S02_IITP_C반_유영재.ipynb        "> S02_IITP_C반_유영재.ipynb       </a>
@@ -31,7 +32,7 @@
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S04_IITP_C반_김홍기_ver2.ipynb   "> S04_IITP_C반_김홍기_ver2.ipynb  </a>
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S05_IITP_C반_김하준.ipynb        "> S05_IITP_C반_김하준.ipynb       </a>
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S05_IITP_C반_김하준_ver4.ipynb   "> S05_IITP_C반_김하준_ver4.ipynb  </a>
-- <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S06_IITP_C반_고준형.zip          "> S06_IITP_C반_고준형.zip         </a>
+- <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S06_IITP_C반_고준형.ipynb        "> S06_IITP_C반_고준형.ipynb         </a>
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S07_IITP_C반_이진수.ipynb        "> S07_IITP_C반_이진수.ipynb       </a>
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S08_IITP_C반_유수정.ipynb        "> S08_IITP_C반_유수정.ipynb       </a>
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S09_IITP_C반_장은경.ipynb        "> S09_IITP_C반_장은경.ipynb       </a>
@@ -40,8 +41,13 @@
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S12_IITP_C반_공정배.ipynb        "> S12_IITP_C반_공정배.ipynb       </a>
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S13_IITP_C반_유영재.ipynb        "> S13_IITP_C반_유영재.ipynb       </a>
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S14_IITP_C반_김효신.html         "> S14_IITP_C반_김효신.html        </a>
+- <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S15_IITP_C반_조민정.ipynb        "> S15_IITP_C반_조민정.ipynb       </a>
+- <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S16_IITP_C반_민유진.ipynb        "> S16_IITP_C반_민유진.ipynb       </a>
+- <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S17_IITP_C반_함윤선.ipynb        "> S17_IITP_C반_함윤선.ipynb       </a>
+- <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S18_IITP_C반_정민호.ipynb        "> S18_IITP_C반_정민호.ipynb       </a>
+- <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S19_IITP_C반_장정호.ipynb        "> S19_IITP_C반_장정호.ipynb       </a>
+- <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S20_IITP_C반_주상훈.ipynb        "> S20_IITP_C반_주상훈.ipynb       </a>
 <br/><br/>
-
 
 
 <hr>
