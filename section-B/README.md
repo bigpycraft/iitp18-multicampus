@@ -31,16 +31,21 @@
 <br/><br/>
 ★★ Python Programming TEST ★★   ----->  <a href="https://github.com/bigpycraft/iitp18-multicampus/tree/master/midterm-exam "> [Move] </a>
 <br/><br/>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_220_NumPy.html            "> 4-1. NumPy1                 </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_222_NumPy.html            "> 4-2. NumPy2                 </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_422_JSON.html             "> 4-3. JSON Handle            </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_220_NumPy.html            "> 4-1. NumPy1                  </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_222_NumPy.html            "> 4-2. NumPy2                  </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_422_JSON.html             "> 4-3. JSON Handle             </a>
 <br/><br/>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_230_Pandas.html           "> 5-1. Pandas1                </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_232_Pandas.html           "> 5-2. Pandas2                </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_423_RegEx.html            "> 5-3. Regular Expression     </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_230_Pandas.html           "> 5-1. Pandas1                 </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_232_Pandas.html           "> 5-2. Pandas2                 </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_423_RegEx.html            "> 5-3. Regular Expression      </a>
 <br/><br/>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_211_Matplotlib.html       "> 6-1. Matplot Lib            </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_210_Matplotlib.html             "> 6-1. MatplotLib.Pyplot </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_211_Matplotlib_Basic_Chart.html "> 6-2. Basic Chart       </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_212_Matplotlib_Color_Style.html "> 6-3. Color & Style     </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_213_Matplotlib_Annotation.html  "> 6-4. Annotation        </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_214_Matplotlib_Seaborn.html     "> 6-5. Seabron           </a>
 <br/><br/>
+
 
 <hr>
 
