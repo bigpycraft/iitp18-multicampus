@@ -45,6 +45,8 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_213_Matplotlib_Annotation.html  "> 6-4. Annotation        </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_214_Matplotlib_Seaborn.html     "> 6-5. Seabron           </a>
 <br/><br/>
+- ★★ Kaggle Mission ★★ -----> <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_215_Kaggle_Stat_Visualize.html  "> [클릭] </a>
+<br/><br/>
 
 
 <hr>
