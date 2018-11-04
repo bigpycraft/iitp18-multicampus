@@ -21,8 +21,13 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S03_IITP_C반_강호영_Checked.html  "> S03_IITP_C반_강호영_Checked  </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S04_IITP_C반_김홍기_Checked.html  "> S04_IITP_C반_김홍기_Checked  </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S05_IITP_C반_김하준_Checked.html  "> S05_IITP_C반_김하준_Checked  </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S06_IITP_C반_고준형_Checked.html  "> S06_IITP_C반_고준형_Checked  </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S07_IITP_C반_이진수_Checked.html  "> S07_IITP_C반_이진수_Checked  </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S08_IITP_C반_유수정_Checked.html  "> S08_IITP_C반_유수정_Checked  </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S09_IITP_C반_장은경_Checked.html  "> S09_IITP_C반_장은경_Checked  </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S10_IITP_C반_문정연_Checked.html  "> S10_IITP_C반_문정연_Checked  </a>
 
-<br>
+<br/>
 
 <hr>
 
@@ -48,6 +53,7 @@
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S18_IITP_C반_정민호.ipynb        "> S18_IITP_C반_정민호.ipynb       </a>
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S19_IITP_C반_장정호.ipynb        "> S19_IITP_C반_장정호.ipynb       </a>
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S20_IITP_C반_주상훈.ipynb        "> S20_IITP_C반_주상훈.ipynb       </a>
+
 <br/><br/>
 
 
