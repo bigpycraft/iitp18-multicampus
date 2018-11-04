@@ -15,13 +15,16 @@
 <hr>
 
 ## Data Analysis Practice for BigData
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PD_DA_310_Kaggle_Stat_Visualize___Mission.html    "> ★★ Mission - Kaggle ★★ </a>
+
+- Open Data Site Analysis
+<br/><br/>
+ <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PD_DA_310_Kaggle_Stat_Visualize___Mission.html    "> ★★ Mission - Kaggle ★★ </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PD_DA_311_Kaggle_Stat_Visualize.html              "> 1-1. Kaggle Analysis : Basic, Intermediate  </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PD_DA_312_Kaggle_Titanic_ver3.html                "> 1-2. Kaggle Analysis : Advanced  </a>
 <br/><br/>
+ <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PD_DA_323_DataGoKr_CCTV현황_in2017___Mission.html "> ★★ Mission - Data Portal ★★ </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PD_DA_321_DataGoKr_노화빌딩.html                  "> 2-1. Public Data Portal 1  </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PD_DA_322_DataGoKr_범죄발생.html                  "> 2-2. Public Data Portal 2  </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PD_DA_323_DataGoKr_CCTV현황_in2017___Mission.html "> ★★ Mission - Data Portal ★★ </a>
 <br/><br/>
 
 
