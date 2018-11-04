@@ -29,7 +29,7 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_104_Lambda_Internal_Functiion.html  "> 3-1. Lambda Function & Internal Functions           </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PB_DA_111_MFR.html                        "> 3-2. Map, Filter, Reduce                            </a>
 <br/><br/>
-★★ Python Programming TEST ★★   ----->  <a href="https://github.com/bigpycraft/iitp18-multicampus/tree/master/midterm-exam "> [Move] </a>
+★★ Python Programming TEST ★★   ----->  <a href="https://github.com/bigpycraft/iitp18-multicampus/tree/master/midterm-exam "> [Click] </a>
 <br/><br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_220_NumPy.html            "> 4-1. NumPy1                  </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_222_NumPy.html            "> 4-2. NumPy2                  </a>
@@ -45,7 +45,7 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_213_Matplotlib_Annotation.html  "> 6-4. Annotation        </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_214_Matplotlib_Seaborn.html     "> 6-5. Seabron           </a>
 <br/><br/>
-- ★★ Kaggle Mission ★★ -----> <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_215_Kaggle_Stat_Visualize.html  "> [클릭] </a>
+★★ Kaggle Mission ★★ -----> <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-B/html/PC_DA_215_Kaggle_Stat_Visualize.html  "> [Click] </a>
 <br/><br/>
 
 
