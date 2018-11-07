@@ -37,7 +37,13 @@
 <br/><br/>
   <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_413_Web_Scraping_Quiz.html                  "> ★★ Mission - Ranking Crawling ★★ </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_420_Seoul_McDonalds_idx_ver3.html           "> 5-1. McDonalds-idx    </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_500_WebCollecting.html                      "> 5-2. URL Parsing Tip        </a>
 <br/><br/>
+  <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_521_Selenium_Starbucks_idx_ver3_Quiz.html   "> ★★ Mission - Selenium  ★★ </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_510_Selenium_WebDriver_ver2.html            "> 6-1. How to use Selenium    </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_521_Selenium_Starbucks_idx_ver3_Quiz.html   "> 6-2. StarBucks-idx</a>
+<br/><br/>
+
 
 <hr>
 
@@ -52,6 +58,28 @@
 - Download : https://repo.continuum.io/archive/ 
 - Reason : TF Requires Python 3.4, 3.5, or 3.6 
 - TensorFlow : https://www.tensorflow.org/install/pip
+
+
+<hr>
+
+### Selenium HQ
+> Selenium 1.0 + WebDriver = Selenium 2.0
+- HomeSite : https://www.seleniumhq.org/projects/webdriver/
+- WebDriver is designed in a simpler and more concise programming interface along with addressing some limitations in the Selenium-RC API.
+- WebDriver is a compact Object Oriented API when compared to Selenium1.0
+- It drives the browser much more effectively and overcomes the limitations of Selenium 1.x which affected our functional test coverage, like the file upload or download, pop-ups and dialogs barrier
+- WebDriver overcomes the limitation of Selenium RC's Single Host origin policy
+
+<hr>
+
+### Webdriver Down & Install</font>
+> 아래 사이트에서 OS에 맞는 웹드라이브를 다운받아 압축을 풀어 driver 폴더에 복사
+- Chrome WebDriver &nbsp;&nbsp;: <a href='http://chromedriver.chromium.org/downloads'>[다운로드1]</a>, &nbsp;&nbsp;&nbsp;<a href='https://sites.google.com/a/chromium.org/chromedriver/downloads'>[다운로드2]</a>
+- Firefox WebDriver &nbsp;&nbsp;&nbsp;&nbsp;: <a href='https://github.com/mozilla/geckodriver/releases'>[다운로드]</a>
+- Microsoft WebDriver : <a href='https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/'>[다운로드]</a>
+
+<br/>
+cf. 가장 보편적으로 많이 사용하는 크롬 웹드라이브를 다운받아서 설치한다.
 
 
 <hr>
