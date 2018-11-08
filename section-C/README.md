@@ -41,7 +41,7 @@
 <br/><br/>
   <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_521_Selenium_Starbucks_idx_ver3_Quiz.html   "> ★★ Mission - Selenium  ★★ </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_510_Selenium_WebDriver_ver2.html            "> 6-1. How to use Selenium    </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_521_Selenium_Starbucks_idx_ver3_Quiz.html   "> 6-2. StarBucks-idx</a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_521_Selenium_Starbucks_idx_ver3.html   "> 6-2. StarBucks-idx</a>
 <br/><br/>
 
 
