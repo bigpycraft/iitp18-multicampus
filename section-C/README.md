@@ -36,14 +36,23 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_412_Web_Crawling2_ver3.html                 "> 4-3. Web Crawling2    </a>
 <br/><br/>
   <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_413_Web_Scraping_Quiz.html                  "> ★★ Mission - Ranking Crawling ★★ </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/영화랭킹_웹크롤링_by_김하준_ver1.html             "> [제출] 김하준 </a>
+--> <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/영화랭킹_웹크롤링_by_김하준_ver2.html             "> 피드백 </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_414_Crawling_Music_Ranking1_ver3.html       "> 4-4. Crawling Music Ranking 50       </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_415_Crawling_Movie_Ranking2_ver3.html       "> 4-5. Crawling Movie Top 10    </a>
+<br/><br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_420_Seoul_McDonalds_idx_ver3.html           "> 5-1. McDonalds-idx    </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_500_WebCollecting.html                      "> 5-2. URL Parsing Tip        </a>
 <br/><br/>
   <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_521_Selenium_Starbucks_idx_ver3_Quiz.html   "> ★★ Mission - Selenium  ★★ </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_510_Selenium_WebDriver_ver2.html            "> 6-1. How to use Selenium    </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_521_Selenium_Starbucks_idx_ver3.html   "> 6-2. StarBucks-idx</a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_521_Selenium_Starbucks_idx_ver3.html        "> 6-2. StarBucks-idx</a>
 <br/><br/>
-
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_831_KoNLPy.html                             "> 7-1. NLP(Natural Language Processing) </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_810_Datamining_ver2.html                    "> 7-2. 데이터마이닝    </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_832_NLP_WordCloud.html                      "> 7-4. WordCloud1    </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_820_WordCloud_형태소분석_v2.html            "> 7-3. WordCloud2    </a>
+<br/><br/>
 
 <hr>
 
@@ -72,7 +81,7 @@
 
 <hr>
 
-### Webdriver Down & Install</font>
+### Webdriver Down & Install
 > 아래 사이트에서 OS에 맞는 웹드라이브를 다운받아 압축을 풀어 driver 폴더에 복사
 - Chrome WebDriver &nbsp;&nbsp;: <a href='http://chromedriver.chromium.org/downloads'>[다운로드1]</a>, &nbsp;&nbsp;&nbsp;<a href='https://sites.google.com/a/chromium.org/chromedriver/downloads'>[다운로드2]</a>
 - Firefox WebDriver &nbsp;&nbsp;&nbsp;&nbsp;: <a href='https://github.com/mozilla/geckodriver/releases'>[다운로드]</a>
@@ -80,6 +89,27 @@
 
 <br/>
 cf. 가장 보편적으로 많이 사용하는 크롬 웹드라이브를 다운받아서 설치한다.
+
+
+<hr> 
+
+### NLP Environment Install </font>
+
+* KoNLPy : pip install konlpy
+* JPype1 : conda install -c conda-forge jpype1
+<br/> - 이후 Jupyter Notebook 재실행 필요
+* JDK 설치 : Java JDK로 검색해서 OS에 맞춰 설치
+<br/> - JAVA_HOME 설정 
+
+<hr>
+
+### JAVA Environment Setting
+> JDK Install & JAVA Environmnmet Variable Setting 
+- Download : https://www.oracle.com/technetwork/java/javase/downloads/
+- 시스템 환경변수 : 
+<br/> 1) JAVA_HOME : JDK설치경로
+<br/> 2) Path = %JAVA_HOME%\bin;%Path%
+<br/> 3) CLASSPATH = .;%JAVA_HOME%\lib;
 
 
 <hr>
