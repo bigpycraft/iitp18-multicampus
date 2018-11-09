@@ -135,8 +135,9 @@
 
 <hr> 
 
-### KoNLPy Install Guide  </font>
-<table width="100%" align="left">
+### KoNLPy Install Guide  
+
+<table width="800" align="left">
     <tr align="left">
         <td width="200">
             <a href="http://konlpy.org/ko/v0.5.0/install/">
@@ -145,16 +146,16 @@
         </td>
     <td >
 <div align="left">
-    <b> 1. JAVA 환경 </b> : [JDK (>=1.8) ](https://www.oracle.com/technetwork/java/javase/downloads/) Install & JAVA Environmnmet Variable Setting
+    <b> 1. JAVA 환경 </b> : <a href="https://www.oracle.com/technetwork/java/javase/downloads/">JDK (>=1.8)</a> Install & JAVA Environmnmet Variable Setting
     <br/><br/>
-    <b> 2. MS Visual C++ 설치 </b> : [Build Tools for Visual Studio 2017 (>=14.0) ](https://www.scivision.co/python-windows-visual-c++-14-required//)  Install 
+    <b> 2. MS Visual C++ 설치 </b> : <a href="https://www.scivision.co/python-windows-visual-c++-14-required/">Build Tools for Visual Studio 2017 (>=14.0) </a> Install 
     <br/><br/>
-    <b> 3. JPype 설치 </b> : [JPype1  (>=0.5.7) ](https://www.lfd.uci.edu/~gohlke/pythonlibs/#jpype) Install
-    <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> ** pip install --upgrade pip **
-    <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> ** pip install JPype1‑0.6.3‑cp36‑cp36m‑win_amd64.whl **
+    <b> 3. JPype 설치 </b> : <a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#jpype">JPype1  (>=0.5.7) </a>Install
+    <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> <b> pip install --upgrade pip </b>
+    <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> <b> pip install JPype1‑0.6.3‑cp36‑cp36m‑win_amd64.whl </b>
     <br/><br/>
     <b> 4. KoNLPy 설치 </b> :
-    <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> ** pip install konlpy **
+    <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> <b> pip install konlpy </b>
 </div>
         </td>
     </tr>
@@ -165,7 +166,7 @@
 
 ### JDK Install & JAVA Environment Setting
 
-<table width="100%" align="left">
+<table width="800" align="left">
     <tr align="left">
         <td width="200">
             <a href="https://www.oracle.com/technetwork/java/javase/downloads/">
@@ -188,11 +189,12 @@
     </tr>
 </table>
 
+
 <hr>
 
 ### Microsoft Azuer Notebooks
 
-<table width="100%" align="left">
+<table width="800" align="left">
     <tr align="left">
         <td width="200">
             <a href="https://notebooks.azure.com/">
@@ -210,6 +212,7 @@
         </td>
     </tr>
 </table>
+
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
