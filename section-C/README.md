@@ -58,7 +58,7 @@
 
 <hr>
 
-### Jupyter Notebook
+<h3> Jupyter Notebook </h3>
 
 <table width="100%" align="left">
     <tr align="left">
@@ -67,11 +67,10 @@
             <img src="../images/jupyter.jpg" width="150" />
             </a>
         </td>
-        <td width="800">
-    
+        <td width="600">
 <div align="left">
-<font size=2>
-<b> Latest : Version 5.3 | Release Date: September 28, 2018 </b>
+    <font size=2>
+    <b> Latest : Version 5.3 | Release Date: September 28, 2018 </b>
     <br/>
     - Filename : Anaconda3-5.3.0-Windows-x86_64.exe 
     <br/>
@@ -80,7 +79,7 @@
     - Check the OS version & bit (32bit / 64bit)
     <br/><br/>
 
-<b> Recommand : Version 5.2 | Release Date: May 30, 2018 </b>
+    <b> Recommand : Version 5.2 | Release Date: May 30, 2018 </b>
     <br/>
     - Filename : Anaconda3-5.2.0-Windows-x86_64.exe
     <br/>
@@ -89,12 +88,12 @@
     - Reason : TF Requires Python 3.4, 3.5, or 3.6 
     <br/>
     - TensorFlow : https://www.tensorflow.org/install/pip
-</font>
+    </font>
 </div>
         </td>
     </tr>
-    <tr>
 </table>
+<br/>
 
 
 <hr>
@@ -108,7 +107,7 @@
             <img src="../images/SeleniumHQ-logo.png" width="150" />
             </a>
         </td>
-    <td > 
+        <td width="600">
 <div align="left">
     <b> - Selenium HQ </b> : https://www.seleniumhq.org/projects/webdriver/
     <br/><br/>
@@ -124,8 +123,8 @@
 </div>
         </td>
     </tr>
-    <tr>
 </table>
+<br/>
 
 
 ### Selenium 1.0 + WebDriver = Selenium 2.0
@@ -162,20 +161,21 @@
         </td>
     </tr>
 </table>
-   
+<br/>
+
 
 <hr>
 
 ### JDK Install & JAVA Environment Setting
 
-<table width="800" align="left">
+<table width="100%" align="left">
     <tr align="left">
         <td width="200">
             <a href="https://www.oracle.com/technetwork/java/javase/downloads/">
             <img src="../images/java-se-downloads-1612441.gif" width="150" />
             </a>
         </td>
-    <td >
+        <td width="600">
 <div align="left"> 
     <b> - Download </b> : https://www.oracle.com/technetwork/java/javase/downloads/
     <br/><br/> 
@@ -196,14 +196,14 @@
 
 ### Microsoft Azuer Notebooks
 
-<table width="800" align="left">
+<table width="100%" align="left">
     <tr align="left">
         <td width="200">
             <a href="https://notebooks.azure.com/">
             <img src="../images/microsoft.jpg" width="100" />
             </a>
         </td>
-    <td >
+        <td width="600">
 <div align="left">
     - <b> Microsoft Azure Notebooks </b> : https://notebooks.azure.com/
     <br/><br/>
@@ -214,6 +214,7 @@
         </td>
     </tr>
 </table>
+<br/>
 
 
 <hr>
