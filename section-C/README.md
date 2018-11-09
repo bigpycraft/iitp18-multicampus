@@ -67,7 +67,7 @@
             <img src="../images/jupyter.jpg" width="150" />
             </a>
         </td>
-    <td >
+        <td width="800">
     
 <div align="left">
 <font size=2>
@@ -95,6 +95,7 @@
     </tr>
     <tr>
 </table>
+
 
 <hr>
 
@@ -125,6 +126,7 @@
     </tr>
     <tr>
 </table>
+
 
 ### Selenium 1.0 + WebDriver = Selenium 2.0
 - HomeSite : https://www.seleniumhq.org/projects/webdriver/
