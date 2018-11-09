@@ -69,28 +69,26 @@
         </td>
         <td width="600">
 <div align="left">
-    <font size=2>
-    <b> Latest : Version 5.3 | Release Date: September 28, 2018 </b>
-    <br/>
-    - Filename : Anaconda3-5.3.0-Windows-x86_64.exe 
-    <br/>
-    - Download : https://www.anaconda.com/download/
-    <br/>
-    - Check the OS version & bit (32bit / 64bit)
-    <br/><br/>
-
-    <b> Recommand : Version 5.2 | Release Date: May 30, 2018 </b>
-    <br/>
-    - Filename : Anaconda3-5.2.0-Windows-x86_64.exe
-    <br/>
-    - Download : https://repo.continuum.io/archive/ 
-    <br/>
-    - Reason : TF Requires Python 3.4, 3.5, or 3.6 
-    <br/>
-    - TensorFlow : https://www.tensorflow.org/install/pip
-    </font>
+<b> Latest : Version 5.3 | Release Date: September 28, 2018 </b>
+<br/>
+- Filename : Anaconda3-5.3.0-Windows-x86_64.exe 
+<br/>
+- Download : https://www.anaconda.com/download/
+<br/>
+- Check the OS version & bit (32bit / 64bit)
 </div>
-        </td>
+<br/>
+<div align="left">
+<b> Recommand : Version 5.2 | Release Date: May 30, 2018 </b>
+<br/>
+- Filename : Anaconda3-5.2.0-Windows-x86_64.exe
+<br/>
+- Download : https://repo.continuum.io/archive/ 
+<br/>
+- Reason : TF Requires Python 3.4, 3.5, or 3.6 
+<br/>
+- TensorFlow : https://www.tensorflow.org/install/pip
+</div></td>
     </tr>
 </table>
 <br/>
@@ -110,12 +108,11 @@
         <td width="600">
 <div align="left">
     <b> - Selenium HQ </b> : https://www.seleniumhq.org/projects/webdriver/
+    <br/><br/> - 아래 사이트에서 OS에 맞는 웹드라이브를 다운받아 압축을 풀어 driver 폴더에 복사
     <br/><br/>
-    - 아래 사이트에서 OS에 맞는 웹드라이브를 다운받아 압축을 풀어 driver 폴더에 복사
+    <b> 1. Chrome WebDriver </b> &nbsp;&nbsp; : <a href='http://chromedriver.chromium.org/downloads'>[다운로드1]</a>, &nbsp;&nbsp;&nbsp;<a href='https://sites.google.com/a/chromium.org/chromedriver/downloads'>[다운로드2]</a>
     <br/><br/>
-    <b> 1. Chrome WebDriver </b> &nbsp;&nbsp;: <a href='http://chromedriver.chromium.org/downloads'>[다운로드1]</a>, &nbsp;&nbsp;&nbsp;<a href='https://sites.google.com/a/chromium.org/chromedriver/downloads'>[다운로드2]</a>
-    <br/><br/>
-    <b> 2. Firefox WebDriver </b> &nbsp;&nbsp;&nbsp;&nbsp;: <a href='https://github.com/mozilla/geckodriver/releases'>[다운로드]</a>
+    <b> 2. Firefox WebDriver </b> &nbsp;&nbsp;&nbsp;&nbsp; : <a href='https://github.com/mozilla/geckodriver/releases'>[다운로드]</a>
     <br/><br/>
     <b> 3. Microsoft WebDriver </b> : <a href='https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/'>[다운로드]</a>
     <br/><br/>
