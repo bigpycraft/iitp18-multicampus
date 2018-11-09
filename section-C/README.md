@@ -91,7 +91,6 @@
 - TensorFlow : https://www.tensorflow.org/install/pip
 </font>
 </div>
-
         </td>
     </tr>
     <tr>
@@ -108,8 +107,7 @@
             <img src="../images/SeleniumHQ-logo.png" width="150" />
             </a>
         </td>
-    <td >
-    
+    <td > 
 <div align="left">
 ** - Selenium HQ ** : https://www.seleniumhq.org/projects/webdriver/
 <br/><br/>
@@ -123,7 +121,6 @@
 <br/><br/>
 ** cf. 가장 보편적으로 많이 사용하는 크롬 웹드라이브를 다운받아서 설치한다. ** 
 </div>
-
         </td>
     </tr>
     <tr>
@@ -165,7 +162,6 @@
             </a>
         </td>
     <td >
-    
 <div align="left">
 ** 1. JAVA 환경 ** : [JDK (>=1.8) ](https://www.oracle.com/technetwork/java/javase/downloads/) Install & JAVA Environmnmet Variable Setting
 <br/><br/>
@@ -178,7 +174,6 @@
 ** 4. KoNLPy 설치 ** :
 <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> ** pip install konlpy **
 </div>
-
         </td>
     </tr>
 </table>
@@ -227,15 +222,12 @@
         </td>
     <td >
 <div align="left">
-
  - ** Microsoft Azure Notebooks ** : https://notebooks.azure.com/
  <br/><br/>
  - Interactive coding in my browser
  <br/><br/>
  - Free, in the cloud, powered by jupyter
- 
 </div>
-
         </td>
     </tr>
 </table>
