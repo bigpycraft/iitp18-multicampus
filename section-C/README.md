@@ -97,8 +97,12 @@ cf. 가장 보편적으로 많이 사용하는 크롬 웹드라이브를 다운�
 ### NLP Environment Install </font>
 
 * KoNLPy : pip install konlpy
-* JPype1 : conda install -c conda-forge jpype1
-<br/> - 이후 Jupyter Notebook 재실행 필요
+<br/> 공식설치가이드 : http://konlpy.org/ko/v0.5.0/install/
+* JPype설치 : 
+<br/>- 방법1 : conda install -c conda-forge jpype1
+<br/>- 방법2 : 아래사이트에서 설치파일 직접 다운후 설치
+<br/> &nbsp;&nbsp;&nbsp;&nbsp; https://www.lfd.uci.edu/~gohlke/pythonlibs/#jpype 
+<br/>- 이후 Jupyter Notebook 재실행 필요
 * JDK 설치 : Java JDK로 검색해서 OS에 맞춰 설치
 <br/> - JAVA_HOME 설정 
 
