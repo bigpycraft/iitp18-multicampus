@@ -98,14 +98,14 @@
 
 ### Selenium WebDriver 
 
-<table width="100%" align="left">
+<table align="left">
     <tr align="left">
         <td width="200">
             <a href="https://www.seleniumhq.org/projects/webdriver/">
             <img src="../images/SeleniumHQ-logo.png" width="150" />
             </a>
         </td>
-        <td width="600">
+        <td width="800">
 <div align="left">
     <b> - Selenium HQ </b> : https://www.seleniumhq.org/projects/webdriver/
     <br/><br/> - 아래 사이트에서 OS에 맞는 웹드라이브를 다운받아 압축을 풀어 driver 폴더에 복사
@@ -135,14 +135,14 @@
 
 ### KoNLPy Install Guide  
 
-<table width="800" align="left">
+<table align="left">
     <tr align="left">
         <td width="200">
             <a href="http://konlpy.org/ko/v0.5.0/install/">
             <img src="../images/konlpy.png" width="150" />
             </a>
         </td>
-    <td >
+        <td width="800">
 <div align="left">
     <b> 1. JAVA 환경 </b> : <a href="https://www.oracle.com/technetwork/java/javase/downloads/">JDK (>=1.8)</a> Install & JAVA Environmnmet Variable Setting
     <br/><br/>
@@ -165,14 +165,14 @@
 
 ### JDK Install & JAVA Environment Setting
 
-<table width="100%" align="left">
+<table align="left">
     <tr align="left">
         <td width="200">
             <a href="https://www.oracle.com/technetwork/java/javase/downloads/">
             <img src="../images/java-se-downloads-1612441.gif" width="150" />
             </a>
         </td>
-        <td width="600">
+        <td width="800">
 <div align="left"> 
     <b> - Download </b> : https://www.oracle.com/technetwork/java/javase/downloads/
     <br/><br/> 
@@ -193,14 +193,14 @@
 
 ### Microsoft Azuer Notebooks
 
-<table width="100%" align="left">
+<table align="left">
     <tr align="left">
         <td width="200">
             <a href="https://notebooks.azure.com/">
             <img src="../images/microsoft.jpg" width="100" />
             </a>
         </td>
-        <td width="600">
+        <td width="800">
 <div align="left">
     - <b> Microsoft Azure Notebooks </b> : https://notebooks.azure.com/
     <br/><br/>
