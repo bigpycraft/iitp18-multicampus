@@ -71,24 +71,24 @@
     
 <div align="left">
 <font size=2>
-** Latest : Version 5.3 | Release Date: September 28, 2018 **
-<br/>
-- Filename : Anaconda3-5.3.0-Windows-x86_64.exe 
-<br/>
-- Download : https://www.anaconda.com/download/
-<br/>
-- Check the OS version & bit (32bit / 64bit)
-<br/><br/>
+<b> Latest : Version 5.3 | Release Date: September 28, 2018 </b>
+    <br/>
+    - Filename : Anaconda3-5.3.0-Windows-x86_64.exe 
+    <br/>
+    - Download : https://www.anaconda.com/download/
+    <br/>
+    - Check the OS version & bit (32bit / 64bit)
+    <br/><br/>
 
-** Recommand : Version 5.2 | Release Date: May 30, 2018 **
-<br/>
-- Filename : Anaconda3-5.2.0-Windows-x86_64.exe
-<br/>
-- Download : https://repo.continuum.io/archive/ 
-<br/>
-- Reason : TF Requires Python 3.4, 3.5, or 3.6 
-<br/>
-- TensorFlow : https://www.tensorflow.org/install/pip
+<b> Recommand : Version 5.2 | Release Date: May 30, 2018 </b>
+    <br/>
+    - Filename : Anaconda3-5.2.0-Windows-x86_64.exe
+    <br/>
+    - Download : https://repo.continuum.io/archive/ 
+    <br/>
+    - Reason : TF Requires Python 3.4, 3.5, or 3.6 
+    <br/>
+    - TensorFlow : https://www.tensorflow.org/install/pip
 </font>
 </div>
         </td>
@@ -109,39 +109,21 @@
         </td>
     <td > 
 <div align="left">
-** - Selenium HQ ** : https://www.seleniumhq.org/projects/webdriver/
-<br/><br/>
-- 아래 사이트에서 OS에 맞는 웹드라이브를 다운받아 압축을 풀어 driver 폴더에 복사
-<br/><br/>
-** 1. Chrome WebDriver ** &nbsp;&nbsp;: <a href='http://chromedriver.chromium.org/downloads'>[다운로드1]</a>, &nbsp;&nbsp;&nbsp;<a href='https://sites.google.com/a/chromium.org/chromedriver/downloads'>[다운로드2]</a>
-<br/><br/>
-** 2. Firefox WebDriver ** &nbsp;&nbsp;&nbsp;&nbsp;: <a href='https://github.com/mozilla/geckodriver/releases'>[다운로드]</a>
-<br/><br/>
-** 3. Microsoft WebDriver ** : <a href='https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/'>[다운로드]</a>
-<br/><br/>
-** cf. 가장 보편적으로 많이 사용하는 크롬 웹드라이브를 다운받아서 설치한다. ** 
+    <b> - Selenium HQ </b> : https://www.seleniumhq.org/projects/webdriver/
+    <br/><br/>
+    - 아래 사이트에서 OS에 맞는 웹드라이브를 다운받아 압축을 풀어 driver 폴더에 복사
+    <br/><br/>
+    <b> 1. Chrome WebDriver </b> &nbsp;&nbsp;: <a href='http://chromedriver.chromium.org/downloads'>[다운로드1]</a>, &nbsp;&nbsp;&nbsp;<a href='https://sites.google.com/a/chromium.org/chromedriver/downloads'>[다운로드2]</a>
+    <br/><br/>
+    <b> 2. Firefox WebDriver </b> &nbsp;&nbsp;&nbsp;&nbsp;: <a href='https://github.com/mozilla/geckodriver/releases'>[다운로드]</a>
+    <br/><br/>
+    <b> 3. Microsoft WebDriver </b> : <a href='https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/'>[다운로드]</a>
+    <br/><br/>
+    <b> cf. 가장 보편적으로 많이 사용하는 크롬 웹드라이브를 다운받아서 설치한다. </b>
 </div>
         </td>
     </tr>
     <tr>
-        <td colspan=2>
-<!--        
-<div align="left">
-** Selenium 1.0 + WebDriver = Selenium 2.0 **
-<br/><br/>
-- HomeSite : https://www.seleniumhq.org/projects/webdriver/
-<br/><br/>
-- WebDriver is designed in a simpler and more concise programming interface along with addressing some limitations in the Selenium-RC API.
-<br/><br/>
-- WebDriver is a compact Object Oriented API when compared to Selenium1.0
-<br/><br/>
-- It drives the browser much more effectively and overcomes the limitations of Selenium 1.x which affected our functional test coverage, like the file upload or download, pop-ups and dialogs barrier
-<br/><br/>
-- WebDriver overcomes the limitation of Selenium RC's Single Host origin policy
-</div>
-//-->
-        </td>
-    </tr>
 </table>
 
 ### Selenium 1.0 + WebDriver = Selenium 2.0
@@ -163,16 +145,16 @@
         </td>
     <td >
 <div align="left">
-** 1. JAVA 환경 ** : [JDK (>=1.8) ](https://www.oracle.com/technetwork/java/javase/downloads/) Install & JAVA Environmnmet Variable Setting
-<br/><br/>
-** 2. MS Visual C++ 설치 ** : [Build Tools for Visual Studio 2017 (>=14.0) ](https://www.scivision.co/python-windows-visual-c++-14-required//)  Install 
-<br/><br/>
-** 3. JPype 설치 ** : [JPype1  (>=0.5.7) ](https://www.lfd.uci.edu/~gohlke/pythonlibs/#jpype) Install
-<br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> ** pip install --upgrade pip **
-<br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> ** pip install JPype1‑0.6.3‑cp36‑cp36m‑win_amd64.whl **
-<br/><br/>
-** 4. KoNLPy 설치 ** :
-<br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> ** pip install konlpy **
+    <b> 1. JAVA 환경 </b> : [JDK (>=1.8) ](https://www.oracle.com/technetwork/java/javase/downloads/) Install & JAVA Environmnmet Variable Setting
+    <br/><br/>
+    <b> 2. MS Visual C++ 설치 </b> : [Build Tools for Visual Studio 2017 (>=14.0) ](https://www.scivision.co/python-windows-visual-c++-14-required//)  Install 
+    <br/><br/>
+    <b> 3. JPype 설치 </b> : [JPype1  (>=0.5.7) ](https://www.lfd.uci.edu/~gohlke/pythonlibs/#jpype) Install
+    <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> ** pip install --upgrade pip **
+    <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> ** pip install JPype1‑0.6.3‑cp36‑cp36m‑win_amd64.whl **
+    <br/><br/>
+    <b> 4. KoNLPy 설치 </b> :
+    <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> ** pip install konlpy **
 </div>
         </td>
     </tr>
@@ -191,18 +173,16 @@
             </a>
         </td>
     <td >
-<div align="left">
-    
-** - Download ** : https://www.oracle.com/technetwork/java/javase/downloads/
-<br/><br/> 
-** - 시스템 환경변수 **
-<br/><br/> 
-** 1. JAVA_HOME ** = C:\Java\jdk1.8.0
-<br/><br/> 
-** 2. Path ** = %Path%; %JAVA_HOME%\bin
-<br/><br/>
-** 3. CLASSPATH ** = .; %JAVA_HOME%\lib;
-
+<div align="left"> 
+    <b> - Download </b> : https://www.oracle.com/technetwork/java/javase/downloads/
+    <br/><br/> 
+    <b> - 시스템 환경변수 </b>
+    <br/><br/> 
+    <b> 1. JAVA_HOME </b> = C:\Java\jdk1.8.0
+    <br/><br/> 
+    <b> 2. Path </b> = %Path%; %JAVA_HOME%\bin
+    <br/><br/>
+    <b> 3. CLASSPATH </b> = .; %JAVA_HOME%\lib;
 </div>
         </td>
     </tr>
@@ -221,11 +201,11 @@
         </td>
     <td >
 <div align="left">
- - ** Microsoft Azure Notebooks ** : https://notebooks.azure.com/
- <br/><br/>
- - Interactive coding in my browser
- <br/><br/>
- - Free, in the cloud, powered by jupyter
+    - <b> Microsoft Azure Notebooks </b> : https://notebooks.azure.com/
+    <br/><br/>
+    - Interactive coding in my browser
+    <br/><br/>
+    - Free, in the cloud, powered by jupyter
 </div>
         </td>
     </tr>
