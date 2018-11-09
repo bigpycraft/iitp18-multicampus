@@ -47,6 +47,7 @@
   <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_521_Selenium_Starbucks_idx_ver3_Quiz.html   "> ★★ Mission - Selenium  ★★ </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_510_Selenium_WebDriver_ver2.html            "> 6-1. How to use Selenium    </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_521_Selenium_Starbucks_idx_ver3.html        "> 6-2. StarBucks-idx</a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_540_Election_Result_Analysis_ver2.html      "> 6-3. Election Result Crawling & Analysis</a>
 <br/><br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_831_KoNLPy.html                             "> 7-1. NLP(Natural Language Processing) </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_810_Datamining_ver2.html                    "> 7-2. 데이터마이닝    </a>
