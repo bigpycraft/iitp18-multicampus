@@ -16,12 +16,9 @@
 <hr>
 
 ## Checked Code for Feedback
-<div>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S00_IITP_C반_BestPractice.html   "> <font size="brown">S00_IITP_C반_BestPractice </font?     </a>
 
-<div/>
-<div/>
-<div/>
+★★ <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S00_IITP_C반_BestPractice.html   "> <font size="brown">S00_IITP_C반_BestPractice </font>  </a>★★
+<br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S01_IITP_C반_이상훈_Checked.html "> S01_IITP_C반_이상훈_Checked   </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S02_IITP_C반_유영재_Checked.html "> S02_IITP_C반_유영재_Checked   </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S03_IITP_C반_강호영_Checked.html "> S03_IITP_C반_강호영_Checked   </a>
@@ -46,6 +43,7 @@
 <hr>
 
 ## Original Submission Code
+
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S01_IITP_C반_이상훈.ipynb        "> S01_IITP_C반_이상훈.ipynb       </a>
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S02_IITP_C반_유영재.ipynb        "> S02_IITP_C반_유영재.ipynb       </a>
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/original_src/S03_IITP_C반_강호영.ipynb        "> S03_IITP_C반_강호영.ipynb       </a>
