@@ -49,10 +49,17 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_521_Selenium_Starbucks_idx_ver3.html        "> 6-2. StarBucks-idx</a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PE_DA_540_Election_Result_Analysis_ver2.html      "> 6-3. Election Result Crawling & Analysis</a>
 <br/><br/>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_831_KoNLPy.html                             "> 7-1. NLP(Natural Language Processing) </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_810_Datamining_ver2.html                    "> 7-2. 데이터마이닝    </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_832_NLP_WordCloud.html                      "> 7-4. WordCloud1    </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_820_WordCloud_형태소분석_v2.html            "> 7-3. WordCloud2    </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_711_NLP_KoNLPy_Module.html                    "> 7-1. NLP Overview & Setting     </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_720_KoNLPy_Module_ver2.0.html                 "> 7-2. KoNLPy Module        </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_730_KoNLPy_WordCloud_형태소분석_v2.html       "> 7-3. KoNLPy 형태소분석     </a>
+<br/><br/>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_713_NLP_kobill_v2.html                        "> 8-1. NLP WordCount - 법관련 국회의안 </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_740_KoNLPy_WordCloud_동물보호법_v3.html       "> 8-2. NLP WordCloud - 동물보호법      </a>
+<br/><br/>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_750_KoNLPy_WordCloud_대통령연설문_Mission.html"> ★★ NLP WordCloud - 미션  ★★          </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_750_KoNLPy_WordCloud_대통령연설문_Mission.html     "> 8-3. NLP WordCloud - 대통령연설문        </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_760_NLP_WordCloud_Eng_Alice_v3.html           "> 8-4. NLP WordCloud - Masking Eng Version </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_770_WordCloud_이미지마스킹_v3.html            "> 8-5. NLP WordCloud - Masking Kor Version </a>
 <br/><br/>
 
 
@@ -60,14 +67,14 @@
 
 <h3> Jupyter Notebook </h3>
 
-<table width="100%" align="left">
+<table align="left">
     <tr align="left">
         <td width="200">
             <a href="https://www.seleniumhq.org/projects/webdriver/">
             <img src="../images/jupyter.jpg" width="150" />
             </a>
         </td>
-        <td width="600">
+        <td width="800">
 <div align="left">
 <b> Latest : Version 5.3 | Release Date: September 28, 2018 </b>
 <br/>
@@ -202,13 +209,12 @@
         </td>
         <td width="800">
 <div align="left">
-    - <b> Microsoft Azure Notebooks </b> : https://notebooks.azure.com/
-    <br/><br/>
-    - Interactive coding in my browser
-    <br/><br/>
-    - Free, in the cloud, powered by jupyter
-</div>
-        </td>
+- <b> Microsoft Azure Notebooks </b> : https://notebooks.azure.com/
+<br/><br/>
+- Interactive coding in my browser
+<br/><br/>
+- Free, in the cloud, powered by jupyter
+</div></td>
     </tr>
 </table>
 <br/>
