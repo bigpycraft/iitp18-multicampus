@@ -57,8 +57,9 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_740_KoNLPy_WordCloud_동물보호법_v3.html       "> 8-2. NLP WordCloud - 동물보호법      </a>
 <br/><br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_750_KoNLPy_WordCloud_대통령연설문_Mission.html"> ★★ NLP WordCloud - 미션  ★★          </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_750_KoNLPy_WordCloud_대통령연설문_Mission.html     "> 8-3. NLP WordCloud - 대통령연설문        </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_760_NLP_WordCloud_Eng_Alice_v3.html           "> 8-4. NLP WordCloud - Masking Eng Version </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_750_KoNLPy_WordCloud_대통령연설문_Mission.html  "> 8-3. NLP WordCloud - 대통령연설문        </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_760_NLP_WordCloud_Eng_Alice_v3-1.html           "> 8-4. NLP WordCloud - Masking Eng Version 1/2 </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_760_NLP_WordCloud_Eng_Alice_v3-2.html           "> 8-4. NLP WordCloud - Masking Eng Version 2/2 </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_770_WordCloud_이미지마스킹_v3.html            "> 8-5. NLP WordCloud - Masking Kor Version </a>
 <br/><br/>
 
