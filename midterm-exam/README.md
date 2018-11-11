@@ -38,7 +38,6 @@
 		</td>
 		<td width="220">
 <div align="center">
-
 <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S06_IITP_C반_고준형_Checked.html "> S06 IITP18 고준형 피드백   </a><br/> 
 <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S07_IITP_C반_이진수_Checked.html "> S07 IITP18 이진수 피드백   </a><br/> 
 <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/midterm-exam/html/S08_IITP_C반_유수정_Checked.html "> S08 IITP18 유수정 피드백   </a><br/> 
