@@ -62,8 +62,12 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_760_NLP_WordCloud_Eng_Alice_v3-2.html           "> 8-4. NLP WordCloud - Masking Eng Version 2/2 </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-C/html/PF_DA_770_WordCloud_이미지마스킹_v3.html            "> 8-5. NLP WordCloud - Masking Kor Version </a>
 <br/><br/>
+- <a href="https://github.com/bigpycraft/iitp18-multicampus/tree/master/midterm-exam"> ★★ Team Mission - Data Analysis  ★★          </a>
+<br/><br/>
 - <a href="https://github.com/bigpycraft/iitp18-multicampus/tree/master/midterm-exam"> ★★ Python Programming Test - Checked and Feedback Completed   ★★          </a>
 <br/><br/>
+
+
 
 <hr>
 
