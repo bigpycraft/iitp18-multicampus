@@ -22,7 +22,7 @@
 	<tr>
 		<td colspan="4">
 		<div align="center">
-		Python Exam - Original Submissin Code
+		Python Exam - Checking and Feedback 
 		</div>
 		</td>
 	</tr>
