@@ -31,11 +31,16 @@
 <br/><br/>
 02. <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-D/html/WCS02_크롤링과_스크랩핑_ver2.html   "> 파이썬으로 시작하는 크롤링/스크레이핑     </a>
 <br/><br/>
+03. <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-D/html/WCS03_주요_라이브러리_활용_ver2.html"> 주요 라이브러리 활용                      </a>
+<br/><br/>
+04. <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-D/html/WCS04_크롤러사용_ver2.html          "> 크롤러를 사용할 때 기억해야 하는 것       </a>
+<br/><br/>
 </font>
 </div></td>
     </tr>
 </table>
 <br/>
+
 
 
 <hr>
