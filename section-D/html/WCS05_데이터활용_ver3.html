@@ -12834,6 +12834,34 @@ UnboundLocalError: local variable &#39;buffer&#39; referenced before assignment
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>cf. RESTful : <a href="https://meetup.toast.com/posts/92">https://meetup.toast.com/posts/92</a></p>
+<blockquote><p></p>
+<ul>
+<li>REST 구성
+<br/> - 자원(RESOURCE) - URI
+<br/> - 행위(Verb) - HTTP METHOD
+<br/> - 표현(Representations)
+<br/><br/></li>
+<li>REST 특징
+<br/> 1) Uniform (유니폼 인터페이스)
+<br/> 2) Stateless (무상태성)
+<br/> 3) Cacheable (캐시 가능)
+<br/> 4) Self-descriptiveness (자체 표현 구조)
+<br/> 5) Client - Server 구조
+<br/> 6) 계층형 구조
+<br/>
+<br/>[참고] HTTP METHOD의 알맞은 역할 
+<br/>POST, GET, PUT, DELETE 이 4가지의 Method를 가지고 CRUD를 할 수 있습니다.</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="-&#53944;&#50948;&#53552;-API-&#51064;&#51613;-"><font color="#0000CC"> &#53944;&#50948;&#53552; API &#51064;&#51613; </font><a class="anchor-link" href="#-&#53944;&#50948;&#53552;-API-&#51064;&#51613;-">&#182;</a></h4><blockquote><p>OAuth 1.0a 인증 필요 (아래 4가지 모두 필요)</p>
 <ul>
 <li>애플리케니션 단위 발행
@@ -13019,10 +13047,9 @@ B… https://t.co/QEoO4mgsof
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="-c5-04_rest_api_with_tweepy-"><font color="#0000FF"> c5-04_rest_api_with_tweepy </font><a class="anchor-link" href="#-c5-04_rest_api_with_tweepy-">&#182;</a></h4><blockquote><p>tweepy 를 이용한 타임라인 추출</p>
 <ul>
-<li>연결 확립한 상태로 메시지 계속 전송</li>
-<li>각 메시지는 줄바꿈 코드 CRLF로 구분</li>
-<li>메시지는 대부분 트윗을 나타내는 JSON 형식의 문자열</li>
-<li>트윗 이외의 연결을 유지하기 위한 공백과 메타 정보도 전송된다.</li>
+<li>Requests-OAuthlib을 사용한 코드와 비교하면 전체적인 흐름이 비스</li>
+<li>다른점은 REST API의 URL 지정이 home_timeline() 메소드로로 추상화</li>
+<li>트윗을 나타내는 객체가 dict가 아니라 Tweepy의 Status 객체이다</li>
 </ul>
 </blockquote>
 
@@ -13133,6 +13160,12 @@ B… https://t.co/QEoO4mgsof
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="-c5-05_streaming_api_with_tweepy-"><font color="#0000FF"> c5-05_streaming_api_with_tweepy </font><a class="anchor-link" href="#-c5-05_streaming_api_with_tweepy-">&#182;</a></h4><blockquote><p>Tweepy 로 Streaming API 사용</p>
+<ul>
+<li>연결 확립한 상태로 메시지 계속 전송</li>
+<li>각 메시지는 줄바꿈 코드 CRLF로 구분</li>
+<li>메시지는 대부분 트윗을 나타내는 JSON 형식의 문자열</li>
+<li>트윗 이외의 연결을 유지하기 위한 공백과 메타 정보도 전송된다.</li>
+</ul>
 </blockquote>
 
 </div>
