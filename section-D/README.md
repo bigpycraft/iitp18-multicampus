@@ -35,7 +35,7 @@
 <br/><br/>
 04. <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-D/html/WCS04_크롤러사용_ver2.html          "> 크롤러를 사용할 때 기억해야 하는 것       </a>
 <br/><br/>
-04. <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-D/html/WCS05_데이터활용_ver3.html          "> 크롤링/스크레이핑 실전과 데이터 활용      </a>
+05. <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-D/html/WCS05_데이터활용_ver3.html          "> 크롤링/스크레이핑 실전과 데이터 활용      </a>
 <br/><br/>
 </font>
 </div></td>
