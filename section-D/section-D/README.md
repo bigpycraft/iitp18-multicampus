@@ -37,12 +37,13 @@
 <br/><br/>
 05. <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-D/html/WCS05_데이터활용_ver3.html          "> 크롤링/스크레이핑 실전과 데이터 활용      </a>
 <br/><br/>
+06. <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-D/html/WCS06_Scrapy_프레임워크_ver2.html   "> Scrapy 프레임워크      </a>
+<br/><br/>
 </font>
 </div></td>
     </tr>
 </table>
 <br/>
-
 
 <hr>
 
