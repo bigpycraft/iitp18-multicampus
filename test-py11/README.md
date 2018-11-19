@@ -20,36 +20,42 @@
 		<td width="100"><div align="center"><font color="#FFFFFF"><b>팀명    </b></font></div></td>
 		<td width="100"><div align="center"><font color="#FFFFFF"><b>팀장    </b></font></div></td>
 		<td width="200"><div align="center"><font color="#FFFFFF"><b>멤버    </b></font></div></td>
+		<td width="100"><div align="center"><font color="#FFFFFF"><b>주제    </b></font></div></td>
 		<td width="100"><div align="center"><font color="#FFFFFF"><b>완료보고</b></font></div></td>
 	</tr>
 	<tr>
 		<td><div align="center">1팀</div></td>
 		<td><div align="center">김하준</div></td>
 		<td><div align="left">문정연, 이상훈, 주상훈</div></td>
-		<td><div align="center">-</div></td>
+		<td><div align="center">영화</div></td>
+		<td><div align="center"><a href="report/IITP18_혁신성장과정_1팀.pdf">[제출]</a></div></td>
 	</tr>
 	<tr>
 		<td><div align="center">2팀</div></td>
 		<td><div align="center">유영재</div></td>
 		<td><div align="left">장은경, 공정배, 민유진</div></td>
-		<td><div align="center">-</div></td>
+		<td><div align="center">정치</div></td>
+		<td><div align="center"><a href="report/IITP18_혁신성장과정_2팀.pdf">[제출]</a></div></td>
 	</tr>
 	<tr>
 		<td><div align="center">3팀</div></td>
 		<td><div align="center">이진수</div></td>
 		<td><div align="left">김홍기, 김효신, 함윤선</div></td>
+		<td><div align="center">영화</div></td>
 		<td><div align="center"><a href="report/IITP18_혁신성장과정_3팀.pdf">[제출]</a></div></td>
 	</tr>
 	<tr>
 		<td><div align="center">4팀</div></td>
 		<td><div align="center">장정호</div></td>
 		<td><div align="left">강호영, 유수정, 고준형</div></td>
+		<td><div align="center">정치</div></td>
 		<td><div align="center"><a href="report/IITP18_혁신성장과정_4팀.pdf">[제출]</a></div></div></td>
 	</tr>
 	<tr>
 		<td><div align="center">5팀</div></td>
 		<td><div align="center">정민호</div></td>
 		<td><div align="left">유선우, 조민정</div></td>
+		<td><div align="center">정치</div></td>
 		<td><div align="center"><a href="report/IITP18_혁신성장과정_5팀.pdf">[제출]</a></div></div></td>
 	</tr>
 </table>
