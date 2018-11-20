@@ -27,8 +27,6 @@
 
 <img src="../images/img_front_readme_iitp.png">
 
-<hr>
-
 ## Machine Learning for BigData
 
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML101-Basics_operations.html                 "> 1-1. Basics operations                  </a>
@@ -36,7 +34,12 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML103-Minimizing_Cost.html                   "> 1-3. Minimizing Cost                    </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML104-Multi-Variable_linear_regression.html  "> 1-4. Multi-Variable linear regression   </a>
 <br/><br/>
-
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML201-Logistic_classifier_ver2.html          "> 2-1. Logistic classifier                </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML202-Softmax_Classifier.html                "> 2-2. Softmax Classifier                 </a>
+<br/><br/>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML301-Learning_rate_Evaluation.html          "> 3-1. Learning rate Evaluation           </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML302-Tensor_Manipulation.html               "> 3-2. Tensor Manipulation                </a>
+<br/><br/>
 
 
 <hr>
