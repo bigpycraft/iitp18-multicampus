@@ -9,16 +9,15 @@
 - [Section-A][link-A] : Python Programming Basics 
 - [Section-B][link-B] : Python Modules for Data Analysis
 <br>
-♣ [Midterm Test][test10] : Python Core Programming
+<b> ♣ [Midterm Test][test10] : Python Core Programming </b>
 <br><br>
 - [Section-C][link-C] : Data Analysis Practice for BigData
 - [Section-D][link-D] : Web Crawling and Scraping
 <br>
-♣ [Team Project][test11] : Keyword Data Analysis by Topic
+<b> ♣ [Team Project][test11] : Keyword Data Analysis by Topic </b>
 <br><br>
 - <b>[Section-E][link-E] : Machine Learning</b>
 - [Section-F][link-F] : Deep Learning
-
 
 [link-A]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-A "Go Section-A"
 [link-B]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-B "Go Section-B"
