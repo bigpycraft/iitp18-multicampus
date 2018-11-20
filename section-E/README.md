@@ -8,14 +8,10 @@
 >  
 - [Section-A][link-A] : Python Programming Basics 
 - [Section-B][link-B] : Python Modules for Data Analysis
-<br>
-<b> ♣ [Midterm Test][test10] : Python Core Programming </b>
-<br><br>
+- ♣ [Midterm Test][test10] : Python Core Programming <br/><br/>
 - [Section-C][link-C] : Data Analysis Practice for BigData
 - [Section-D][link-D] : Web Crawling and Scraping
-<br>
-<b> ♣ [Team Project][test11] : Keyword Data Analysis by Topic </b>
-<br><br>
+- ♣ [Team Project][test11] : Keyword Data Analysis by Topic <br/><br/>
 - <b>[Section-E][link-E] : Machine Learning</b>
 - [Section-F][link-F] : Deep Learning
 
