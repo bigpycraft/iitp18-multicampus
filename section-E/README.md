@@ -42,11 +42,18 @@
 <br/><br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML401-Neural_Networks.html                   "> 4-1. Neural Networks 1                  </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML402_Neural_Networks.html                   "> 4-2. Neural Networks 2                  </a>
-    - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML402_Neural_Networks_2-1.html               "> 4-2-1. Neural Networks (1)                 </a>
-    - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML402_Neural_Networks_2-2.html               "> 4-2-2. Neural Networks (2)                  </a>
+    - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML402_Neural_Networks_2-1.html           "> 4-2-1. Neural Networks (1)              </a>
+    - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML402_Neural_Networks_2-2.html           "> 4-2-2. Neural Networks (2)              </a>
 <br/><br/>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML510_NN_ReLu_Xavier_Dropout_Adam.html       "> 5-1. NN, ReLu, Xavier, Dropout, and Adam</a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML511-Softmax_for_MNIST.html                 "> 5-1. Softmax for MNIST                  </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML512-NN_for_MNIST.html                      "> 5-2. NN for MNIST                       </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML513-MNIST_NN_Xavier2.html                  "> 5-3. MNIST NN Xavier2                   </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML514-MNIST_NN_deep.html                     "> 5-4. MNIST NN deep                      </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML515-MNIST_NN_Dropout.html                  "> 5-5. MNIST NN Dropout                   </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML516-MNIST_NN_Batchnorm.html                "> 5-6. MNIST NN Batchnorm                 </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML517-MNIST_NN_Higher_Level_API.html         "> 5-7. MNIST NN Higher Level API          </a>
 <br/><br/>
+
 
 
 
