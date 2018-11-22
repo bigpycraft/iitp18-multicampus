@@ -47,11 +47,13 @@
 <br/><br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML511-Softmax_for_MNIST.html                 "> 5-1. Softmax for MNIST                  </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML512-NN_for_MNIST.html                      "> 5-2. NN for MNIST                       </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML513-MNIST_NN_Xavier2.html                  "> 5-3. MNIST NN Xavier initialization     </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML513-MNIST_NN_Xavier2.html                  "> 5-3. MNIST NN Xavier initialization(1)     </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML513-MNIST_NN_Xavier3.html                  "> 5-3. MNIST NN Xavier initialization(2)     </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML514-MNIST_NN_deep.html                     "> 5-4. MNIST NN deep                      </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML515-MNIST_NN_Dropout.html                  "> 5-5. MNIST NN Dropout                   </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML516-MNIST_NN_Batchnorm.html                "> 5-6. MNIST NN Batchnorm                 </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML517-MNIST_NN_Higher_Level_API.html         "> 5-7. MNIST NN Higher Level API          </a>
+<br/><br/>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML516-MNIST_NN_Batchnorm.html                "> Ref1. MNIST NN Batchnorm                 </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML517-MNIST_NN_Higher_Level_API.html         "> Ref2. MNIST NN Higher Level API          </a>
 <br/><br/>
 
 
