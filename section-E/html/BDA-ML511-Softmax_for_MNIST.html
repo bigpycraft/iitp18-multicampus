@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>BDA-ML510_NN_ReLu_Xavier_Dropout_Adam</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>BDA-ML511-Softmax_for_MNIST</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11796,6 +11796,14 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.-Softmax-classifier-for-MNIST">1. Softmax classifier for MNIST<a class="anchor-link" href="#1.-Softmax-classifier-for-MNIST">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
@@ -11804,17 +11812,13 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">images</span> <span class="k">import</span> <span class="n">bigpycraft_ai</span> <span class="k">as</span> <span class="n">bpc</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Image</span> 
 <span class="kn">from</span> <span class="nn">tqdm</span> <span class="k">import</span> <span class="n">tqdm_notebook</span>
-
-<span class="kn">import</span> <span class="nn">time</span><span class="o">,</span> <span class="nn">os</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-</div><!--
-### Examples : https://github.com/aymericdamien/TensorFlow-Examples
-//-->
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
@@ -11840,286 +11844,9 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><font color='#00AAAA'></p>
-<h1 id="MNIST-Dataset-Introduction">MNIST Dataset Introduction<a class="anchor-link" href="#MNIST-Dataset-Introduction">&#182;</a></h1><p><br>
-Most examples are using MNIST dataset of handwritten digits. It has 60,000 examples for training and 10,000 examples for testing. The digits have been size-normalized and centered in a fixed-size image, so each sample is represented as a matrix of size 28x28 with values from 0 to 1.</p>
-<h3 id="Overview">Overview<a class="anchor-link" href="#Overview">&#182;</a></h3><p><img src="http://neuralnetworksanddeeplearning.com/images/mnist_100_digits.png" alt="MNIST Digits"></p>
-<h3 id="Usage">Usage<a class="anchor-link" href="#Usage">&#182;</a></h3><p>In our examples, we are using TensorFlow <a href="https://github.com/tensorflow/tensorflow/blob/r0.7/tensorflow/examples/tutorials/mnist/input_data.py">input_data.py</a> script to load that dataset.
-It is quite useful for managing our data, and handle:</p>
-<ul>
-<li><p>Dataset downloading</p>
-</li>
-<li><p>Loading the entire dataset into numpy array:</p>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import MNIST</span>
-<span class="kn">from</span> <span class="nn">tensorflow.examples.tutorials.mnist</span> <span class="k">import</span> <span class="n">input_data</span>
-<span class="n">mnist</span> <span class="o">=</span> <span class="n">input_data</span><span class="o">.</span><span class="n">read_data_sets</span><span class="p">(</span><span class="s2">&quot;data/MNIST_data/&quot;</span><span class="p">,</span> <span class="n">one_hot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="c1"># Load data</span>
-<span class="n">X_train</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">images</span>
-<span class="n">Y_train</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">labels</span>
-<span class="n">X_test</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">images</span>
-<span class="n">Y_test</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">labels</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Python\Anaconda3-50\lib\site-packages\h5py\__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-  from ._conv import register_converters as _register_converters
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>WARNING:tensorflow:From &lt;ipython-input-3-f5f295f1b6a3&gt;:3: read_data_sets (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
-Instructions for updating:
-Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
-WARNING:tensorflow:From C:\Python\Anaconda3-50\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:260: maybe_download (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
-Instructions for updating:
-Please write your own downloading logic.
-WARNING:tensorflow:From C:\Python\Anaconda3-50\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:262: extract_images (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
-Instructions for updating:
-Please use tf.data to implement this functionality.
-Extracting data/MNIST_data/train-images-idx3-ubyte.gz
-WARNING:tensorflow:From C:\Python\Anaconda3-50\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:267: extract_labels (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
-Instructions for updating:
-Please use tf.data to implement this functionality.
-Extracting data/MNIST_data/train-labels-idx1-ubyte.gz
-WARNING:tensorflow:From C:\Python\Anaconda3-50\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:110: dense_to_one_hot (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
-Instructions for updating:
-Please use tf.one_hot on tensors.
-Extracting data/MNIST_data/t10k-images-idx3-ubyte.gz
-Extracting data/MNIST_data/t10k-labels-idx1-ubyte.gz
-WARNING:tensorflow:From C:\Python\Anaconda3-50\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:290: DataSet.__init__ (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
-Instructions for updating:
-Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><font color='#00CCCC'></p>
-<ul>
-<li>A "next_batch" function that can iterate over the whole dataset and return only the desired fraction of the dataset samples (in order to save memory and avoid to load the entire dataset).</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get the next 64 images array and labels</span>
-<span class="n">batch_X</span><span class="p">,</span> <span class="n">batch_Y</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">next_batch</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
-<span class="n">batch_X</span><span class="p">,</span> <span class="n">batch_Y</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[4]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(array([[0., 0., 0., ..., 0., 0., 0.],
-        [0., 0., 0., ..., 0., 0., 0.],
-        [0., 0., 0., ..., 0., 0., 0.],
-        ...,
-        [0., 0., 0., ..., 0., 0., 0.],
-        [0., 0., 0., ..., 0., 0., 0.],
-        [0., 0., 0., ..., 0., 0., 0.]], dtype=float32),
- array([[0., 0., 0., 0., 1., 0., 0., 0., 0., 0.],
-        [0., 1., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 1., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 1., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 1., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 1., 0., 0.],
-        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 1., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 1., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 1., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 0., 1.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 1., 0.],
-        [0., 0., 0., 0., 0., 0., 1., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 1., 0.],
-        [0., 0., 0., 0., 1., 0., 0., 0., 0., 0.],
-        [0., 0., 1., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 0., 1.],
-        [0., 0., 0., 0., 1., 0., 0., 0., 0., 0.],
-        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 0., 1.],
-        [0., 0., 0., 0., 0., 0., 1., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 1., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 0., 1.],
-        [0., 0., 0., 0., 0., 0., 0., 1., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 1., 0.],
-        [0., 1., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 1., 0., 0., 0., 0., 0.],
-        [0., 0., 1., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 1., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 1., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 1., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 1., 0., 0.],
-        [0., 0., 1., 0., 0., 0., 0., 0., 0., 0.],
-        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 1., 0.],
-        [0., 0., 0., 0., 1., 0., 0., 0., 0., 0.],
-        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 1., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 1., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 1., 0., 0., 0., 0.],
-        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 1., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 1., 0., 0.],
-        [0., 0., 0., 0., 0., 1., 0., 0., 0., 0.],
-        [0., 0., 0., 1., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 1., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 1., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 0., 1.],
-        [0., 0., 0., 0., 1., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 0., 1.],
-        [0., 0., 0., 1., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 0., 1.],
-        [0., 0., 0., 0., 0., 0., 0., 1., 0., 0.],
-        [0., 0., 0., 0., 0., 1., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 0., 0., 1., 0.],
-        [0., 0., 0., 0., 0., 1., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 1., 0., 0., 0., 0.],
-        [0., 1., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 1., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0., 0., 1., 0., 0., 0.],
-        [0., 1., 0., 0., 0., 0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 1., 0., 0., 0., 0., 0.]]))</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time1</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">time2</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bpc</span><span class="o">.</span><span class="n">chk_processting_time</span><span class="p">(</span><span class="n">time1</span><span class="p">,</span> <span class="n">time2</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>처리시간 : 0분 3초 경과되었습니다.
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[6]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>3.0007381439208984</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><hr></p>
-<h3 id="1.-Softmax-classifier-for-MNIST">1. Softmax classifier for MNIST<a class="anchor-link" href="#1.-Softmax-classifier-for-MNIST">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Review : Learning rate and Evaluation</span>
@@ -12169,12 +11896,42 @@ Please use alternatives such as official/mnist/dataset.py from tensorflow/models
 <div class="prompt"></div>
 
 
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Python\Anaconda3-50\lib\site-packages\h5py\__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Extracting data/MNIST_data/train-images-idx3-ubyte.gz
+<pre>WARNING:tensorflow:From &lt;ipython-input-3-a821cfaead4a&gt;:10: read_data_sets (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+WARNING:tensorflow:From C:\Python\Anaconda3-50\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:260: maybe_download (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please write your own downloading logic.
+WARNING:tensorflow:From C:\Python\Anaconda3-50\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:262: extract_images (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+Extracting data/MNIST_data/train-images-idx3-ubyte.gz
+WARNING:tensorflow:From C:\Python\Anaconda3-50\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:267: extract_labels (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
 Extracting data/MNIST_data/train-labels-idx1-ubyte.gz
+WARNING:tensorflow:From C:\Python\Anaconda3-50\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:110: dense_to_one_hot (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.one_hot on tensors.
 Extracting data/MNIST_data/t10k-images-idx3-ubyte.gz
 Extracting data/MNIST_data/t10k-labels-idx1-ubyte.gz
-WARNING:tensorflow:From &lt;ipython-input-7-a821cfaead4a&gt;:31: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+WARNING:tensorflow:From C:\Python\Anaconda3-50\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:290: DataSet.__init__ (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+WARNING:tensorflow:From &lt;ipython-input-3-a821cfaead4a&gt;:31: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 
 Future major versions of TensorFlow will allow gradients to flow
@@ -12189,57 +11946,10 @@ See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
 </div>
 </div>
 
-</div><!--
-Signature: tf.reduce_mean(input_tensor, axis=None, keep_dims=False, name=None, reduction_indices=None)
-Docstring:
-Computes the mean of elements across dimensions of a tensor.
-
-Args:
-  input_tensor: The tensor to reduce. Should have numeric type.
-  axis: The dimensions to reduce. If `None` (the default), reduces all dimensions.
-  keep_dims: If true, retains reduced dimensions with length 1.
-  name: A name for the operation (optional).
-  reduction_indices: The old (deprecated) name for axis.
-
-Returns:
-  The reduced tensor.
-
-//--><!--
-Signature: tf.nn.softmax_cross_entropy_with_logits(_sentinel=None, labels=None, logits=None, dim=-1, name=None)
-Docstring:
-Computes softmax cross entropy between `logits` and `labels`.
-
-Args:
-  _sentinel: Used to prevent positional parameters. Internal, do not use.
-  labels: Each row `labels[i]` must be a valid probability distribution.
-  logits: Unscaled log probabilities.
-  dim: The class dimension. Defaulted to -1 which is the last dimension.
-  name: A name for the operation (optional).
-
-Returns:
-  A 1-D `Tensor` of length `batch_size` of the same type as `logits` with the
-  softmax cross entropy loss.
-
-//--><!--
-Init signature: tf.train.AdamOptimizer(learning_rate=0.001, beta1=0.9, beta2=0.999, epsilon=1e-08, use_locking=False, name='Adam')
-Docstring:     
-Optimizer that implements the Adam algorithm.
-
-Args:
-  learning_rate: A Tensor or a floating point value.  The learning rate.
-  beta1: A float value or a constant float tensor.
-         The exponential decay rate for the 1st moment estimates.
-  beta2: A float value or a constant float tensor.
-         The exponential decay rate for the 2nd moment estimates.
-  epsilon: A small constant for numerical stability.
-  use_locking: If True use locks for update operations.
-  name: Optional name for the operations created when applying gradients.
-        Defaults to "Adam".
-
-//-->
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># parameters</span>
@@ -12252,7 +11962,7 @@ Args:
 
 <span class="c1"># train my model</span>
 <span class="n">time1</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="n">tqdm_notebook</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">training_epochs</span><span class="p">)):</span>
+<span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">training_epochs</span><span class="p">):</span>
     <span class="n">avg_cost</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">total_batch</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">mnist</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">num_examples</span> <span class="o">/</span> <span class="n">batch_size</span><span class="p">)</span>
 
@@ -12267,7 +11977,7 @@ Args:
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Learning Finished!&#39;</span><span class="p">)</span>
 <span class="n">time2</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 
-<span class="n">bpc</span><span class="o">.</span><span class="n">chk_processting_time</span><span class="p">(</span><span class="n">time1</span><span class="p">,</span> <span class="n">time2</span><span class="p">)</span>
+<span class="n">chk_processting_time</span><span class="p">(</span><span class="n">time1</span><span class="p">,</span> <span class="n">time2</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12277,28 +11987,6 @@ Args:
 <div class="output_wrapper">
 <div class="output">
 
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-
- 
- 
-<div id="fd647a4e-ccbd-4f13-8cae-5754633305b1"></div>
-<div class="output_subarea output_widget_view ">
-<script type="text/javascript">
-var element = $('#fd647a4e-ccbd-4f13-8cae-5754633305b1');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "ad54ca2219b6479bbae79f7a78f3fb57", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
 
 <div class="output_area">
 
@@ -12321,7 +12009,6 @@ Epoch: 0012  | cost = 0.449374351
 Epoch: 0013  | cost = 0.432675659
 Epoch: 0014  | cost = 0.418828158
 Epoch: 0015  | cost = 0.406128930
-
 Learning Finished!
 처리시간 : 0분 9초 경과되었습니다.
 </pre>
@@ -12330,13 +12017,13 @@ Learning Finished!
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[8]:</div>
+<div class="prompt output_prompt">Out[4]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>9.06290888786316</pre>
+<pre>9.175117492675781</pre>
 </div>
 
 </div>
@@ -12344,18 +12031,10 @@ Learning Finished!
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="training_epochs,-mnist.train.num_examples,-total_batch">training_epochs, mnist.train.num_examples, total_batch<a class="anchor-link" href="#training_epochs,-mnist.train.num_examples,-total_batch">&#182;</a></h3>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Test model and check accuracy</span>
@@ -12390,7 +12069,7 @@ Learning Finished!
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Accuracy: 0.9023
-Label:  [5]
+Label:  [8]
 Prediction:  [8]
 </pre>
 </div>
@@ -12406,768 +12085,74 @@ Prediction:  [8]
 <div class="output_png output_subarea ">
 <img src="data:image/png;base64,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
-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
-gg==
-"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><hr></p>
-<h3 id="2.-NN(Neural-Nets)-for-MNIST">2. NN(Neural Nets) for MNIST<a class="anchor-link" href="#2.-NN(Neural-Nets)-for-MNIST">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># MNIST and NN</span>
-<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
-<span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="kn">from</span> <span class="nn">tensorflow.examples.tutorials.mnist</span> <span class="k">import</span> <span class="n">input_data</span>
-
-<span class="n">tf</span><span class="o">.</span><span class="n">set_random_seed</span><span class="p">(</span><span class="mi">777</span><span class="p">)</span>  <span class="c1"># reproducibility</span>
-
-<span class="n">mnist</span> <span class="o">=</span> <span class="n">input_data</span><span class="o">.</span><span class="n">read_data_sets</span><span class="p">(</span><span class="s2">&quot;data/MNIST_data/&quot;</span><span class="p">,</span> <span class="n">one_hot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="c1"># Check out https://www.tensorflow.org/get_started/mnist/beginners for</span>
-<span class="c1"># more information about the mnist dataset</span>
-
-<span class="c1"># parameters</span>
-<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.001</span>
-<span class="n">training_epochs</span> <span class="o">=</span> <span class="mi">15</span>
-<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">100</span>
-
-<span class="c1"># input place holders</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">784</span><span class="p">])</span>
-<span class="n">Y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
-
-<span class="c1"># weights &amp; bias for nn layers</span>
-<span class="c1"># W1 = tf.Variable(tf.random_normal([784, 256]))</span>
-<span class="c1"># b1 = tf.Variable(tf.random_normal([256]))</span>
-<span class="c1"># L1 = tf.nn.relu(tf.matmul(X, W1) + b1)</span>
-
-<span class="c1"># W2 = tf.Variable(tf.random_normal([256, 256]))</span>
-<span class="c1"># b2 = tf.Variable(tf.random_normal([256]))</span>
-<span class="c1"># L2 = tf.nn.relu(tf.matmul(L1, W2) + b2)</span>
-
-<span class="c1"># W3 = tf.Variable(tf.random_normal([256, 10]))</span>
-<span class="c1"># b3 = tf.Variable(tf.random_normal([10]))</span>
-<span class="c1"># hypothesis = tf.matmul(L2, W3) + b3</span>
-
-<span class="c1"># tf Graph input</span>
-<span class="n">W1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="mi">784</span><span class="p">,</span> <span class="mi">256</span><span class="p">]))</span>
-<span class="n">W2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="mi">256</span><span class="p">,</span> <span class="mi">256</span><span class="p">]))</span>
-<span class="n">W3</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="mi">256</span><span class="p">,</span> <span class="mi">10</span><span class="p">]))</span>
-
-<span class="n">b1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="mi">256</span><span class="p">]))</span>
-<span class="n">b2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="mi">256</span><span class="p">]))</span>
-<span class="n">b3</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="mi">10</span><span class="p">]))</span>
-
-<span class="n">L1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">W1</span><span class="p">)</span> <span class="o">+</span> <span class="n">b1</span><span class="p">)</span>
-<span class="n">L2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">L1</span><span class="p">,</span> <span class="n">W2</span><span class="p">)</span> <span class="o">+</span> <span class="n">b2</span><span class="p">)</span>
-<span class="n">hypothesis</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">L2</span><span class="p">,</span> <span class="n">W3</span><span class="p">)</span> <span class="o">+</span> <span class="n">b3</span>
-
-<span class="c1"># define cost/loss &amp; optimizer</span>
-<span class="c1"># Softmax loss</span>
-<span class="n">cost</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reduce_mean</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">softmax_cross_entropy_with_logits</span><span class="p">(</span>
-    <span class="n">logits</span><span class="o">=</span><span class="n">hypothesis</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">Y</span><span class="p">))</span>     
-
-<span class="c1"># Adam Optimizer</span>
-<span class="n">optimizer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">AdamOptimizer</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="n">learning_rate</span><span class="p">)</span><span class="o">.</span><span class="n">minimize</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Extracting data/MNIST_data/train-images-idx3-ubyte.gz
-Extracting data/MNIST_data/train-labels-idx1-ubyte.gz
-Extracting data/MNIST_data/t10k-images-idx3-ubyte.gz
-Extracting data/MNIST_data/t10k-labels-idx1-ubyte.gz
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># parameters</span>
-<span class="n">training_epochs</span> <span class="o">=</span> <span class="mi">15</span>
-<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">100</span>
-
-<span class="c1"># initialize</span>
-<span class="n">sess</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
-<span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">global_variables_initializer</span><span class="p">())</span>
-
-<span class="c1"># train my model</span>
-<span class="n">time1</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="n">tqdm_notebook</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">training_epochs</span><span class="p">)):</span>
-    <span class="n">avg_cost</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">total_batch</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">mnist</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">num_examples</span> <span class="o">/</span> <span class="n">batch_size</span><span class="p">)</span>
-
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">total_batch</span><span class="p">):</span>
-        <span class="n">batch_xs</span><span class="p">,</span> <span class="n">batch_ys</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">next_batch</span><span class="p">(</span><span class="n">batch_size</span><span class="p">)</span>
-        <span class="n">feed_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">X</span><span class="p">:</span> <span class="n">batch_xs</span><span class="p">,</span> <span class="n">Y</span><span class="p">:</span> <span class="n">batch_ys</span><span class="p">}</span>
-        <span class="n">c</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="n">cost</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">],</span> <span class="n">feed_dict</span><span class="o">=</span><span class="n">feed_dict</span><span class="p">)</span>
-        <span class="n">avg_cost</span> <span class="o">+=</span> <span class="n">c</span> <span class="o">/</span> <span class="n">total_batch</span>
-
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Epoch:&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%04d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">epoch</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="s1">&#39; | cost =&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{:.9f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">avg_cost</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Learning Finished!&#39;</span><span class="p">)</span>
-<span class="n">time2</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-
-<span class="n">bpc</span><span class="o">.</span><span class="n">chk_processting_time</span><span class="p">(</span><span class="n">time1</span><span class="p">,</span> <span class="n">time2</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-
- 
- 
-<div id="281aee46-a2df-49f4-925d-f254a0e15bfb"></div>
-<div class="output_subarea output_widget_view ">
-<script type="text/javascript">
-var element = $('#281aee46-a2df-49f4-925d-f254a0e15bfb');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "3d948189884a4c4ca6ffb5b97fb48ba9", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch: 0001  | cost = 168.871117528
-Epoch: 0002  | cost = 39.789018199
-Epoch: 0003  | cost = 25.078855662
-Epoch: 0004  | cost = 17.581257204
-Epoch: 0005  | cost = 12.949745178
-Epoch: 0006  | cost = 9.672311279
-Epoch: 0007  | cost = 7.251559166
-Epoch: 0008  | cost = 5.489999496
-Epoch: 0009  | cost = 4.080529510
-Epoch: 0010  | cost = 3.032799814
-Epoch: 0011  | cost = 2.280402585
-Epoch: 0012  | cost = 1.826971169
-Epoch: 0013  | cost = 1.487424602
-Epoch: 0014  | cost = 1.108632946
-Epoch: 0015  | cost = 0.960463530
-
-Learning Finished!
-처리시간 : 0분 26초 경과되었습니다.
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[11]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>26.68108558654785</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">training_epochs</span><span class="p">,</span> <span class="n">mnist</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">num_examples</span><span class="p">,</span> <span class="n">total_batch</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[12]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(15, 55000, 550)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Test model and check accuracy</span>
-<span class="n">correct_prediction</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">equal</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">hypothesis</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">tf</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-<span class="n">accuracy</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reduce_mean</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">correct_prediction</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy:&#39;</span><span class="p">,</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span>
-      <span class="n">X</span><span class="p">:</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">images</span><span class="p">,</span> <span class="n">Y</span><span class="p">:</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">labels</span><span class="p">}))</span>
-
-<span class="c1"># Get one and predict</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">num_examples</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Label: &quot;</span><span class="p">,</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">labels</span><span class="p">[</span><span class="n">r</span><span class="p">:</span><span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="mi">1</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prediction: &quot;</span><span class="p">,</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
-    <span class="n">tf</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">hypothesis</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span><span class="n">X</span><span class="p">:</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="n">r</span><span class="p">:</span><span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]}))</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="n">r</span><span class="p">:</span><span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span>
-          <span class="n">reshape</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">),</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greys&#39;</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;nearest&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Accuracy: 0.9443
-Label:  [4]
-Prediction:  [9]
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-lX6NvgAAAABJRU5ErkJggg==
-"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><hr></p>
-<h3 id="3.-Xavier-initialization">3. Xavier initialization<a class="anchor-link" href="#3.-Xavier-initialization">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="&#48169;&#48277;-:-initializer=tf.contrib.layers.xavier_initializer()">&#48169;&#48277; : initializer=tf.contrib.layers.xavier_initializer()<a class="anchor-link" href="#&#48169;&#48277;-:-initializer=tf.contrib.layers.xavier_initializer()">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Lab 10 MNIST and Xavier</span>
-<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
-<span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="kn">from</span> <span class="nn">tensorflow.examples.tutorials.mnist</span> <span class="k">import</span> <span class="n">input_data</span>
-
-<span class="n">tf</span><span class="o">.</span><span class="n">set_random_seed</span><span class="p">(</span><span class="mi">777</span><span class="p">)</span>  <span class="c1"># reproducibility</span>
-
-<span class="n">mnist</span> <span class="o">=</span> <span class="n">input_data</span><span class="o">.</span><span class="n">read_data_sets</span><span class="p">(</span><span class="s2">&quot;data/MNIST_data/&quot;</span><span class="p">,</span> <span class="n">one_hot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="c1"># Check out https://www.tensorflow.org/get_started/mnist/beginners for</span>
-<span class="c1"># more information about the mnist dataset</span>
-
-<span class="c1"># parameters</span>
-<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.001</span>
-<span class="n">training_epochs</span> <span class="o">=</span> <span class="mi">15</span>
-<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">100</span>
-
-<span class="c1"># input place holders</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">784</span><span class="p">])</span>
-<span class="n">Y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
-
-<span class="c1"># weights &amp; bias for nn layers</span>
-<span class="c1"># http://stackoverflow.com/questions/33640581/how-to-do-xavier-initialization-on-tensorflow</span>
-<span class="n">W1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;W1&quot;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="mi">784</span><span class="p">,</span> <span class="mi">256</span><span class="p">],</span>
-                     <span class="n">initializer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">xavier_initializer</span><span class="p">())</span>
-<span class="n">b1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="mi">256</span><span class="p">]))</span>
-<span class="n">L1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">W1</span><span class="p">)</span> <span class="o">+</span> <span class="n">b1</span><span class="p">)</span>
-
-<span class="n">W2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;W2&quot;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="mi">256</span><span class="p">,</span> <span class="mi">256</span><span class="p">],</span>
-                     <span class="n">initializer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">xavier_initializer</span><span class="p">())</span>
-<span class="n">b2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="mi">256</span><span class="p">]))</span>
-<span class="n">L2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">L1</span><span class="p">,</span> <span class="n">W2</span><span class="p">)</span> <span class="o">+</span> <span class="n">b2</span><span class="p">)</span>
-
-<span class="n">W3</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">get_variable</span><span class="p">(</span><span class="s2">&quot;W3&quot;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="mi">256</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
-                     <span class="n">initializer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">xavier_initializer</span><span class="p">())</span>
-<span class="n">b3</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="mi">10</span><span class="p">]))</span>
-<span class="n">hypothesis</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">L2</span><span class="p">,</span> <span class="n">W3</span><span class="p">)</span> <span class="o">+</span> <span class="n">b3</span>
-
-<span class="c1"># define cost/loss &amp; optimizer</span>
-<span class="n">cost</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reduce_mean</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">softmax_cross_entropy_with_logits</span><span class="p">(</span>
-    <span class="n">logits</span><span class="o">=</span><span class="n">hypothesis</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">Y</span><span class="p">))</span>
-<span class="n">optimizer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">AdamOptimizer</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="n">learning_rate</span><span class="p">)</span><span class="o">.</span><span class="n">minimize</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Extracting data/MNIST_data/train-images-idx3-ubyte.gz
-Extracting data/MNIST_data/train-labels-idx1-ubyte.gz
-Extracting data/MNIST_data/t10k-images-idx3-ubyte.gz
-Extracting data/MNIST_data/t10k-labels-idx1-ubyte.gz
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># parameters</span>
-<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.001</span>
-<span class="n">training_epochs</span> <span class="o">=</span> <span class="mi">15</span>
-<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">100</span>
-
-<span class="c1"># initialize</span>
-<span class="n">sess</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
-<span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">global_variables_initializer</span><span class="p">())</span>
-
-<span class="c1"># train my model</span>
-<span class="n">time1</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="n">tqdm_notebook</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">training_epochs</span><span class="p">)):</span>
-    <span class="n">avg_cost</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">total_batch</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">mnist</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">num_examples</span> <span class="o">/</span> <span class="n">batch_size</span><span class="p">)</span>
-
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">total_batch</span><span class="p">):</span>
-        <span class="n">batch_xs</span><span class="p">,</span> <span class="n">batch_ys</span> <span class="o">=</span> <span class="n">mnist</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">next_batch</span><span class="p">(</span><span class="n">batch_size</span><span class="p">)</span>
-        <span class="n">feed_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">X</span><span class="p">:</span> <span class="n">batch_xs</span><span class="p">,</span> <span class="n">Y</span><span class="p">:</span> <span class="n">batch_ys</span><span class="p">}</span>
-        <span class="n">c</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="n">cost</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">],</span> <span class="n">feed_dict</span><span class="o">=</span><span class="n">feed_dict</span><span class="p">)</span>
-        <span class="n">avg_cost</span> <span class="o">+=</span> <span class="n">c</span> <span class="o">/</span> <span class="n">total_batch</span>
-
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Epoch:&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%04d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">epoch</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="s1">&#39; | cost =&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{:.9f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">avg_cost</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Learning Finished!&#39;</span><span class="p">)</span>
-<span class="n">time2</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-
-<span class="n">bpc</span><span class="o">.</span><span class="n">chk_processting_time</span><span class="p">(</span><span class="n">time1</span><span class="p">,</span> <span class="n">time2</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-
- 
- 
-<div id="e119ee43-6757-4f9d-988b-06f640bb4a30"></div>
-<div class="output_subarea output_widget_view ">
-<script type="text/javascript">
-var element = $('#e119ee43-6757-4f9d-988b-06f640bb4a30');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "c34fe72a2ee8496abc558a8b535103b9", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch: 0001  | cost = 0.302049108
-Epoch: 0002  | cost = 0.120434554
-Epoch: 0003  | cost = 0.077402316
-Epoch: 0004  | cost = 0.056101177
-Epoch: 0005  | cost = 0.040522710
-Epoch: 0006  | cost = 0.031933484
-Epoch: 0007  | cost = 0.025075606
-Epoch: 0008  | cost = 0.019702032
-Epoch: 0009  | cost = 0.016768747
-Epoch: 0010  | cost = 0.017060622
-Epoch: 0011  | cost = 0.011450966
-Epoch: 0012  | cost = 0.009874320
-Epoch: 0013  | cost = 0.011352131
-Epoch: 0014  | cost = 0.010574085
-Epoch: 0015  | cost = 0.008389076
-
-Learning Finished!
-처리시간 : 0분 26초 경과되었습니다.
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[15]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>26.924170970916748</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Test model and check accuracy</span>
-<span class="n">correct_prediction</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">equal</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">hypothesis</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">tf</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-<span class="n">accuracy</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reduce_mean</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">correct_prediction</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy:&#39;</span><span class="p">,</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span>
-      <span class="n">X</span><span class="p">:</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">images</span><span class="p">,</span> <span class="n">Y</span><span class="p">:</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">labels</span><span class="p">}))</span>
-
-<span class="c1"># Get one and predict</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">num_examples</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Label: &quot;</span><span class="p">,</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">labels</span><span class="p">[</span><span class="n">r</span><span class="p">:</span><span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="mi">1</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prediction: &quot;</span><span class="p">,</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
-    <span class="n">tf</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">hypothesis</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span><span class="n">X</span><span class="p">:</span> <span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="n">r</span><span class="p">:</span><span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]}))</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">mnist</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="n">r</span><span class="p">:</span><span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span>
-          <span class="n">reshape</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">),</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greys&#39;</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;nearest&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Accuracy: 0.9788
-Label:  [9]
-Prediction:  [9]
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-uSXX/lEezvxAUIQfCIrwA0ERfiAowg8ERfiBoAg/EFTdcX4z65G0UdJXJZ2VtN7dnzGzxyUtlnRu
-AviV7v5yqxqNbMKECcn6008/XbN27733JredP39+ss44/uWrkYt8Tkta7u67zOwrkt4xsx1Z7cfu
-/i+taw9Aq9QNv7sflnQ4u33CzHZLmtzqxgC01iW95jezXklTJf02W7TMzH5nZv1mdl2NbZaYWdXM
-qkNDQ6OtAqAEDYffzL4saYukH7j7nyStk/QNSVM0/Mzgh6Nt5+7r3b3i7pXu7u4CWgZQhIbCb2Zf
-0nDwf+buv5Ikdz/i7mfc/aykn0jqa12bAIpWN/xmZpKek7Tb3X80YvmkEat9R9IHxbcHoFUaebd/
-mqQFkt43s3ezZSslzTezKZJc0oCk77WkQ9R1zz331KydOXOmjZ1gLGnk3f6dkmyUEmP6wBjGFX5A
-UIQfCIrwA0ERfiAowg8ERfiBoAg/EBThB4Ii/EBQhB8IivADQRF+ICjCDwRF+IGgzN3bdzCzIUn7
-RyzqknS0bQ1cmk7trVP7kuitWUX2drO7N/R9eW0N/0UHN6u6e6W0BhI6tbdO7Uuit2aV1RtP+4Gg
-CD8QVNnhX1/y8VM6tbdO7Uuit2aV0lupr/kBlKfsMz+AkpQSfjObYWYfmtleM1tRRg+1mNmAmb1v
-Zu+aWbXkXvrNbNDMPhix7Hoz22Fme7Kfo06TVlJvj5vZ/2WP3btm9g8l9dZjZv9hZrvN7Pdm9o/Z
-8lIfu0RfpTxubX/ab2ZXSPpfSfdJOijpbUnz3f2/29pIDWY2IKni7qWPCZvZPZL+LGmju9+eLXta
-0jF3X5v94bzO3f+pQ3p7XNKfy565OZtQZtLImaUlzZa0SCU+dom+5qqEx62MM3+fpL3u/rG7n5L0
-c0mzSuij47n7G5KOXbB4lqQN2e0NGv7H03Y1eusI7n7Y3Xdlt09IOjezdKmPXaKvUpQR/smS/jDi
-/kF11pTfLuk3ZvaOmS0pu5lRTMymTT83ffoNJfdzobozN7fTBTNLd8xj18yM10UrI/yjzf7TSUMO
-09z9TkkzJX0/e3qLxjQ0c3O7jDKzdEdodsbropUR/oOSekbc/5qkQyX0MSp3P5T9HJT0ojpv9uEj
-5yZJzX4OltzPX3TSzM2jzSytDnjsOmnG6zLC/7akW83s62Y2TtI8SdtK6OMiZjYheyNGZjZB0rfU
-ebMPb5O0MLu9UNLWEns5T6fM3FxrZmmV/Nh12ozXpVzkkw1l/KukKyT1u/s/t72JUZjZLRo+20vD
-k5huKrM3M9ssabqGP/V1RNJqSS9J+qWkmyQdkDTH3dv+xluN3qZr+KnrX2ZuPvcau8293S3pPyW9
-L+lstnilhl9fl/bYJfqarxIeN67wA4LiCj8gKMIPBEX4gaAIPxAU4QeCIvxAUIQfCIrwA0H9P576
-DzxioStzAAAAAElFTkSuQmCC
+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
 "
 >
 </div>
