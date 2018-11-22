@@ -42,9 +42,12 @@
 <br/><br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML401-Neural_Networks.html                   "> 4-1. Neural Networks 1                  </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML402_Neural_Networks.html                   "> 4-2. Neural Networks 2                  </a>
+    - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML402_Neural_Networks_2-1.html               "> 4-2-1. Neural Networks (1)                 </a>
+    - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML402_Neural_Networks_2-2.html               "> 4-2-2. Neural Networks (2)                  </a>
 <br/><br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML510_NN_ReLu_Xavier_Dropout_Adam.html       "> 5-1. NN, ReLu, Xavier, Dropout, and Adam</a>
 <br/><br/>
+
 
 
 <hr>
