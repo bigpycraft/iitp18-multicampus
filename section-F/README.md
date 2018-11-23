@@ -43,7 +43,7 @@
         <td width="350">
 <div align="left">
 <font size="2">
-<br/>[첫째 마당] 나의 첫 딥러닝
+<br/><a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL110_First_DeepLearning.html">[첫째 마당] 나의 첫 딥러닝</a>
 <br/>1장. 최고급 요리를 먹을 시간 
 <br/>2장. 처음 해 보는 딥러닝 
 <br/><br/>
