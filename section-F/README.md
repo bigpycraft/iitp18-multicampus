@@ -40,20 +40,18 @@
             <img src="../images/reference-02.png" width="250" />
             </a>
         </td>
-        <td width="50">
-        </td>
-        <td width="300">
+        <td width="350">
 <div align="left">
 <font size="2">
 <br/>[첫째 마당] 나의 첫 딥러닝
 <br/>1장. 최고급 요리를 먹을 시간 
 <br/>2장. 처음 해 보는 딥러닝 
-<br/><br/>
+<br/>
 <br/>[둘째 마당] 딥러닝의 동작 원리
 <br/>3장. 가장 훌륭한 예측선 긋기: 선형 회귀 
 <br/>4장. 오차 수정하기: 경사 하강법
 <br/>5장. 참 거짓 판단 장치: 로지스틱 회귀 
-<br/><br/>
+<br/>
 <br/>[셋째 마당] 신경망의 이해
 <br/>6장. 퍼셉트론 
 <br/>7장. 다층 퍼셉트론 
@@ -64,7 +62,7 @@
 </font>
 </div>
         </td>
-        <td width="300">
+        <td width="350">
 <div align="left">
 <font size="2">
 <br/>[넷째 마당] 딥러닝 기본기 다지기
@@ -79,7 +77,7 @@
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;[실습] 와인의 종류 예측
 <br/>15장 선형 회귀 적용하기 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;[실습] 보스턴 집값 예측
-<br/><br/>
+<br/>
 <br/>[다섯째 마당] 딥러닝의 활용
 <br/>16장. 이미지 인식의 꽃, CNN 익히기
 <br/>17장. 시퀀스 배열로 다루는 순환 신경망(RNN) 
