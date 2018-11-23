@@ -6,9 +6,26 @@
 
 ## IITP 2018, Innovation Growth Intensive Training in MultiCampus
 >  
-- Python Programming Basics
-- Python Modules for Data Analysis
-- <b>Data Analysis Practice for BigData</b>
+- [Section-A][link-A] : Python Programming Basics 
+- [Section-B][link-B] : Python Modules for Data Analysis
+- ♣ [Midterm Test][test10] : Python Core Programming <br/><br/>
+- <b>[Section-C][link-C] : Data Analysis Practice for BigData</b>
+- [Section-D][link-D] : Web Crawling and Scraping
+- ♣ [Team Project][test11] : Keyword Data Analysis by Topic <br/><br/>
+- [Section-E][link-E] : Machine Learning
+- [Section-F][link-F] : Deep Learning
+- ♣ [Team Project][test12] : Challenge Kaggle for Machine Learning <br/><br/>
+
+[link-A]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-A "Go Section-A"
+[link-B]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-B "Go Section-B"
+[link-C]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-C "Go Section-C"
+[link-D]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-D "Go Section-D"
+[link-E]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-E "Go Section-E"
+[link-F]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-F "Go Section-F"
+[test10]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/test-py10 "Go Test-10"
+[test11]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/test-py11 "Go Test-11"
+[test12]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/test-py12 "Go Test-12"
+
 
 <img src="../images/img_front_readme_iitp.png">
 
