@@ -24,13 +24,14 @@
         <td width="800">
 <div align="left">
     <b> - Kaggle.com </b> : https://www.kaggle.com/
-    <br/><br/> - Kaggle is the place to do data science projects
+    <br/> - Kaggle is the place to do data science projects
     <br/><br/>
     <b> 1. Kaggle Competitions : <a href='https://www.kaggle.com/competitions/'>[경진대회]</a>
-    <br/><br/>
+    <br/>
     <b> 2. Kaggle Datasets : <a href='https://www.kaggle.com/datasets/'>[데이터셋]</a>
     <br/><br/>
     <b> cf. Exception Task : Titanic ML & Digit Recognizer with MNIST data  </b>
+    <br/>
 </div>
         </td>
     </tr>
@@ -42,13 +43,14 @@
 
 ## Team Project 
 
-- ** 2nd Subject : Challenge Kaggle **
-- ** Our Motto : Learning by doing, doing by learning !! **
+- 2nd Subject : Challenge Kaggle 
+- Our Motto : <b>Learning by doing, doing by learning !! </b>
+- Report Format : <a href="./report/IITP18_혁신성장과정_0팀_샘플.docx">착수보고서 양식</a>
 
 <table border=1 bgcolor="#EEEEEE">
 	<tr bgcolor="#CC0000">
 		<td width="100"><div align="center"><font color="#FFFFFF"><b>팀명    </b></font></div></td>
-		<td width="100"><div align="center"><font color="#FFFFFF"><b>팀장    </b></font></div></td>
+		<td width="150"><div align="center"><font color="#FFFFFF"><b>팀장    </b></font></div></td>
 		<td width="200"><div align="center"><font color="#FFFFFF"><b>멤버    </b></font></div></td>
 		<td width="100"><div align="center"><font color="#FFFFFF"><b>주제    </b></font></div></td>
 		<td width="100"><div align="center"><font color="#FFFFFF"><b>보고    </b></font></div></td>
@@ -98,6 +100,13 @@
 </table>
 
 
+
+<hr>
+
+## Articles & News
+
+- <a href="http://www.asiae.co.kr/news/view.htm?idxno=2018111911582199902">삼성전자, 대졸공채에 '파이썬' 도입</a>
+- <a href="http://news.mk.co.kr/newsRead.php?year=2017&no=489532&fbclid=IwAR2aK3GJBuer_ksU_HqlPyLyMJbnQHfvRCKIOK3X4heR93LOJmRndnSWLDY">빅데이터 만능 시대…'데이터 달인'이 만능인재</a> 
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
