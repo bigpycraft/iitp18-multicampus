@@ -70,9 +70,9 @@
 <table border=1 bgcolor="#EEEEEE">
 	<tr bgcolor="#CC0000">
 		<td width="100"><div align="center"><font color="#FFFFFF"><b>팀명    </b></font></div></td>
-		<td width="200"><div align="center"><font color="#FFFFFF"><b>멤버    </b></font></div></td>
-		<td width="200"><div align="center"><font color="#FFFFFF"><b>주제    </b></font></div></td>
-		<td width="100"><div align="center"><font color="#FFFFFF"><b>과제링크</b></font></div></td>
+		<td width="150"><div align="center"><font color="#FFFFFF"><b>프로젝트팀</b></font></div></td>
+		<td width="150"><div align="center"><font color="#FFFFFF"><b>주제    </b></font></div></td>
+		<td width="500"><div align="center"><font color="#FFFFFF"><b>과제링크</b></font></div></td>
 		<td width="100"><div align="center"><font color="#FFFFFF"><b>보고    </b></font></div></td>
 	</tr>
 	<tr>
@@ -118,7 +118,6 @@
 		<td><div align="center"><a href="report/S10_착수보고서_F팀.pdf">[착수보고서]</a></div></td>
 	</tr>
 </table>
-
 
 
 <hr>
