@@ -70,54 +70,66 @@
 <table border=1 bgcolor="#EEEEEE">
 	<tr bgcolor="#CC0000">
 		<td width="100"><div align="center"><font color="#FFFFFF"><b>팀명    </b></font></div></td>
-		<td width="150"><div align="center"><font color="#FFFFFF"><b>프로젝트팀</b></font></div></td>
-		<td width="150"><div align="center"><font color="#FFFFFF"><b>주제    </b></font></div></td>
-		<td width="500"><div align="center"><font color="#FFFFFF"><b>과제링크</b></font></div></td>
+		<td width="200"><div align="center"><font color="#FFFFFF"><b>프로젝트팀</b></font></div></td>
+		<td width="500"><div align="center"><font color="#FFFFFF"><b>주제 및 링크</b></font></div></td>
 		<td width="100"><div align="center"><font color="#FFFFFF"><b>보고    </b></font></div></td>
 	</tr>
 	<tr>
 		<td><div align="center">A팀<br><b>[하드캐리]</b></div></td>
 		<td><div align="left">팀장 : 강호영<br>팀원 : 유영재, 이상훈</div></td>
-		<td><div align="left">Otto Group 제품 분류 과제</div></td>
-		<td><div align="center"><a href="https://www.kaggle.com/c/otto-group-product-classification-challenge"><img src='images/A팀_과제.png' width=500></a></div></td>
+		<td>
+			<div align="left"> Otto Group 제품 분류 과제</div>
+			<div align="center"><a href="https://www.kaggle.com/c/otto-group-product-classification-challenge"><img src='images/A팀_과제.png' width=500></a></div>
+		</td>
 		<td><div align="center"><a href="report/S10_착수보고서_A팀.pdf">[착수보고서]</a></div></td>
 	</tr>
 	<tr>
 		<td><div align="center">B팀<br><b>[여행조하]</b></div></td>
 		<td><div align="left">팀장 : 유수정<br>팀원 : 김홍기, 김하준</div></td>
-		<td><div align="left"></div>Airbnb 신규 사용자 예약</td>
-		<td><div align="center"><a href="https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings"><img src='images/B팀_과제.png' width=500></a></div></td>
+		<td>
+			<div align="left"></div> Airbnb 신규 사용자 예약</div>
+			<div align="center"><a href="https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings"><img src='images/B팀_과제.png' width=500></a></div>
+		</td>
 		<td><div align="center"><a href="report/S10_착수보고서_B팀.pdf">[착수보고서]</a></div></td>
 	</tr>
 	<tr>
 		<td><div align="center">C팀<br><b>[제이씨제이]</b></div></td>
 		<td><div align="left">팀장 : 장은경<br>팀원 : 정민호, 주상훈</div></td>
-		<td><div align="left">얼굴 특징 감지</div></td>
-		<td><div align="center"><a href="https://www.kaggle.com/c/facial-keypoints-detection#description"><img src='images/C팀_과제.png' width=500></a></div></td>
+		<td>
+			<div align="left">얼굴 특징 감지</div>
+			<div align="center"><a href="https://www.kaggle.com/c/facial-keypoints-detection#description"><img src='images/C팀_과제.png' width=500></a></div>
+		</td>
 		<td><div align="center"><a href="report/S10_착수보고서_C팀.pdf">[착수보고서]</a></div></td>
 	</tr>
 	<tr>
 		<td><div align="center">D팀<br><b>[팀명D]</b></div></td>
 		<td><div align="left">팀장 : 조민정<br>팀원 : 고준형, 김효신</div></td>
-		<td><div align="left">주택 가격 : 고급 회귀 기법</div></td>
-		<td><div align="center"><a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques"><img src='images/D팀_과제.png' width=500></a></div></td>
+		<td>
+			<div align="left">주택 가격 : 고급 회귀 기법</div>
+			<div align="center"><a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques"><img src='images/D팀_과제.png' width=500></a></div>
+		</td>
 		<td><div align="center"><a href="report/S10_착수보고서_D팀.pdf">[착수보고서]</a></div></td>
 	</tr>
 	<tr>
 		<td><div align="center">E팀<br><b>[원픽]</b></div></td>
 		<td><div align="left">팀장 : 문정연<br>팀원 : 공정배, 이진수</div></td>
-		<td><div align="left">코스타리카 가계 빈곤 수준 예측</div></td>
-		<td><div align="center"><a href="https://www.kaggle.com/c/costa-rican-household-poverty-prediction"><img src='images/E팀_과제.png' width=500></a></div></td>
+		<td>
+			<div align="left">코스타리카 가계 빈곤 수준 예측</div>
+			<div align="center"><a href="https://www.kaggle.com/c/costa-rican-household-poverty-prediction"><img src='images/E팀_과제.png' width=500></a></div>
+		</td>
 		<td><div align="center"><a href="report/S10_착수보고서_E팀.pdf">[착수보고서]</a></div></td>
 	</tr>
 	<tr>
 		<td><div align="center">F팀<br><b>[듀란듀란]</b></div></td>
 		<td><div align="left">팀장 : 민유진, 함윤선<br>팀원 : 유선우, 장정호</div></td>
-		<td><div align="left">샌프란시스코 범죄 예측</div></td>
-		<td><div align="center"><a href="https://www.kaggle.com/c/sf-crime"><img src='images/F팀_과제.png' width=500></a></div></td>
+		<td>
+			<div align="left">샌프란시스코 범죄 예측</div>
+			<div align="center"><a href="https://www.kaggle.com/c/sf-crime"><img src='images/F팀_과제.png' width=500></a></div>
+		</td>
 		<td><div align="center"><a href="report/S10_착수보고서_F팀.pdf">[착수보고서]</a></div></td>
 	</tr>
 </table>
+
 
 
 <hr>
