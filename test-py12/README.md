@@ -5,8 +5,28 @@
 <hr>
 
 ## IITP 2018, Innovation Growth Intensive Training in MultiCampus
->  <font size=3><a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/test-py12/Project_Topics.html ">Project topics</a></font>
-<img src="../images/kaggle-computer.png" width="300"  />
+>  
+- [Section-A][link-A] : Python Programming Basics 
+- [Section-B][link-B] : Python Modules for Data Analysis
+- ♣ [Midterm Test][test10] : Python Core Programming <br/><br/>
+- [Section-C][link-C] : Data Analysis Practice for BigData
+- [Section-D][link-D] : Web Crawling and Scraping
+- ♣ [Team Project][test11] : Keyword Data Analysis by Topic <br/><br/>
+- [Section-E][link-E] : Machine Learning
+- [Section-F][link-F] : Deep Learning
+- ♣ <b>[Team Project][test12] : Challenge Kaggle for Machine Learning </b><br/><br/>
+<br/><br/>
+<div align="left"><img src="../images/kaggle-computer.png" width="300"  /></div>
+
+[link-A]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-A "Go Section-A"
+[link-B]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-B "Go Section-B"
+[link-C]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-C "Go Section-C"
+[link-D]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-D "Go Section-D"
+[link-E]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-E "Go Section-E"
+[link-F]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-F "Go Section-F"
+[test10]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/test-py10 "Go Test-10"
+[test11]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/test-py11 "Go Test-11"
+[test12]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/test-py12 "Go Test-12"
 
 
 
@@ -50,52 +70,52 @@
 <table border=1 bgcolor="#EEEEEE">
 	<tr bgcolor="#CC0000">
 		<td width="100"><div align="center"><font color="#FFFFFF"><b>팀명    </b></font></div></td>
-		<td width="150"><div align="center"><font color="#FFFFFF"><b>팀장    </b></font></div></td>
 		<td width="200"><div align="center"><font color="#FFFFFF"><b>멤버    </b></font></div></td>
-		<td width="100"><div align="center"><font color="#FFFFFF"><b>주제    </b></font></div></td>
+		<td width="200"><div align="center"><font color="#FFFFFF"><b>주제    </b></font></div></td>
+		<td width="100"><div align="center"><font color="#FFFFFF"><b>과제링크</b></font></div></td>
 		<td width="100"><div align="center"><font color="#FFFFFF"><b>보고    </b></font></div></td>
 	</tr>
 	<tr>
-		<td><div align="center">A팀</div></td>
-		<td><div align="center">강호영</div></td>
-		<td><div align="center">유영재, 이상훈</div></td>
-		<td><div align="center"> - </div></td>
-		<td><div align="center"> - </div></td>
+		<td><div align="center">A팀<br><b>[하드캐리]</b></div></td>
+		<td><div align="left">팀장 : 강호영<br>팀원 : 유영재, 이상훈</div></td>
+		<td><div align="left">Otto Group 제품 분류 과제</div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/otto-group-product-classification-challenge"><img src='images/A팀_과제.png' width=500></a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_A팀.pdf">[착수보고서]</a></div></td>
 	</tr>
 	<tr>
-		<td><div align="center">B팀</div></td>
-		<td><div align="center">유수정</div></td>
-		<td><div align="center">김홍기, 김하준</div></td>
-		<td><div align="center"> - </div></td>
-		<td><div align="center"> - </div></td>
+		<td><div align="center">B팀<br><b>[여행조하]</b></div></td>
+		<td><div align="left">팀장 : 유수정<br>팀원 : 김홍기, 김하준</div></td>
+		<td><div align="left"></div>Airbnb 신규 사용자 예약</td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings"><img src='images/B팀_과제.png' width=500></a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_B팀.pdf">[착수보고서]</a></div></td>
 	</tr>
 	<tr>
-		<td><div align="center">C팀</div></td>
-		<td><div align="center">장은경</div></td>
-		<td><div align="center">정민호, 주상훈</div></td>
-		<td><div align="center"> - </div></td>
-		<td><div align="center"> - </div></td>
+		<td><div align="center">C팀<br><b>[제이씨제이]</b></div></td>
+		<td><div align="left">팀장 : 장은경<br>팀원 : 정민호, 주상훈</div></td>
+		<td><div align="left">얼굴 특징 감지</div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/facial-keypoints-detection#description"><img src='images/C팀_과제.png' width=500></a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_C팀.pdf">[착수보고서]</a></div></td>
 	</tr>
 	<tr>
-		<td><div align="center">D팀</div></td>
-		<td><div align="center">조민정</div></td>
-		<td><div align="center">고준형, 김효신</div></td>
-		<td><div align="center"> - </div></td>
-		<td><div align="center"> - </div></td>
+		<td><div align="center">D팀<br><b>[팀명D]</b></div></td>
+		<td><div align="left">팀장 : 조민정<br>팀원 : 고준형, 김효신</div></td>
+		<td><div align="left">주택 가격 : 고급 회귀 기법</div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques"><img src='images/D팀_과제.png' width=500></a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_D팀.pdf">[착수보고서]</a></div></td>
 	</tr>
 	<tr>
-		<td><div align="center">E팀</div></td>
-		<td><div align="center">문정연</div></td>
-		<td><div align="center">공정배, 이진수</div></td>
-		<td><div align="center"> - </div></td>
-		<td><div align="center"> - </div></td>
+		<td><div align="center">E팀<br><b>[원픽]</b></div></td>
+		<td><div align="left">팀장 : 문정연<br>팀원 : 공정배, 이진수</div></td>
+		<td><div align="left">코스타리카 가계 빈곤 수준 예측</div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/costa-rican-household-poverty-prediction"><img src='images/E팀_과제.png' width=500></a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_E팀.pdf">[착수보고서]</a></div></td>
 	</tr>
 	<tr>
-		<td><div align="center">F팀</div></td>
-		<td><div align="center">민유진, 함윤선</div></td>
-		<td><div align="center">유선우, 장정호</div></td>
-		<td><div align="center"> - </div></td>
-		<td><div align="center"> - </div></td>
+		<td><div align="center">F팀<br><b>[듀란듀란]</b></div></td>
+		<td><div align="left">팀장 : 민유진, 함윤선<br>팀원 : 유선우, 장정호</div></td>
+		<td><div align="left">샌프란시스코 범죄 예측</div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/sf-crime"><img src='images/F팀_과제.png' width=500></a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_F팀.pdf">[착수보고서]</a></div></td>
 	</tr>
 </table>
 
