@@ -64,12 +64,12 @@
 <div align="left">
 <font size="2">
 <br/>[넷째 마당] 딥러닝 기본기 다지기
-<br/>10장 모델 설계하기 
-<br/>11장 데이터 다루기 
+<br/><a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2101_Model_Design.html">10장 모델 설계하기 </a>
+<br/><a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2111_Handling_Data_1.html">111장 데이터 다루기 </a>
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;[실습] 피마 인디언 당뇨병 예측
-<br/>12장 다중 분류 문제 해결하기 
+<br/><a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2121_Multiple_Classification.html">12장 다중 분류 문제 해결하기 </a>
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;[실습] 아이리스 품종 예측
-<br/>13장 과적합 피하기 
+<br/><a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2131_Overfiting_Problem.html">13장 과적합 피하기 </a>
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;[실습] 초음파 광물 예측
 <br/>14장 베스트 모델 만들기 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;[실습] 와인의 종류 예측
@@ -77,7 +77,7 @@
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;[실습] 보스턴 집값 예측
 <br/>
 <br/>[다섯째 마당] 딥러닝의 활용
-<br/>16장. 이미지 인식의 꽃, CNN 익히기
+<br/><a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2163_CNN_MNIST_Deep.html">16장. 이미지 인식의 꽃, CNN 익히기 </a>
 <br/>17장. 시퀀스 배열로 다루는 순환 신경망
 </font>
 </div></td>
@@ -96,6 +96,10 @@
 - [13-2. Overfiting Problem Test       ][bda-dl-13-2]
 - [13-3. Sonar Model Save and Reuse    ][bda-dl-13-3]
 - [13-4. Sonar K-fold                  ][bda-dl-13-4]
+<br/><br/>
+- [16-1. CNN MNIST Data                ][bda-dl-16-1]
+- [16-2. CNN MNIST Sample              ][bda-dl-16-2]
+- [16-3. CNN MNIST Deep                ][bda-dl-16-3]
 
 
 [bda-dl-10-1]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2101_Model_Design.html                   "Go DL10-1"
@@ -106,6 +110,9 @@
 [bda-dl-13-2]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2132_Overfiting_Problem_Test.html        "Go DL13-2"
 [bda-dl-13-3]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2133_Sonar_Model_Save_and_Reuse.html     "Go DL13-3"
 [bda-dl-13-4]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2134_Sonar_K-fold.html                   "Go DL13-4"
+[bda-dl-16-1]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2161_CNN_MNIST_Data.html                 "Go DL16-1"
+[bda-dl-16-2]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2162_CNN_MNIST_Simple.html               "Go DL16-2"
+[bda-dl-16-3]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2163_CNN_MNIST_Deep.html                 "Go DL16-3"
 
 
 
