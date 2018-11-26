@@ -36,7 +36,7 @@
 <table align="left">
     <tr align="left">
         <td width="300">
-            <a href="https://www.seleniumhq.org/projects/webdriver/">
+            <a href="#">
             <img src="../images/reference-02.png" width="250" />
             </a>
         </td>
@@ -84,6 +84,32 @@
     </tr>
 </table>
 <br/>
+
+<hr>
+
+### Deep Learning for BigData
+- [10-1. Model Design                  ][bda-dl-10-1]
+- [11-1. Handling Data 1               ][bda-dl-11-1]
+- [11-2. Handling Data 2               ][bda-dl-11-2]
+- [12-1. Multiple Classification       ][bda-dl-12-1]
+- [13-1. Overfiting Problem            ][bda-dl-13-1]
+- [13-2. Overfiting Problem Test       ][bda-dl-13-2]
+- [13-3. Sonar Model Save and Reuse    ][bda-dl-13-3]
+- [13-4. Sonar K-fold                  ][bda-dl-13-4]
+
+
+[bda-dl-10-1]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2101_Model_Design.html                   "Go DL10-1"
+[bda-dl-11-1]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2111_Handling_Data_1.html                "Go DL11-1"
+[bda-dl-11-2]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2112_Handling_Data_2.html                "Go DL11-2"
+[bda-dl-12-1]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2121_Multiple_Classification.html        "Go DL12-1"
+[bda-dl-13-1]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2131_Overfiting_Problem.html             "Go DL13-1"
+[bda-dl-13-2]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2132_Overfiting_Problem_Test.html        "Go DL13-2"
+[bda-dl-13-3]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2133_Sonar_Model_Save_and_Reuse.html     "Go DL13-3"
+[bda-dl-13-4]: https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-F/html/BDA-DL2134_Sonar_K-fold.html                   "Go DL13-4"
+
+
+
+<hr>
 
 ### Data Set
 - [housing.csv                       ][data-set-01]
