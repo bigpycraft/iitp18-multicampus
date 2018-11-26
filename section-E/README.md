@@ -14,6 +14,7 @@
 - ♣ [Team Project][test11] : Keyword Data Analysis by Topic <br/><br/>
 - <b>[Section-E][link-E] : Machine Learning</b>
 - [Section-F][link-F] : Deep Learning
+- ♣ [Team Project][test12] : Challenge Kaggle for Machine Learning <br/><br/>
 
 [link-A]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-A "Go Section-A"
 [link-B]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-B "Go Section-B"
@@ -23,6 +24,7 @@
 [link-F]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-F "Go Section-F"
 [test10]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/test-py10 "Go Test-10"
 [test11]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/test-py11 "Go Test-11"
+[test12]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/test-py12 "Go Test-12"
 
 
 <img src="../images/img_front_readme_iitp.png">
@@ -47,13 +49,19 @@
 <br/><br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML511-Softmax_for_MNIST.html                 "> 5-1. Softmax for MNIST                  </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML512-NN_for_MNIST.html                      "> 5-2. NN for MNIST                       </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML513-MNIST_NN_Xavier2.html                  "> 5-3. MNIST NN Xavier initialization(1)     </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML513-MNIST_NN_Xavier3.html                  "> 5-3. MNIST NN Xavier initialization(2)     </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML513-MNIST_NN_Xavier2.html                  "> 5-3. MNIST NN Xavier initialization(1)  </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML513-MNIST_NN_Xavier3.html                  "> 5-3. MNIST NN Xavier initialization(2)  </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML514-MNIST_NN_deep.html                     "> 5-4. MNIST NN deep                      </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML515-MNIST_NN_Dropout.html                  "> 5-5. MNIST NN Dropout                   </a>
 <br/><br/>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML516-MNIST_NN_Batchnorm.html                "> Ref1. MNIST NN Batchnorm                 </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML517-MNIST_NN_Higher_Level_API.html         "> Ref2. MNIST NN Higher Level API          </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML516-MNIST_NN_Batchnorm.html                "> Ref1. MNIST NN Batchnorm                </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML517-MNIST_NN_Higher_Level_API.html         "> Ref2. MNIST NN Higher Level API         </a>
+<br/><br/>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML621-MNIST_CNN.html                         "> 6-1. MNIST CNN                          </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML622-MNIST_Deep_CNN.html                    "> 6-2. MNIST Deep CNN                     </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML623-MNIST_CNN_Class.html                   "> 6-3. MNIST CNN Class                    </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML624-MNIST_CNN_Layers.html                  "> 6-4. MNIST CNN Layers                   </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML625-MNIST_CNN_Ensemble_Layers_ver2.html    "> 6-5. MNIST CNN Ensemble Layers          </a>
 <br/><br/>
 
 
