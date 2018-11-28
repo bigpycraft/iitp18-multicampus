@@ -82,7 +82,7 @@
 
 <hr>
 
-###  ▶ VM Basic Information
+###  ♠ VM Basic Information
 - <b> 장비이름, Name  </b> : VM-C-LAB01~05
 - <b> 운영체제, OS    </b> : Ubuntu 16.04 LTS(64bit)
 - <b> 하드웨어, HW    </b> : rCore.S3(Memory 24GB, 8rCore CPU, SSD 25GB[disk], 10GB Traffic/day)
@@ -92,7 +92,7 @@
 
 <hr>
 
-###  ▶ VM User Guide
+###  ♣ VM User Guide
 - <b> 사용기간 </b> : 교육기간에만 사용가능한 임시서버 (~2018.12.01)
 - <b> 팀별할당 </b> : 5명 사용제한
 - <b> 서버접속 </b> : 원격 콘솔프로그램 PuTTY 통해 VM-LAB에 접속
@@ -108,9 +108,10 @@
 <br/><br/>
 
 
+
 <hr>
 
-###  ▶ Anaconda Settings for Deep Learning
+###  ♥ Anaconda Settings for Deep Learning
 - sudo user 를 통해 미리 설정해 놓은 환경변수 경로(/home/ubuntu/.bashrc)를 통해 접근
 - 환경변수 경로 설정
 <br/> ＄ source /home/ubuntu/.bashrc
@@ -123,6 +124,9 @@
 <br/> (IITP_BPC) ＄ ...
 <br/> (IITP_BPC) ＄ ...
 <br/> (IITP_BPC) ＄ http://(LAB or 127.0.0.1):8889/?token=token_value
+<br/><br/>
+
+
 
 
 
