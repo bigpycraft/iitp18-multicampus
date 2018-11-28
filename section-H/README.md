@@ -82,17 +82,17 @@
 
 <hr>
 ### ▶ VM Basic Information
-- ** 장비이름, Name  ** : VM-C-LAB01~05
-- ** 운영체제, OS    ** : Ubuntu 16.04 LTS(64bit)
-- ** 하드웨어, HW    ** : rCore.S3(Memory 24GB, 8rCore CPU, SSD 25GB[disk], 10GB Traffic/day)
-- ** 스토리지, Block Storage ** : SATA Block X4 Hard Raid 1TB
+- <b> 장비이름, Name  </b> : VM-C-LAB01~05
+- <b> 운영체제, OS    </b> : Ubuntu 16.04 LTS(64bit)
+- <b> 하드웨어, HW    </b> : rCore.S3(Memory 24GB, 8rCore CPU, SSD 25GB[disk], 10GB Traffic/day)
+- <b> 스토리지, Block Storage </b> : SATA Block X4 Hard Raid 1TB
 <br/><br/>
 
 <hr>
 ### ▶ VM User Guide
-- ** 사용기간 ** : 교육기간에만 사용가능한 임시서버 (~2018.12.01)
-- ** 팀별할당 ** : 5명 사용제한
-- ** 서버접속 ** : 원격 콘솔프로그램 PuTTY 통해 VM-LAB에 접속
+- <b> 사용기간 </b> : 교육기간에만 사용가능한 임시서버 (~2018.12.01)
+- <b> 팀별할당 </b> : 5명 사용제한
+- <b> 서버접속 </b> : 원격 콘솔프로그램 PuTTY 통해 VM-LAB에 접속
 <br> - PuTTY Download : https://www.putty.org/
 <br> - 프로그램 설치 후, VM-LAB의 IP주소 등록
 <br> - Category>Connection>SSH>Tunnels
@@ -120,7 +120,6 @@
 <br/> (IITP_BPC) ＄ ...
 <br/> (IITP_BPC) ＄ ...
 <br/> (IITP_BPC) ＄ http://(LAB or 127.0.0.1):8889/?token=token_value
-
 
 
 <hr>
