@@ -64,6 +64,9 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML624-MNIST_CNN_Layers.html                  "> 6-4. MNIST CNN Layers                   </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML625-MNIST_CNN_Ensemble_Layers.html         "> 6-5. MNIST CNN Ensemble Layers          </a>
 <br/><br/>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML810_NN_Saver.html         "> Tip. DeepLearning Model Saver & Reuse  </a>
+<br/><br/>
+
 
 
 <hr>
