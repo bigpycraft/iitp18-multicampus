@@ -103,10 +103,8 @@
 <br> &nbsp;&nbsp;&nbsp;&nbsp; √ Destination : 127.0.0.1:8888
 <br> &nbsp;&nbsp;&nbsp;&nbsp; √ Local, Auto Selected
 <br> &nbsp;&nbsp;&nbsp;&nbsp; [Add] 클릭
-<br> &nbsp;&nbsp;&nbsp;&nbsp; 
-<br> &nbsp;&nbsp; cf. Tip> 포트중복막기위해 8888~8892까지, forwarded port 미리 설정
-<br> &nbsp;&nbsp;  
-<br> &nbsp;&nbsp;  [Open] 클릭
+<br> &nbsp;&nbsp; ※ Tip. 포트중복막기위해 8888~8892까지, forwarded port 미리 설정
+<br> &nbsp;&nbsp; → 모든 설정 후, [Open] 클릭
 <br/><br/>
 
 
