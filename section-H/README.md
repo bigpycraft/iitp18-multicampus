@@ -36,7 +36,7 @@
 
 <hr>
 
-## 팀별 빅데이터 분산처리장치(Bigdata HDPS)
+## 팀별 빅데이터 분산처리장치
 
 <table border=1 bgcolor="#EEEEEE">
 	<tr bgcolor="#CC0000">
@@ -51,7 +51,7 @@
 		<td><div align="center">70.12.115.60    </div></td>
 		<td><div align="center">user01 ~ user05 </div></td>
 		<td><div align="center">user01 ~ user05 </div></td>
-		<td><div align="center" rowspans="5">global</div></td>
+		<td rowspans="5"><div align="center">global</div></td>
 	</tr>
 	<tr>
 		<td><div align="center">B팀             </div></td>
