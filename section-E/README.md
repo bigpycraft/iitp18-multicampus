@@ -57,11 +57,12 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML516-MNIST_NN_Batchnorm.html                "> Ref1. MNIST NN Batchnorm                </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML517-MNIST_NN_Higher_Level_API.html         "> Ref2. MNIST NN Higher Level API         </a>
 <br/><br/>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML620-CNN_Basics.html                        "> 6. Convolution Neural Network           </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML621-MNIST_CNN.html                         "> 6-1. MNIST CNN                          </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML622-MNIST_Deep_CNN.html                    "> 6-2. MNIST Deep CNN                     </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML623-MNIST_CNN_Class.html                   "> 6-3. MNIST CNN Class                    </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML624-MNIST_CNN_Layers.html                  "> 6-4. MNIST CNN Layers                   </a>
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML625-MNIST_CNN_Ensemble_Layers.html    "> 6-5. MNIST CNN Ensemble Layers          </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML625-MNIST_CNN_Ensemble_Layers.html         "> 6-5. MNIST CNN Ensemble Layers          </a>
 <br/><br/>
 
 
