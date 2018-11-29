@@ -189,7 +189,32 @@
 		<td><div align="center"><a href="report/S20_결과보고서_E팀.pdf"><img src='images/report_icon_01_s.png' width=100 alt="E팀 결과보고서"></a></div></td>
 		<td><div align="center"><a href="report/S20_결과보고서_F팀.pdf"><img src='images/report_icon_02_s.png' width=100 alt="F팀 결과보고서"></a></div></td>
 	</tr>
+	<tr>
+		<td><div align="center"><a href="report/S10_착수보고서_A팀.pdf">[A팀 착수보고]</a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_B팀.pdf">[B팀 착수보고]</a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_C팀.pdf">[C팀 착수보고]</a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_D팀.pdf">[D팀 착수보고]</a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_E팀.pdf">[E팀 착수보고]</a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_F팀.pdf">[F팀 착수보고]</a></div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><a href="report/S20_결과보고서_A팀.pdf">[A팀 결과보고]</a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_B팀.pdf">[B팀 결과보고]</a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_C팀.pdf">[C팀 결과보고]</a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_D팀.pdf">[D팀 결과보고]</a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_E팀.pdf">[E팀 결과보고]</a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_F팀.pdf">[F팀 결과보고]</a></div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><a href="IITP18_Team_A">[A팀 소스코드]</a></div></td>
+		<td><div align="center"><a href="IITP18_Team_B">[B팀 소스코드]</a></div></td>
+		<td><div align="center"><a href="IITP18_Team_C">[C팀 소스코드]</a></div></td>
+		<td><div align="center"><a href="IITP18_Team_D">[D팀 소스코드]</a></div></td>
+		<td><div align="center"><a href="IITP18_Team_E">[E팀 소스코드]</a></div></td>
+		<td><div align="center"><a href="IITP18_Team_F">[F팀 소스코드]</a></div></td>
+	</tr>
 </table>
+
 
 <hr>
 

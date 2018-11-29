@@ -1,0 +1,566 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import time\n",
+    "import os\n",
+    "\n",
+    "def chk_processting_time(start_time, end_time):\n",
+    "    process_time = end_time - start_time\n",
+    "    p_time = int(process_time)\n",
+    "    p_min = p_time // 60\n",
+    "    p_sec = p_time %  60\n",
+    "    print('처리시간 : {p_min}분 {p_sec}초 경과되었습니다.'.format(\n",
+    "            p_min = p_min, \n",
+    "            p_sec = p_sec\n",
+    "        ))\n",
+    "    return process_time\n",
+    "\n",
+    "# Lab 11 MNIST and Convolutional Neural Network\n",
+    "import tensorflow as tf\n",
+    "import random\n",
+    "import matplotlib.pyplot as plt"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 데이터 전처리"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "from PIL import Image\n",
+    "\n",
+    "\n",
+    "def makingResultsList(trainingData) :\n",
+    "    resultsList = []\n",
+    "    for i in range(len(trainingData.iloc[:, 0])) :\n",
+    "        resultsList.append(np.array(trainingData.iloc[i][:30]))\n",
+    "    return resultsList\n",
+    "\n",
+    "def makingClassesList(trainingData) :\n",
+    "    classesList = []\n",
+    "    for i in range(len(trainingData.iloc[:, 0])) :\n",
+    "        classesList.append(np.array(trainingData.columns[:-1]))\n",
+    "    return classesList\n",
+    "\n",
+    "def makingImagesList(trainingData) :\n",
+    "    imagesList = []\n",
+    "    for i in range(len(trainingData.iloc[:, 0])) :\n",
+    "        imagesList.append(np.array(trainingData.iloc[i][30].split(\" \"), dtype=np.uint8))\n",
+    "    return imagesList\n",
+    "\n",
+    "def resize96(trainingData):  # 전체 행의 image column을 96x96 행렬로 변환하여 resize_images에 입력\n",
+    "    imagesList = []\n",
+    "    for i in range(len(trainingData.iloc[:, 0])):  # len(a.iloc([:, 0]) 은 행의 갯수를 추출하기 위해 만듬\n",
+    "        imagesList.append(np.array(trainingData.iloc[i][30].split(\" \"), dtype=np.uint8).reshape(96, 96))\n",
+    "        # dtype를 uint8로 지정해줘야 그림이 출력됨\n",
+    "    return imagesList\n",
+    "\n",
+    "def showImage(imagesList, row):\n",
+    "    # 원하는 행의 사진을 출력합니다.\n",
+    "    # imagesList.append(np.array(trainingData.iloc[i][30].split(\" \"), dtype=np.uint8).reshape(96, 96)) 에서\n",
+    "    # dtype를 uint8로 지정해줘야 그림이 출력됨\n",
+    "    return Image.fromarray(imagesList[row])\n",
+    "\n",
+    "\n",
+    "def makingBatch(imagesList, resultsList, count, batch_size) :\n",
+    "    batch_xs = np.array(imagesList[count*batch_size:(count+1)*batch_size])\n",
+    "    batch_ys = np.array(resultsList[count*batch_size:(count+1)*batch_size])\n",
+    "    return batch_xs, batch_ys\n",
+    "\n",
+    "\n",
+    "if __name__ == \"__main__\":\n",
+    "    trainingData = pd.read_csv(\"training.csv\")\n",
+    "    trainingData.dropna(inplace=True)\n",
+    "    # trainingData.info()\n",
+    "\n",
+    "    imagesList = []\n",
+    "    imagesList = makingImagesList(trainingData)\n",
+    "    resultsList = []\n",
+    "    resultsList = makingResultsList(trainingData)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Convolution Layer1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "'''\n",
+    "Convolution Layer1\n",
+    "'''\n",
+    "# hyper parameters\n",
+    "learning_rate = 0.001\n",
+    "training_epochs = 100\n",
+    "batch_size = 20\n",
+    "\n",
+    "# input place holders\n",
+    "# 96 * 96 = 9216\n",
+    "X = tf.placeholder(tf.float32, [None, 9216]) \n",
+    "\n",
+    "# [many images, 96x96, black&white]\n",
+    "X_img = tf.reshape(X, [-1, 96, 96, 1])\n",
+    "\n",
+    "# eyes XY, noseXY, .. colums' counts are 30\n",
+    "Y = tf.placeholder(tf.float32, [None, 30])\n",
+    "\n",
+    "# declare first Convolution Frame. [3x3, black/white, 32 nodes(conventions)]\n",
+    "W1 = tf.Variable(tf.random_normal([3, 3, 1, 32], stddev=0.01))\n",
+    "print('W1 (tf.random_normal) \\t: ', W1)\n",
+    "\n",
+    "# declare first Convolution. per moving 1pixel to right&down\n",
+    "# Conv -> (?, 96, 96, 32)\n",
+    "L1 = tf.nn.conv2d(X_img, W1, strides=[1, 1, 1, 1], padding='SAME')\n",
+    "print('tf.nn.conv2d \\t: ', L1)\n",
+    "\n",
+    "# First Relu\n",
+    "L1 = tf.nn.relu(L1)\n",
+    "print('tf.nn.relu \\t: ', L1)\n",
+    "\n",
+    "# First Pool\n",
+    "# Pool -> (?, 48, 48, 32)\n",
+    "L1 = tf.nn.max_pool(L1, ksize=[1, 2, 2, 1],strides=[1, 2, 2, 1], padding='SAME')\n",
+    "print('tf.nn.max_pool \\t: ', L1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Convolution Layer2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "'''\n",
+    "Convolution Layer2\n",
+    "'''\n",
+    "# tf.nn.max_pool \t:  Tensor(\"MaxPool_1:0\", shape=(?, 48, 48, 32), dtype=float32)\n",
+    "# declare second Convolution Frame. [3x3, 32 black/white base nodes, 64 nodes(conventions)]\n",
+    "# increase 32nodes to 64nodes\n",
+    "W2 = tf.Variable(tf.random_normal([3, 3, 32, 64], stddev=0.01)) \n",
+    "print('W2 (tf.random_normal) \\t: ', W2)\n",
+    "\n",
+    "# declare second Convolution. per moving 1pixel to right&down\n",
+    "#    Conv      ->(?, 48, 48, 64)\n",
+    "L2 = tf.nn.conv2d(L1, W2, strides=[1, 1, 1, 1], padding='SAME')\n",
+    "print('tf.nn.conv2d \\t:', L2)\n",
+    "\n",
+    "# Second Relu\n",
+    "L2 = tf.nn.relu(L2)\n",
+    "print('tf.nn.relu \\t:', L2)\n",
+    "\n",
+    "# Second Pool\n",
+    "#    Pool      ->(?, 24, 24, 64)\n",
+    "L2 = tf.nn.max_pool(L2, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')\n",
+    "print('tf.nn.max_pool \\t:', L2)\n",
+    "\n",
+    "\n",
+    "'''\n",
+    "Making 4demension to 2demension\n",
+    "'''\n",
+    "L2_flat = tf.reshape(L2, [-1, 24 * 24 * 64])\n",
+    "print('tf.reshape \\t:', L2_flat)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Fully Connected Layer & Saver"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "'''\n",
+    "Fully Connected (FC, Dense) Layer\n",
+    "'''\n",
+    "\n",
+    "# ★모델 저장용★학습에 직접적으로 사용하지 않고 학습 횟수에 따라 단순히 증가시킬 변수를 만듭니다.\n",
+    "global_step = tf.Variable(0, trainable=False, name='global_step')\n",
+    "\n",
+    "\n",
+    "# Final FC 24x24x64 inputs -> 10 outputs\n",
+    "#reuse=tf.AUTO_REUSE\n",
+    "W6 = tf.get_variable(\"W6\", shape=[24 * 24 * 64, 30], initializer=tf.contrib.layers.xavier_initializer())\n",
+    "print('W6 (xavier_initializer) \\t: ', W6)\n",
+    "\n",
+    "b = tf.Variable(tf.random_normal([30])) ## 임의의 수 10개를 만든다. ([1], 0, 10) 으로 하면 0에서 10사이에서 임의의 수 1개를 만든다.\n",
+    "\n",
+    "# logits = AX1 + BX2 + CX3 + ... + ?X30 + b\n",
+    "logits = tf.matmul(L2_flat, W6) + b\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# define cost/loss & optimizer\n",
+    "# cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=Y))\n",
+    "cost = tf.reduce_mean(tf.square(logits-Y))\n",
+    "# optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)\n",
+    "\n",
+    "# ★모델 저장용★\n",
+    "optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate)\n",
+    "# ★모델 저장용★ global_step로 넘겨준 변수를, 학습용 변수들을 최적화 할 때 마다 학습 횟수를 하나씩 증가시킵니다.\n",
+    "train_op = optimizer.minimize(cost, global_step=global_step)\n",
+    "\n",
+    "print('cost :', cost)\n",
+    "print('optimizer :\\n', optimizer)\n",
+    "print('train_op :\\n', train_op)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Training"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "'''\n",
+    "Training\n",
+    "'''\n",
+    "# initialize\n",
+    "sess = tf.Session() ## 세션 생성\n",
+    "\n",
+    "# ★모델 저장용★\n",
+    "# 모델을 저장하고 불러오는 API를 초기화합니다.\n",
+    "# global_variables() 함수를 통해 앞서 정의하였던 변수들을 저장하거나 불러올 변수들로 설정합니다.\n",
+    "saver = tf.train.Saver(tf.global_variables())\n",
+    "chkpoint = tf.train.get_checkpoint_state('./models')\n",
+    "if chkpoint and tf.train.checkpoint_exists(chkpoint.model_checkpoint_path):\n",
+    "    saver.restore(sess, chkpoint.model_checkpoint_path)\n",
+    "else:\n",
+    "    sess.run(tf.global_variables_initializer()) # 세션 내 변수를 초기화\n",
+    "\n",
+    "\n",
+    "# train my model\n",
+    "print('Learning started. It takes sometime.')\n",
+    "time1 = time.time()\n",
+    "for epoch in range(100): ## training_epochs는 위에서 15로 정의했다.\n",
+    "    avg_cost = 0\n",
+    "#     total_batch = int(mnist.train.num_examples / batch_size)\n",
+    "    total_batch = int(len(trainingData.iloc[:,0]) / batch_size) \n",
+    "    ## batch_size는 샘플을 한 번에 몇 개씩 처리할지를 정하는 부분. 너무 크면 학습 속도가 느려지고, 너무 작으면 각 실행 값의 편차가 생겨서 결과값이 불안정해진다.\n",
+    "\n",
+    "    for i in range(total_batch):\n",
+    "        batch_xs, batch_ys = makingBatch(imagesList, resultsList, i, batch_size)\n",
+    "        feed_dict = {X: batch_xs, Y: batch_ys}\n",
+    "        # ★모델 저장용★ optimizer를 train_op로 변경해준다.\n",
+    "        # c, _ = sess.run([cost, optimizer], feed_dict=feed_dict)\n",
+    "        c, _ = sess.run([cost, train_op], feed_dict=feed_dict)\n",
+    "        avg_cost += c / total_batch    \n",
+    "\n",
+    "    print('Epoch:', '%04d' % (epoch + 1), 'cost =', '{:.9f}'.format(avg_cost))\n",
+    "    print('Step: %d, ' % sess.run(global_step))\n",
+    "    if (float(avg_cost) <= 7) :\n",
+    "        break    \n",
+    "\n",
+    "print('Learning Finished!')\n",
+    "time2 = time.time()\n",
+    "\n",
+    "chk_processting_time(time1, time2)\n",
+    "\n",
+    "\n",
+    "# ★모델 저장용★최적화가 끝난 뒤, 변수를 저장합니다.\n",
+    "saver.save(sess, './models/test.model', global_step=global_step)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Training Data Test Model"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Test model and check accuracy\n",
+    "correct_prediction = tf.equal(tf.argmax(logits, 1), tf.argmax(Y, 1))\n",
+    "accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))\n",
+    "\n",
+    "r = 0\n",
+    "\n",
+    "prediction = sess.run(logits, feed_dict={X: np.array(imagesList[r:r + 1])})\n",
+    "print(prediction)\n",
+    "plt.scatter(prediction[0][0], prediction[0][1])\n",
+    "plt.scatter(prediction[0][2], prediction[0][3])\n",
+    "plt.scatter(prediction[0][4], prediction[0][5])\n",
+    "plt.scatter(prediction[0][6], prediction[0][7])\n",
+    "plt.scatter(prediction[0][8], prediction[0][9])\n",
+    "plt.scatter(prediction[0][10], prediction[0][11])\n",
+    "plt.scatter(prediction[0][12], prediction[0][13])\n",
+    "plt.scatter(prediction[0][14], prediction[0][15])\n",
+    "plt.scatter(prediction[0][16], prediction[0][17])\n",
+    "plt.scatter(prediction[0][18], prediction[0][19])\n",
+    "plt.scatter(prediction[0][20], prediction[0][21])\n",
+    "plt.scatter(prediction[0][22], prediction[0][23])\n",
+    "plt.scatter(prediction[0][24], prediction[0][25])\n",
+    "plt.scatter(prediction[0][26], prediction[0][27])\n",
+    "plt.scatter(prediction[0][28], prediction[0][29])\n",
+    "plt.imshow(np.array(imagesList[r:r + 1]).reshape(96, 96), cmap='Greys', interpolation='nearest')\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Test Data Test Model"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Test Data 전처리"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def makingImagesList(trainingData) :\n",
+    "    imagesList = []\n",
+    "    for i in range(len(trainingData.iloc[:, 0])) :\n",
+    "        imagesList.append(np.array(trainingData.iloc[i][1].split(\" \"), dtype=np.uint8))\n",
+    "    return imagesList\n",
+    "\n",
+    "trainingData2 = pd.read_csv(\"test.csv\")\n",
+    "imagesList2 = []\n",
+    "imagesList2 = makingImagesList(trainingData2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Test model and check accuracy\n",
+    "correct_prediction = tf.equal(tf.argmax(logits, 1), tf.argmax(Y, 1))\n",
+    "accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))\n",
+    "print('Accuracy:', sess.run(accuracy, feed_dict={X: np.array(imagesList[0:100]), Y: np.array(resultsList[0:100])}))\n",
+    "\n",
+    "r = 330\n",
+    "\n",
+    "prediction = sess.run(logits, feed_dict={X: np.array(imagesList2[r:r + 1])})\n",
+    "print(prediction)\n",
+    "plt.scatter(prediction[0][0], prediction[0][1])\n",
+    "plt.scatter(prediction[0][2], prediction[0][3])\n",
+    "plt.scatter(prediction[0][4], prediction[0][5])\n",
+    "plt.scatter(prediction[0][6], prediction[0][7])\n",
+    "plt.scatter(prediction[0][8], prediction[0][9])\n",
+    "plt.scatter(prediction[0][10], prediction[0][11])\n",
+    "plt.scatter(prediction[0][12], prediction[0][13])\n",
+    "plt.scatter(prediction[0][14], prediction[0][15])\n",
+    "plt.scatter(prediction[0][16], prediction[0][17])\n",
+    "plt.scatter(prediction[0][18], prediction[0][19])\n",
+    "plt.scatter(prediction[0][20], prediction[0][21])\n",
+    "plt.scatter(prediction[0][22], prediction[0][23])\n",
+    "plt.scatter(prediction[0][24], prediction[0][25])\n",
+    "plt.scatter(prediction[0][26], prediction[0][27])\n",
+    "plt.scatter(prediction[0][28], prediction[0][29])\n",
+    "plt.imshow(np.array(imagesList2[r:r + 1]).reshape(96, 96), cmap='Greys', interpolation='nearest')\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Kaggle 제출을 위한 데이터 처리"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "predictionsList = []\n",
+    "\n",
+    "for i in range(len(imagesList2)) :\n",
+    "    prediction = sess.run(logits, feed_dict={X: np.array(imagesList2[i:i+1])})\n",
+    "    predictionsList.append(prediction)\n",
+    "\n",
+    "predictionsList"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "look_id = pd.read_csv('./IdLookupTable.csv')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "look_id.info()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "look_id.drop('Location', axis=1, inplace=True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "look_id.info()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ind = np.array(trainingData.columns[:-1])\n",
+    "value = np.array(range(0,30))\n",
+    "maps = pd.Series(value, ind)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "look_id['location_id'] = look_id.FeatureName.map(maps)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df = look_id.copy()\n",
+    "\n",
+    "location = pd.DataFrame({'Location':[]})\n",
+    "for i in range(1,1784):\n",
+    "    ind = df[df.ImageId==i].location_id\n",
+    "    location = location.append(pd.DataFrame(predictionsList[i-1][0][list(ind)],columns=['Location']), ignore_index=True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "look_id['Location']=location"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "look_id[['RowId','Location']].to_csv('Predict.csv',index=False)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Kaggle 제출을 위한 API 설치 및 제출"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#### pip install은 하나씩 실행하기를 권장한다.\n",
+    "!pip install kaggle\n",
+    "!pip show kaggle\n",
+    "\n",
+    "#### Kaggle API가 설치된 위치를 확인한 후 다운로드 한 kaggle.json 파일을 이동시킨다\n",
+    "#### kaggle.json은 kaggle 홈페이지 접속 후 My Account - Token 을 다운 받으면 된다.\n",
+    "#### 참고로 kaggle.json 이동해야할 위치는 (C:\\Users\\student\\.kaggle)이다.\n",
+    "!kaggle config path\n",
+    "\n",
+    "#### Submission\n",
+    "! kaggle competitions submit -c facial-keypoints-detection -f Predict.csv -m'submission"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
