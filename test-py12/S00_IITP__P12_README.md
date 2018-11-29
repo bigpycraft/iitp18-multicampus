@@ -166,12 +166,12 @@
 		<td><div align="center"><a href="https://www.kaggle.com/c/bike-sharing-demand                        "></a>Bike Sharing Demand                           </a></div></td>
 	</tr>
 	<tr valign="top">
-		<td><div align="center">Otto Group <br/>제품분류           </div></td>
-		<td><div align="center">Airbnb <br/>신규 사용자 예약 </div></td>
-		<td><div align="center">얼굴 특징 탐지          </div></td>
-		<td><div align="center">주택 가격 예측          </div></td>
+		<td><div align="center">Otto Group <br/>제품분류     </div></td>
+		<td><div align="center">Airbnb <br/>신규사용자 예약  </div></td>
+		<td><div align="center">얼굴 특징 <br/>탐지          </div></td>
+		<td><div align="center">주택 가격 <br/>예측          </div></td>
 		<td><div align="center">가계 빈곤 <br/>수준 예측     </div></td>
-		<td><div align="center">자전거 공유 <br/>수요 예측       </div></td>
+		<td><div align="center">자전거 공유 <br/>수요 예측   </div></td>
 	</tr>
 	<tr valign="top">
 		<td><div align="center">강호영<br/>유영재<br/>이상훈<br/>      </div></td>
@@ -182,15 +182,14 @@
 		<td><div align="center">민유진<br/>함윤선<br/>유선우<br/>장정호</div></td>
 	</tr>
 	<tr>
-		<td><div align="center"><a href="report/S20_결과보고서_A팀.pdf"><img src='images/report_icon_01.png' width=100 alt="A팀 결과보고서"></a></div></td>
-		<td><div align="center"><a href="report/S20_결과보고서_B팀.pdf"><img src='images/report_icon_02.png' width=100 alt="B팀 결과보고서"></a></div></td>
-		<td><div align="center"><a href="report/S20_결과보고서_C팀.pdf"><img src='images/report_icon_01.png' width=100 alt="C팀 결과보고서"></a></div></td>
-		<td><div align="center"><a href="report/S20_결과보고서_D팀.pdf"><img src='images/report_icon_02.png' width=100 alt="D팀 결과보고서"></a></div></td>
-		<td><div align="center"><a href="report/S20_결과보고서_E팀.pdf"><img src='images/report_icon_01.png' width=100 alt="E팀 결과보고서"></a></div></td>
-		<td><div align="center"><a href="report/S20_결과보고서_F팀.pdf"><img src='images/report_icon_02.png' width=100 alt="F팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_A팀.pdf"><img src='images/report_icon_01_s.png' width=100 alt="A팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_B팀.pdf"><img src='images/report_icon_02_s.png' width=100 alt="B팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_C팀.pdf"><img src='images/report_icon_01_s.png' width=100 alt="C팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_D팀.pdf"><img src='images/report_icon_02_s.png' width=100 alt="D팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_E팀.pdf"><img src='images/report_icon_01_s.png' width=100 alt="E팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_F팀.pdf"><img src='images/report_icon_02_s.png' width=100 alt="F팀 결과보고서"></a></div></td>
 	</tr>
 </table>
-
 
 <hr>
 
