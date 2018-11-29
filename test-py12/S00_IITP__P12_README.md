@@ -157,7 +157,7 @@
 		<td><div align="center"><a href="https://www.kaggle.com/c/costa-rican-household-poverty-prediction   "></a><img src='images/E팀_과제_icon.png' width=150></a></div></td>
 		<td><div align="center"><a href="https://www.kaggle.com/c/bike-sharing-demand                        "></a><img src='images/F팀_과제_icon.png' width=150></a></div></td>
 	</tr>
-	<tr>
+	<tr valign="top">
 		<td><div align="center"><a href="https://www.kaggle.com/c/otto-group-product-classification-challenge"></a>Otto Group Product Classification Challenge   </a></div></td>
 		<td><div align="center"><a href="https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings        "></a>Airbnb New User Bookings                      </a></div></td>
 		<td><div align="center"><a href="https://www.kaggle.com/c/facial-keypoints-detection#description     "></a>Facial Keypoints Detection                    </a></div></td>
@@ -165,29 +165,29 @@
 		<td><div align="center"><a href="https://www.kaggle.com/c/costa-rican-household-poverty-prediction   "></a>Costa Rican Household Poverty Level Prediction</a></div></td>
 		<td><div align="center"><a href="https://www.kaggle.com/c/bike-sharing-demand                        "></a>Bike Sharing Demand                           </a></div></td>
 	</tr>
-	<tr>
-		<td><div align="center">Otto 제품분류           </div></td>
-		<td><div align="center">Airbnb 신규 사용자 예약 </div></td>
+	<tr valign="top">
+		<td><div align="center">Otto Group <br/>제품분류           </div></td>
+		<td><div align="center">Airbnb <br/>신규 사용자 예약 </div></td>
 		<td><div align="center">얼굴 특징 탐지          </div></td>
 		<td><div align="center">주택 가격 예측          </div></td>
-		<td><div align="center">가계 빈곤 수준 예측     </div></td>
-		<td><div align="center">자전거 공유 수요        </div></td>
+		<td><div align="center">가계 빈곤 <br/>수준 예측     </div></td>
+		<td><div align="center">자전거 공유 <br/>수요 예측       </div></td>
+	</tr>
+	<tr valign="top">
+		<td><div align="center">강호영<br/>유영재<br/>이상훈<br/>      </div></td>
+		<td><div align="center">유수정<br/>김홍기<br/>김하준<br/>      </div></td>
+		<td><div align="center">장은경<br/>정민호<br/>주상훈<br/>      </div></td>
+		<td><div align="center">조민정<br/>고준형<br/>김효신<br/>      </div></td>
+		<td><div align="center">문정연<br/>공정배<br/>이진수<br/>      </div></td>
+		<td><div align="center">민유진<br/>함윤선<br/>유선우<br/>장정호</div></td>
 	</tr>
 	<tr>
-		<td><div align="center">강호영, 유영재, 이상훈        </div></td>
-		<td><div align="center">유수정, 김홍기, 김하준        </div></td>
-		<td><div align="center">장은경, 정민호, 주상훈        </div></td>
-		<td><div align="center">조민정, 고준형, 김효신        </div></td>
-		<td><div align="center">문정연, 공정배, 이진수        </div></td>
-		<td><div align="center">민유진, 함윤선, 유선우, 장정호</div></td>
-	</tr>
-	<tr>
-		<td><div align="center"><a href="report/S20_결과보고서_A팀.pdf">[결과보고서]</a></div></td>
-		<td><div align="center"><a href="report/S20_결과보고서_B팀.pdf">[결과보고서]</a></div></td>
-		<td><div align="center"><a href="report/S20_결과보고서_C팀.pdf">[결과보고서]</a></div></td>
-		<td><div align="center"><a href="report/S20_결과보고서_D팀.pdf">[결과보고서]</a></div></td>
-		<td><div align="center"><a href="report/S20_결과보고서_E팀.pdf">[결과보고서]</a></div></td>
-		<td><div align="center"><a href="report/S20_결과보고서_F팀.pdf">[결과보고서]</a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_A팀.pdf"><img src='images/report_icon_01.png' width=100 alt="A팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_B팀.pdf"><img src='images/report_icon_02.png' width=100 alt="B팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_C팀.pdf"><img src='images/report_icon_01.png' width=100 alt="C팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_D팀.pdf"><img src='images/report_icon_02.png' width=100 alt="D팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_E팀.pdf"><img src='images/report_icon_01.png' width=100 alt="E팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_F팀.pdf"><img src='images/report_icon_02.png' width=100 alt="F팀 결과보고서"></a></div></td>
 	</tr>
 </table>
 
