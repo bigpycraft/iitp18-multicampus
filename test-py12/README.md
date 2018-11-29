@@ -16,7 +16,7 @@
 - [Section-F][link-F] : Deep Learning
 - ♣ <b>[Team Project][test12] : Challenge Kaggle for Machine Learning </b><br/><br/>
 <br/><br/>
-<div align="left"><img src="../images/kaggle-computer.png" width="300"  /></div>
+<div align="left"><img src="./images/kaggle-computer.png" width="300"  /></div>
 
 [link-A]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-A "Go Section-A"
 [link-B]: https://github.com/bigpycraft/iitp18-multicampus/tree/master/section-B "Go Section-B"
@@ -38,7 +38,7 @@
     <tr align="left">
         <td width="200">
             <a href="https://www.kaggle.com/">
-            <img src="../images/kaggle-logo.png" width="150" />
+            <img src="./images/kaggle-logo.png" width="150" />
             </a>
         </td>
         <td width="800">
@@ -61,7 +61,7 @@
 
 <hr>
 
-## Team Project 
+## Team Project : Kick Off
 
 - 2nd Subject : Challenge Kaggle 
 - Our Motto : <b>Learning by doing, doing by learning !! </b>
@@ -130,6 +130,90 @@
 	</tr>
 </table>
 
+
+
+<hr>
+
+## Team Project : Final Report
+
+- Submission : 결과보고서, 소스코드
+- Presentation : 10min/team, Q&A
+- Keep in mind : <b> Share Lessons Learned !! </b>
+
+<table border=1 bgcolor="#EEEEEE">
+	<tr bgcolor="#CC0000">
+		<td width="150"><div align="center"><font color="#FFFFFF"><b>하드캐리  </b><br/>(A팀)</font></div></td>
+		<td width="150"><div align="center"><font color="#FFFFFF"><b>여행조하  </b><br/>(B팀)</font></div></td>
+		<td width="150"><div align="center"><font color="#FFFFFF"><b>제이씨제이</b><br/>(C팀)</font></div></td>
+		<td width="150"><div align="center"><font color="#FFFFFF"><b>팀-D      </b><br/>(D팀)</font></div></td>
+		<td width="150"><div align="center"><font color="#FFFFFF"><b>원픽      </b><br/>(E팀)</font></div></td>
+		<td width="150"><div align="center"><font color="#FFFFFF"><b>듀란듀란  </b><br/>(F팀)</font></div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><a href="https://www.kaggle.com/c/otto-group-product-classification-challenge"></a><img src='images/A팀_과제_icon.png' width=150></a></div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings        "></a><img src='images/B팀_과제_icon.png' width=150></a></div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/facial-keypoints-detection#description     "></a><img src='images/C팀_과제_icon.png' width=150></a></div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques"></a><img src='images/D팀_과제_icon.png' width=150></a></div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/costa-rican-household-poverty-prediction   "></a><img src='images/E팀_과제_icon.png' width=150></a></div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/bike-sharing-demand                        "></a><img src='images/F팀_과제_icon.png' width=150></a></div></td>
+	</tr>
+	<tr valign="top">
+		<td><div align="center"><a href="https://www.kaggle.com/c/otto-group-product-classification-challenge"></a>Otto Group Product Classification Challenge   </a></div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings        "></a>Airbnb New User Bookings                      </a></div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/facial-keypoints-detection#description     "></a>Facial Keypoints Detection                    </a></div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques"></a>House Prices: Advanced Regression Techniques  </a></div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/costa-rican-household-poverty-prediction   "></a>Costa Rican Household Poverty Level Prediction</a></div></td>
+		<td><div align="center"><a href="https://www.kaggle.com/c/bike-sharing-demand                        "></a>Bike Sharing Demand                           </a></div></td>
+	</tr>
+	<tr valign="top">
+		<td><div align="center">Otto Group <br/>제품분류     </div></td>
+		<td><div align="center">Airbnb <br/>신규사용자 예약  </div></td>
+		<td><div align="center">얼굴 특징 <br/>탐지          </div></td>
+		<td><div align="center">주택 가격 <br/>예측          </div></td>
+		<td><div align="center">가계 빈곤 <br/>수준 예측     </div></td>
+		<td><div align="center">자전거 공유 <br/>수요 예측   </div></td>
+	</tr>
+	<tr valign="top">
+		<td><div align="center">강호영<br/>유영재<br/>이상훈<br/>      </div></td>
+		<td><div align="center">유수정<br/>김홍기<br/>김하준<br/>      </div></td>
+		<td><div align="center">장은경<br/>정민호<br/>주상훈<br/>      </div></td>
+		<td><div align="center">조민정<br/>고준형<br/>김효신<br/>      </div></td>
+		<td><div align="center">문정연<br/>공정배<br/>이진수<br/>      </div></td>
+		<td><div align="center">민유진<br/>함윤선<br/>유선우<br/>장정호</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><a href="report/S20_결과보고서_A팀.pdf"><img src='images/report_icon_01_s.png' width=100 alt="A팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_B팀.pdf"><img src='images/report_icon_02_s.png' width=100 alt="B팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_C팀.pdf"><img src='images/report_icon_01_s.png' width=100 alt="C팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_D팀.pdf"><img src='images/report_icon_02_s.png' width=100 alt="D팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_E팀.pdf"><img src='images/report_icon_01_s.png' width=100 alt="E팀 결과보고서"></a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_F팀.pdf"><img src='images/report_icon_02_s.png' width=100 alt="F팀 결과보고서"></a></div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><a href="report/S10_착수보고서_A팀.pdf">[A팀 착수보고]</a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_B팀.pdf">[B팀 착수보고]</a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_C팀.pdf">[C팀 착수보고]</a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_D팀.pdf">[D팀 착수보고]</a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_E팀.pdf">[E팀 착수보고]</a></div></td>
+		<td><div align="center"><a href="report/S10_착수보고서_F팀.pdf">[F팀 착수보고]</a></div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><a href="report/S20_결과보고서_A팀.pdf">[A팀 결과보고]</a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_B팀.pdf">[B팀 결과보고]</a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_C팀.pdf">[C팀 결과보고]</a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_D팀.pdf">[D팀 결과보고]</a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_E팀.pdf">[E팀 결과보고]</a></div></td>
+		<td><div align="center"><a href="report/S20_결과보고서_F팀.pdf">[F팀 결과보고]</a></div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><a href="IITP18_Team_A">[A팀 소스코드]</a></div></td>
+		<td><div align="center"><a href="IITP18_Team_B">[B팀 소스코드]</a></div></td>
+		<td><div align="center"><a href="IITP18_Team_C">[C팀 소스코드]</a></div></td>
+		<td><div align="center"><a href="IITP18_Team_D">[D팀 소스코드]</a></div></td>
+		<td><div align="center"><a href="IITP18_Team_E">[E팀 소스코드]</a></div></td>
+		<td><div align="center"><a href="IITP18_Team_F">[F팀 소스코드]</a></div></td>
+	</tr>
+</table>
 
 
 <hr>
