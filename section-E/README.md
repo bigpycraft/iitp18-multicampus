@@ -64,10 +64,15 @@
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML624-MNIST_CNN_Layers.html                  "> 6-4. MNIST CNN Layers                   </a>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML625-MNIST_CNN_Ensemble_Layers.html         "> 6-5. MNIST CNN Ensemble Layers          </a>
 <br/><br/>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML721_RNN_String_Sequence.html               "> 7. Recurrent Neural Network             </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML721_RNN_String_Sequence.html               "> 7-1. RNN String Sequence                </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML722_RNN_Sentence_Sequence.html             "> 7-2. RNN Sentence Sequence              </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML723_Only_Softmax_Sentence_Sequence.html    "> 7-3. Only Softmax Sentence Sequence     </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML724_RNN_Long_Sentence.html                 "> 7-4. RNN Long Sentence                  </a>
+- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML725_RNN_Stock_Prediction.html              "> 7-5. RNN Stock Prediction               </a>
+<br/><br/>
 - <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-E/html/BDA-ML810_NN_Saver.html         "> Tip. DeepLearning Model Saver & Reuse  </a>
 <br/><br/>
-
-
 
 <hr>
 
