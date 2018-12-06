@@ -44,7 +44,9 @@
     - <a href="./docu/IITP18_UNIT1_착수보고서_포맷.docx">착수보고서 포맷</a>
 
 
-<h3>A팀 고재형멘토 - 이코노미</h3>
+<hr/>
+<br/><br/>
+<h4>A팀 : 고재형멘토 - 이코노미</h4>
 <table border=1>
 	<tr>
 		<td width="200"><div align="center"><b>Project Team</b></div></td>
@@ -67,6 +69,35 @@
 		<td><div align="left" >서울시 구별 존재하는 경제 불균형의 원인이 불명확하다!</div></td>
 	</tr>
 </table>
+
+
+<br/><br/>
+<h4>B팀 : 강재원 - 사회적구조</h4>
+<table border=1>
+	<tr>
+		<td width="200"><div align="center"><b>Project Team</b></div></td>
+		<td width="600"><div align="left" > 사시미(사회 시스템에 미친)팀</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Team Members</b></div></td>
+		<td><div align="left" > 유선우, 김하준, 공정배, 함윤선</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Report</b></div></td>
+		<td><div align="left" > <a href="report/IITP18_UNIT1_착수보고서_B팀.pdf">[B팀 착수보고]</a> </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Subject</b></div></td>
+		<td><div align="left" >서울시의 미적 경쟁력 확인 및 개선 방안 제안</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Problem Definition</b></div></td>
+		<td><div align="left" >도시의 아름다움, 청결, 치안은 시민들의 정신적 건강과 삶의 질에 직결된 문제이다. 서울시의 치안은 세계적인 수준임에도 청결과 아름다움은 그렇지 못하다. </div></td>
+	</tr>
+</table>
+
+
+
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
