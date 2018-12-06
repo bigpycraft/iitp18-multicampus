@@ -176,13 +176,11 @@
 </table>
 
 
-<hr>
-<iframe src="https://github.com/bigpycraft/iitp18-multicampus/tree/master/test-py12" name="frame_target" style="width:100%; height:400px;"></iframe>
-<p>
-<a href="https://github.com/bigpycraft/iitp18-multicampus" target="frame_target">Python Gopython</a>
-
-</p>
-
+<hr/>
+<br/>
+<h2>The seriousness of thesocial problem in Korea</h2>
+<br/>
+<video src="media/social_problem.mp4" autoplay controls width="800">
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
