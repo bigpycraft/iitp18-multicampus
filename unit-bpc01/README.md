@@ -182,7 +182,7 @@
 <br/>
 <video src="media/social_problem.mp4" autoplay controls width="800">
 <br>
-<a href="media/social_problem.mp4">[PLAY]</a>
+<a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/unit-bpc01/media/social_problem.html">[PLAY]</a>
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
