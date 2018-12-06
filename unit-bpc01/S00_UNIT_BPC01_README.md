@@ -181,6 +181,8 @@
 <h2>The seriousness of thesocial problem in Korea</h2>
 <br/>
 <video src="media/social_problem.mp4" autoplay controls width="800">
+<br>
+<a href="media/social_problem.mp4">[PLAY]</a>
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
