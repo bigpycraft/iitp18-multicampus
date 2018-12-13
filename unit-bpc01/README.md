@@ -43,6 +43,7 @@
     - <a href="./docu/IITP18_UNIT1_문제정의서_포맷.pptx">문제정의서 포맷</a>
     - <a href="./docu/IITP18_UNIT1_착수보고서_포맷.docx">착수보고서 포맷</a>
 
+<div align="left" ><img src="images/Present_1st__DAY.JPG" width="600"></div>
 
 <hr/>
 <br/>
@@ -58,15 +59,15 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Report</b></div></td>
-		<td><div align="left" > <a href="report/IITP18_UNIT1_착수보고서_A팀.pdf">[A팀 착수보고]</a> </div></td>
+		<td><div align="left" > <a href="report/IITP18_UNIT1_결과보고서_A팀_v1.pdf">[A팀 결과보고 1차]</a> </div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
-		<td><div align="left" >지역간 경제 불균형의 영향 요인 발굴 – 서울시를 중심으로</div></td>
+		<td><div align="left" >회귀분석을 활용한 쌀 가격 예측 모델 개선</div></td>
 	</tr>
 	<tr>
-		<td><div align="center"><b>Problem Definition</b></div></td>
-		<td><div align="left" >서울시 구별 존재하는 경제 불균형의 원인이 불명확하다!</div></td>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><img src="images/Present_1st_A-Team.JPG" width="600"></div></td>
 	</tr>
 </table>
 
@@ -79,20 +80,16 @@
 		<td width="800"><div align="left" > 사시미(사회 시스템에 미친)팀</div></td>
 	</tr>
 	<tr>
-		<td><div align="center"><b>Team Members</b></div></td>
-		<td><div align="left" > 유선우, 김하준, 공정배, 함윤선</div></td>
-	</tr>
-	<tr>
 		<td><div align="center"><b>Report</b></div></td>
-		<td><div align="left" > <a href="report/IITP18_UNIT1_착수보고서_B팀.pdf">[B팀 착수보고]</a> </div></td>
+		<td><div align="left" > <a href="report/IITP18_UNIT1_결과보고서_B팀_v1.pdf">[B팀 결과보고 1차]</a> </div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
-		<td><div align="left" >서울시의 미적 경쟁력 확인 및 개선 방안 제안</div></td>
+		<td><div align="left" >현 장애 등급제 실태 파악 개선 방안 제시</div></td>
 	</tr>
 	<tr>
-		<td><div align="center"><b>Problem Definition</b></div></td>
-		<td><div align="left" >도시의 아름다움, 청결, 치안은 시민들의 정신적 건강과 삶의 질에 직결된 문제이다. 서울시의 치안은 세계적인 수준임에도 청결과 아름다움은 그렇지 못하다. </div></td>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><img src="images/Present_1st_B-Team.JPG" width="600"></div></td>
 	</tr>
 </table>
 
@@ -111,15 +108,15 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Report</b></div></td>
-		<td><div align="left" > <a href="report/IITP18_UNIT1_착수보고서_C팀.pdf">[C팀 착수보고]</a> </div></td>
+		<td><div align="left" > <a href="report/IITP18_UNIT1_결과보고서_C팀_v1.pdf">[C팀 결과보고 1차]</a> </div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
-		<td><div align="left" >소확행’을 공략하는 Business Planning</div></td>
+		<td><div align="left" >서울시 50+세대의 삶의 만족도 높이기 위한 사회 공헌형 일자리 분석</div></td>
 	</tr>
 	<tr>
-		<td><div align="center"><b>Problem Definition</b></div></td>
-		<td><div align="left" >경쟁의 심화와 시간적 여유의 감소 등으로 인해 현대 사회에서 행복을 느끼기 쉽지 않아 행복하지 않은 사람이 많다.</div></td>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><img src="images/Present_1st_C-Team.JPG" width="600"></div></td>
 	</tr>
 </table>
 
@@ -137,15 +134,15 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Report</b></div></td>
-		<td><div align="left" > <a href="report/IITP18_UNIT1_착수보고서_D팀.pdf">[D팀 착수보고]</a> </div></td>
+		<td><div align="left" > <a href="report/IITP18_UNIT1_결과보고서_D팀_v1.pdf">[D팀 결과보고 1차]</a> </div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
 		<td><div align="left" >젠트리피케이션 심각도 파악 및 완화 정책 타당성 분석</div></td>
 	</tr>
 	<tr>
-		<td><div align="center"><b>Problem Definition</b></div></td>
-		<td><div align="left" >문제와 직접적으로 관련되어 있는것은 임대/임차인이지만, 완화시킬 수 있는 배경을 적극적으로 제공할 수 있는 지방자치단체의 입장을 선택하였다. <br/>젠트리피케이션은 케이스 데이터 분석을 통해 임대인들에게는 공생을 설득할 수 있는 방법과 자영업자들이 그들이 만들어 온 터전을 떠나지 않을 수 있는 방법을 물색해보고자 한다.</div></td>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><img src="images/Present_1st_D-Team.JPG" width="600"></div></td>
 	</tr>
 </table>
 
@@ -163,15 +160,15 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Report</b></div></td>
-		<td><div align="left" > <a href="report/IITP18_UNIT1_착수보고서_E팀.pdf">[E팀 착수보고]</a> </div></td>
+		<td><div align="left" > <a href="report/IITP18_UNIT1_결과보고서_E팀_v1.pdf">[E팀 결과보고 1차]</a> </div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
-		<td><div align="left" >결혼준비과정에서 파혼 요인 분석 및 사례 분석</div></td>
+		<td><div align="left" >미세먼지의 심각성 분석</div></td>
 	</tr>
 	<tr>
-		<td><div align="center"><b>Problem Definition</b></div></td>
-		<td><div align="left" >결혼과정에 대한 정보부족으로 파혼</div></td>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><img src="images/Present_1st_E-Team.JPG" width="600"></div></td>
 	</tr>
 </table>
 
