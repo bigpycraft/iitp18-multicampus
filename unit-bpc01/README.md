@@ -46,6 +46,7 @@
 <div align="left" ><img src="images/Present_1st__DAY.JPG" width="600"></div>
 
 <hr/>
+<h2>결과보고서 발표</h2>
 <br/>
 <h4>A팀 : 고재형멘토 - 이코노미</h4>
 <table border=1>
@@ -59,7 +60,12 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Report</b></div></td>
-		<td><div align="left" > <a href="report/IITP18_UNIT1_결과보고서_A팀_v1.pdf">[A팀 결과보고 1차]</a> </div></td>
+		<td>
+            <div align="left" > 
+                <a href="report/IITP18_UNIT1_결과보고서_A팀_v1.pdf">[A팀 결과보고 1차]</a>, &nbsp;&nbsp;&nbsp; 
+                <a href="report/IITP18_UNIT1_결과보고서_A팀_v2.pdf">[A팀 결과보고 2차]</a> 
+            </div>
+        </td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
@@ -81,7 +87,12 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Report</b></div></td>
-		<td><div align="left" > <a href="report/IITP18_UNIT1_결과보고서_B팀_v1.pdf">[B팀 결과보고 1차]</a> </div></td>
+		<td>
+            <div align="left" > 
+                <a href="report/IITP18_UNIT1_결과보고서_B팀_v1.pdf">[B팀 결과보고 1차]</a>, &nbsp;&nbsp;&nbsp; 
+                <a href="report/IITP18_UNIT1_결과보고서_B팀_v2.pdf">[B팀 결과보고 2차]</a> 
+            </div>
+        </td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
@@ -108,7 +119,12 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Report</b></div></td>
-		<td><div align="left" > <a href="report/IITP18_UNIT1_결과보고서_C팀_v1.pdf">[C팀 결과보고 1차]</a> </div></td>
+		<td>
+            <div align="left" > 
+                <a href="report/IITP18_UNIT1_결과보고서_C팀_v1.pdf">[C팀 결과보고 1차]</a>, &nbsp;&nbsp;&nbsp; 
+                <a href="report/IITP18_UNIT1_결과보고서_C팀_v2.pdf">[C팀 결과보고 2차]</a> 
+            </div>
+        </td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
@@ -134,7 +150,12 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Report</b></div></td>
-		<td><div align="left" > <a href="report/IITP18_UNIT1_결과보고서_D팀_v1.pdf">[D팀 결과보고 1차]</a> </div></td>
+		<td>
+            <div align="left" > 
+                <a href="report/IITP18_UNIT1_결과보고서_D팀_v1.pdf">[D팀 결과보고 1차]</a>, &nbsp;&nbsp;&nbsp; 
+                <a href="report/IITP18_UNIT1_결과보고서_D팀_v2.pdf">[D팀 결과보고 2차]</a> 
+            </div>
+        </td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
@@ -160,7 +181,12 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Report</b></div></td>
-		<td><div align="left" > <a href="report/IITP18_UNIT1_결과보고서_E팀_v1.pdf">[E팀 결과보고 1차]</a> </div></td>
+		<td>
+            <div align="left" > 
+                <a href="report/IITP18_UNIT1_결과보고서_E팀_v1.pdf">[E팀 결과보고 1차]</a>, &nbsp;&nbsp;&nbsp; 
+                <a href="report/IITP18_UNIT1_결과보고서_E팀_v2.pdf">[E팀 결과보고 2차]</a> 
+            </div>
+        </td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
