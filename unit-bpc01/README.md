@@ -86,6 +86,10 @@
 		<td width="800"><div align="left" > 사시미(사회 시스템에 미친)팀</div></td>
 	</tr>
 	<tr>
+		<td><div align="center"><b>Team Members</b></div></td>
+		<td><div align="left" > 김홍기, 장정호, 정민호, 민유진</div></td>
+	</tr>
+	<tr>
 		<td><div align="center"><b>Report</b></div></td>
 		<td>
             <div align="left" > 
