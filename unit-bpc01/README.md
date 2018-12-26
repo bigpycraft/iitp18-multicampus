@@ -87,7 +87,7 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Team Members</b></div></td>
-		<td><div align="left" > 김홍기, 장정호, 정민호, 민유진</div></td>
+		<td><div align="left" > 유선우, 김하준, 공정배, 함윤선</div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Report</b></div></td>
