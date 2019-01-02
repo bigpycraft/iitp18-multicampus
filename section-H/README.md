@@ -85,6 +85,17 @@
 
 <hr>
 
+###  ★ Account assignment by team
+- <b> Team-A </b> : 강호영, 김하준, 조민정
+- <b> Team-B </b> : 유영재, 이진수, 정민호
+- <b> Team-C </b> : 김홍기, 김효신, 유수정, 장은경
+- <b> Team-D </b> : 민유진, 유선우, 장정호, 함윤선
+- <b> Team-E </b> : 공정배, 문정연
+- <b> Team-F </b> : 고준형, 이상훈
+<br/><br/>
+
+<hr>
+
 ###  ♠ VM Basic Information
 - <b> 장비이름, Name  </b> : VM-C-LAB01~05
 - <b> 운영체제, OS    </b> : Ubuntu 16.04 LTS(64bit)
