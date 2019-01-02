@@ -42,43 +42,46 @@
 	<tr bgcolor="#CC0000">
 		<td width="100"><div align="center"><font color="#FFFFFF"><b>팀별장비 </b></font></div></td>
 		<td width="150"><div align="center"><font color="#FFFFFF"><b>IP       </b></font></div></td>
-		<td width="200"><div align="center"><font color="#FFFFFF"><b>로그인ID </b></font></div></td>
-		<td width="200"><div align="center"><font color="#FFFFFF"><b>로그인PW </b></font></div></td>
-		<td width="150"><div align="center"><font color="#FFFFFF"><b>ROOT PW  </b></font></div></td>
+		<td width="150"><div align="center"><font color="#FFFFFF"><b>로그인ID </b></font></div></td>
+		<td width="100"><div align="center"><font color="#FFFFFF"><b>로그인PW </b></font></div></td>
+		<td width="300"><div align="center"><font color="#FFFFFF"><b>ROOT PW  </b></font></div></td>
 	</tr>
 	<tr>
-		<td><div align="center">A팀             </div></td>
-		<td><div align="center">70.12.115.60    </div></td>
-		<td><div align="center">user01 ~ user05 </div></td>
-		<td><div align="center">user01 ~ user05 </div></td>
-		<td rowspan="5"><div align="center">global</div></td>
+		<td><div align="center">Team-A                                                  </div></td>
+		<td><div align="center">13.209.216.54                                           </div></td>
+		<td><div align="center">user01 ~ user05                                         </div></td>
+		<td><div align="center">multiclab                                               </div></td>
+		<td><div align="center">ec2-13-209-216-54.ap-northeast-2.compute.amazonaws.com  </div></td>
 	</tr>
 	<tr>
-		<td><div align="center">B팀             </div></td>
-		<td><div align="center">70.12.115.72    </div></td>
-		<td><div align="center">user01 ~ user05 </div></td>
-		<td><div align="center">user01 ~ user05 </div></td>
+		<td><div align="center">Team-B                                                 </div></td>
+		<td><div align="center">54.180.61.217                                          </div></td>
+		<td><div align="center">user01 ~ user05                                        </div></td>
+		<td><div align="center">multiclab                                              </div></td>
+		<td><div align="center">ec2-54-180-61-217.ap-northeast-2.compute.amazonaws.com </div></td>
 	</tr>
 	<tr>
-		<td><div align="center">C팀             </div></td>
-		<td><div align="center">70.12.115.75    </div></td>
-		<td><div align="center">user01 ~ user05 </div></td>
-		<td><div align="center">user01 ~ user05 </div></td>
+		<td><div align="center">Team-C                                                 </div></td>
+		<td><div align="center">52.79.119.156                                          </div></td>
+		<td><div align="center">user01 ~ user05                                        </div></td>
+		<td><div align="center">multiclab                                              </div></td>
+		<td><div align="center">ec2-52-79-119-156.ap-northeast-2.compute.amazonaws.com </div></td>
 	</tr>
 	<tr>
-		<td><div align="center">D팀             </div></td>
-		<td><div align="center">70.12.115.77    </div></td>
-		<td><div align="center">user01 ~ user05 </div></td>
-		<td><div align="center">user01 ~ user05 </div></td>
+		<td><div align="center">Team-D                                                </div></td>
+		<td><div align="center">13.125.71.43                                          </div></td>
+		<td><div align="center">user01 ~ user05                                       </div></td>
+		<td><div align="center">multiclab                                             </div></td>
+		<td><div align="center">ec2-13-125-71-43.ap-northeast-2.compute.amazonaws.com </div></td>
 	</tr>
 	<tr>
-		<td><div align="center">E팀             </div></td>
-		<td><div align="center">70.12.115.80    </div></td>
-		<td><div align="center">user01 ~ user05 </div></td>
-		<td><div align="center">user01 ~ user05 </div></td>
+		<td><div align="center">Team-E                                                  </div></td>
+		<td><div align="center">13.125.173.224                                          </div></td>
+		<td><div align="center">user01 ~ user05                                         </div></td>
+		<td><div align="center">multiclab                                               </div></td>
+		<td><div align="center">ec2-13-125-173-224.ap-northeast-2.compute.amazonaws.com </div></td>
 	</tr>
 </table>
-
 
 <hr>
 
