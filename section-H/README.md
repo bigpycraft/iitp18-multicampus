@@ -29,8 +29,8 @@
 
 <img src="../images/img_front_readme_iitp.png">
 
-## Virtual Machine for BigData Environment
-- <a href="https://htmlpreview.github.io/?https://github.com/bigpycraft/iitp18-multicampus/blob/master/section-H/html/BDA-VM101-Tutorials.html                 "> 1. Tutorial for Virtual Machine    </a>
+## AWS Server Connectin & Jupyter Notebook Environment Setting
+- <a href="https://github.com/bigpycraft/iitp18-multicampus/blob/master/special_lecture/%ED%8A%B9%EA%B0%95_%EA%B9%80%EC%A7%84%EC%88%98_AWS_%EC%84%9C%EB%B2%84_%EC%A0%91%EC%86%8D_ver3.pdf"> 특강_김진수_AWS_서버_접속</a>
 <br/><br/>
 
 
